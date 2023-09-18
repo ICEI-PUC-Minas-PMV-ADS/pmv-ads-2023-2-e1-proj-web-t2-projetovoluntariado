@@ -44,8 +44,7 @@ O quadro kanban do grupo no Trello está disponível no link https://trello.com/
 </ul>
 
 <img width="296" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/929f10a5-7c73-4b52-852f-8df5faabcfc3">
-
-Figura 2 - Tela do esquema de cores das etiquetas
+<p>Figura 2 - Tela do esquema de cores das etiquetas</p>
 
 ### Ferramentas
 

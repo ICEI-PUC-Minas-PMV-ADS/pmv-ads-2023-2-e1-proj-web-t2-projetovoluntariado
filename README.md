@@ -1,12 +1,12 @@
 # Título do Projeto
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas - PUC Minas`
 
-`DISCIPLINA`
+`Desenvolvimento de aplicação web front-end`
 
-`SEMESTRE`
+`2º semestre/2023`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+O objetivo deste projeto é a criação de uma aplicação web que permita as pessoas a se cadastrarem como voluntários para projetos sociais e que as empresas interessadas publiquem projetos.
 
 ## Integrantes
 

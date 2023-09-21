@@ -2,38 +2,44 @@
 
 ## Perfis de Usuários
 
-[Enumere e faça o detalhamento dos perfis de usuários. Utilize o modelo de tabela abaixo para sintetizá-los.]
-
+### Voluntários
 <table>
-<tbody>
-<tr align=center>
-<th colspan="2">Perfil Nome </th>
-</tr>
-<tr>
-<td width="150px"><b>Descrição</b></td>
-<td width="600px">...</td>
-</tr>
-<tr>
-<td><b>Necessidades</b></td>
-<td>...</td>
-</tr>
-</tbody>
+  <tr>
+    <th>Descrição</th>
+    <td>Indivíduos que desejam oferecer seu tempo e habilidades para causas sociais. Possuindo assim a necessidade de serem reconhecidos pelo papel exercido.</td>
+  </tr>
+  <tr>
+    <th>Necessidades</th>
+    <td>
+      Encontrar uma causa social que se identifique para voluntariar. Inscrever-se, rastrear horas de voluntariado e receber certificados de reconhecimento.
+    </td>
+  </tr>
 </table>
 
+### Organizações 
+<table>
+  <tr>
+    <th>Descrição</th>
+    <td>Entidades que necessitam de voluntários para apoiar suas iniciativas.</td>
+  </tr>
+  <tr>
+    <th>Necessidades</th>
+    <td>
+      Encontrar voluntários dispostos a atuar nas causas sociais. Criar projetos, receber inscrições de voluntários, rastrear atividades.
+    </td>
+  </tr>
+</table>
 
 ## Histórias de Usuários
 
-[Apresente aqui as histórias de usuários que são relevantes para o projeto da solução.]
-
-> **Link Útil**:
-> - [Como escrever boas histórias de usuário](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-
-[Utilize o modelo de tabela abaixo para apresentar as histórias de usuários.]
-
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
-| ...                | ...                       | ...                              |
-| ...                | ...                       | ...                              |
+| Voluntário                 | Quero encontrar projetos que correspondam às minhas habilidades e interesses.                       | Para que eu possa contribuir de maneira significativa com a sociedade.                              |
+| Voluntário                 | Quero rastrear e registrar as horas que dediquei ao voluntariado.                       | Para acompanhar meu progresso e impacto na sociedade.                              |
+| Voluntário                 | Desejo receber certificados de reconhecimento e avançar em níveis de engajamento/evolução de acordo com número de projetos realizados.                        | Para me sentir motivado e valorizado. Utilizar o certificado para agregar portfólio pessoal, como LinkedIn.                              |
+| Organização                | Quero publicar projetos de voluntariado de maneira eficiente.                       | Para receber inscrições de voluntários engajados.                              |
+| Organização                | Quero especificar a quantidade de voluntários necessários para cada projeto.                       | Para conseguir mensurar se a quantidade de pessoas será suficiente para atingir o objetivo.                              |
+| Organização                | Quero conseguir especificar as habilidades/conhecimentos necessários do voluntário para exercer a função requisitada.                       | Para garantir que as tarefas sejam executadas com eficiência.                              |
 
 ## Requisitos do Projeto
 

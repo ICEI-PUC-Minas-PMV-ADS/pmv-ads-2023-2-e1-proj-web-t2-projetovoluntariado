@@ -1,35 +1,32 @@
 # Introdução
 
-[Aqui a equipe deve criar um texto descritivo com a visão geral do problema abordado, apresentando o ambiente e as situações envolvidas no problema.]
+No contexto atual, as ações voluntárias desempenham um papel significativo na melhoria das condições sociais e no engajamento cívico. 
+Apesar da crescente conscientização sobre a importância do voluntariado, muitas vezes é difícil para voluntários e organizações encontrarem-se mutuamente e coordenarem esforços de forma eficaz. Há uma falta de centralização de informações e uma desconexão entre as partes interessadas. Diante destes fatos é fundamental que existam canais e mecanismos que facilitem esta conexão e que não haja de fato um fator limitante para os avanços dos trabalhos e serviços voluntários. Algumas plataformas já existentes que tomamos como referência são: Transforma Brasil e Atados, onde ambas oferecem oportunidades para se candidatar a projetos, permitindo a aplicação de filtros com base nas causas buscadas pelo voluntariado, na localização geográfica, na especialização e nas empresas de interesse.
 
 ## Problema
-[Aqui a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.]
 
-Este link pode ajudar a equipe a entender mais sobre definição do problema: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-
+Diante do exposto, o problema que se busca resolver, é esta desconexão entre voluntários e organizações, juntamente com a falta de incentivo contínuo para o voluntariado.
 
 ## Objetivos
 
-[Aqui a equipe deve realizar uma descrição detalhada dos objetivos do trabalho, ressaltando quais as questões principais do problema a serem resolvidas pelo projeto, não é a hora de apresentar requisitos detalhados.]
- 
-Este link pode ajudar a equipe a entender mais sobre definição dos objetivos: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+O objetivo deste projeto é desenvolver uma plataforma de voluntariado online que visa solucionar os problemas de desconexão entre os voluntários e as organizações. 
+Os objetivos específicos do projeto incluem:
+- Facilitar a conexão entre voluntários e organizações;
+- Permitir que organizações publiquem projetos e que voluntários se inscrevam;
+- Rastrear de forma gamificada as horas de voluntariado;
+- Fornecer reconhecimento tangível e certificação para voluntários engajados;
+- Promover o voluntariado como uma ferramenta para a transformação social.
 
 ## Justificativa
 
-[Aqui a equipe deve descrever a importância ou a motivação para trabalhar com o problema definido. Indique as razões pelas quais a equipe escolheu o problema e definiu os objetivos.
+A criação dessa plataforma atenderá a uma necessidade real na sociedade, melhorando a eficiência do voluntariado e incentivando mais pessoas a se envolverem em causas sociais. Além disso, a abordagem gamificada ajudará a aumentar o engajamento dos voluntários ao fornecer recompensas simbólicas pelo trabalho árduo. A plataforma também permitirá que organizações alcancem um grupo mais amplo e diversificado de voluntários, aumentando seu impacto.
 
-Devem ser apresentados dados de fontes relevantes e confiáveis sobre o problema, inserindo-o como alvo de estudo. Sugere-se que a equipe utilize questionários, entrevistas e dados estatísticos, que devem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pela equipe.]
+Segundo uma pesquisa realizada através do site Valor de Propósito (2022), 16% dos brasileiros possuem grandes dificuldades em encontrar uma organização para se voluntariar. 
+O artigo do site Volunteerhub, segundo Burger (s.d) cita que assim como outras partes interessadas, os voluntários precisam de se manter satisfeitos e empenhados para que continuem a ser voluntários no futuro. 	O envolvimento de voluntários é crucial para as organizações principalmente as sem fins lucrativos, uma das maneiras de envolver e incentivar os voluntários a participarem de ações e projetos seria incluir a gamificação nos projetos.
 
-Este link pode ajudar a equipe a formular a justificativa: [Como montar a justificativa.](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A gamificação envolve usar elementos de jogos e recompensas em situações não relacionadas a jogos. Integrar a gamificação em programas de voluntariado ajuda as organizações a manter e engajar apoiadores importantes, dando-lhes motivos para continuar apoiando regularmente. Estudos mostram que a gamificação aumenta a produtividade, sendo uma oportunidade única para organizações atrair, recompensar e criar embaixadores de longo prazo para sua causa. Devido a este fato, incluiremos a gamificação como um diferencial em nossa plataforma de voluntariado.
 
 ## Público-Alvo
 
-[Aqui é necessário descrever os atores envolvidos no problema, destacando os diferentes perfis de usuários. O propósito é apresentar as características, necessidades, conhecimentos prévios e experiência com a tecnologia do público-alvo.
-
-Sugere-se que a equipe utilize questionários e/ou entrevistas a fim de conhecer os atores que compõem o público alvo.]
-
-Os links abaixo podem ajudar a equipe a conhecer um pouco mais sobre o público-alvo. 
-
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
+ Embora todas as pessoas e organizações possam se beneficiar de uma solução de comunicação e conexão, estabeleceu-se como público-alvo as organizações sem fins lucrativos, ongs, associações e instituições de caridade que buscam voluntários. Busca-se também como público alvo, jovens que desejam ganhar suas primeiras experiências laborais e permitindo assim expandir conhecimento e experiência nas áreas de seus interesses de trabalho voluntário, essa informação foi baseada na pesquisa realizada pelo Data Folha (2021) indicando que 35% dos voluntários pertencem a faixa etária entre 21 a 34 anos.  
 

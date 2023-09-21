@@ -43,27 +43,26 @@
 
 ## Requisitos do Projeto
 
-[Com base nas Histórias de Usuários, enumere os requisitos da solução. Lembre-se que cada requisito deve corresponder a uma, e somente uma, característica alvo da solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.]
-
 ### Requisitos Funcionais
-
-[Utilize o modelo de tabela abaixo para apresentar os requisitos funcionais]
 
 |ID    | Descrição                | Prioridade |
 |-------|---------------------------------|----|
-| RF-01 |  ...                    | ...   | 
-|  ...  |  ...                    | ...   |
+| RF-01 |  A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário.                    | Alta   | 
+| RF-02 |  Por parte do voluntário, a aplicação deve possuir um mecanismo de busca e filtro de projetos de acordo com a área de interesse.                    | Médio   |
+| RF-03 |  A aplicação deve permitir que o voluntário se inscreva em projetos.                    | Alta   |
+| RF-04 |  A aplicação deve possuir a funcionalidade para as organizações publicarem projetos.                    | Alta   |
+| RF-05 |  A aplicação deve possuir um mecanismo de rastreamento de horas de voluntariado.                    | Baixo   |
+| RF-06 |  A aplicação deve possuir um sistema de gamificação para reconhecimento e certificação dos voluntários.                     | Médio   |
 
 **Prioridade: Alta / Média / Baixa. 
 
 ### Requisitos não Funcionais
 
-[Utilize o modelo de tabela abaixo para apresentar os requisitos não-funcionais]
-
 |ID      | Descrição               |Prioridade |
 |--------|-------------------------|----|
-| RNF-01 |  ...                    | ...   | 
-| ...    |  ...                    | ...   | 
+| RNF-01 |  A plataforma deve possuir um design responsivo.                    | Alta   | 
+| RNF-02 |  A plataforma deve ser compatível com uma variedade de navegadores modernos, como Chrome, Firefox, Safari e Edge, para garantir que a experiência do usuário seja consistente em diferentes ambientes.                    | Médio   | 
+| RNF-03 |  A interface da plataforma deve ser intuitiva, de fácil uso, para acomodar tanto usuários experientes quanto aqueles menos familiarizados com tecnologia.                    | Alta   | 
 
 **Prioridade: Alta / Média / Baixa. 
 

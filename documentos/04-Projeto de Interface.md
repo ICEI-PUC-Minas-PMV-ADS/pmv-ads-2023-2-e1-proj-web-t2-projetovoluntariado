@@ -3,33 +3,119 @@
 
 ## User Flow
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de navegação do usuário na aplicação. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+O fluxograma apresentado na figura 1 mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Protótipo de baixa fidelidade que se segue.
 
-[Adicione aqui o diagrama de fluxo de usuário da sua aplicação.] 
+<img width="851" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/17196cca-5ec9-402a-a972-48e43a085d82">
 
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+<br>
+<figure> 
+    <figcaption>Figura 1 - Fluxo de telas do usuário
+</figure> 
 
 ## Protótipo
 
-Desenvolver um protótipo emerge como uma das maneiras mais ágeis e econômicas de validar uma ideia, conceito ou funcionalidade. Isso permite a interação, avaliação, modificação e aprovação das principais características de uma interface antes de entrar na fase de desenvolvimento. Leia o artigo [Protótipos: baixa, média ou alta fidelidade?](https://medium.com/ladies-that-ux-br/prot%C3%B3tipos-baixa-m%C3%A9dia-ou-alta-fidelidade-71d897559135).
-
 ### Protótipo de baixa fidelidade
 
-Protótipos de baixa fidelidade apresentam de forma simplificada o design da interface e o relacionamento entre suas páginas, permitindo evolução da proposta da solução. Neste projeto, os utilizaremos para apoiar a validação dos requisitos e efetuar mudanças dos mesmos, caso seja necessário, para menor impacto na codificação da aplicação.
+As telas do sistema apresentam uma estrutura comum que é apresentada na figura 2. Nesta estrutura existem 3 grandes blocos, descritos a seguir. Sendo eles:
+<ul>
+  <li>Cabeçalho (Header) - Local onde estão dispostos o nome da aplicação web e navegação principal do site;</li>
+  <li>Conteúdo (Main) - Apresenta o conteúdo da tela em questão;</li>
+  <li>Rodapé (Footer) - Apresenta informações sobre os direitos autorais, mapa do site e contatos.</li>
+</ul>
 
-[Elabore as principais interfaces gráficas da aplicação de modo que os requisitos funcionais sejam contemplados nas telas propostas.]
+<img width="312" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/1fbcc746-03cf-4c3e-989c-8ee6d74e4328">
 
-[Adicione aqui as telas da sua aplicação com seus devidos títulos.] 
+<br>
+<figure> 
+    <figcaption>Figura 2 - Estrutura padrão do site
+</figure>
+
+
+
+
+
+### Tela - Home page
+A tela de home page apresenta um banner rotativo, projetos publicados, depoimentos de voluntários e uma breve descrição sobre quem somos.
+    
+<img width="317" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/e51d19b0-f89d-41e2-8924-8e11100bc779">
+
+<br>
+<figure> 
+  <figcaption>Figura 3 - Tela home page
+</figure> 
+<hr>
+
+### Tela - Login
+A tela de Login apresenta campos para a inserção do e-mail e da senha.
+    
+<img width="321" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/2b4d89c3-7fd3-4066-af8c-951e8b731963">
+
+<br>
+<figure> 
+  <figcaption>Figura 3 - Tela home page
+</figure> 
+<hr>
+
+### Tela - Cadastro
+A tela de Cadastro apresenta campos para a inserção do nome, e-mail e senha.
+    
+<img width="297" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/65b2955f-e56c-4d7f-aec5-35bd5bd884ef">
+
+<br>
+<figure> 
+  <figcaption>Figura 3 - Tela home page
+</figure> 
+<hr>
+
+### Tela - Perfil Empresa
+A tela de Perfil da Empresa apresenta a foto de perfil, o nome da empresa, quantidade de projetos, a funcionalidade de cadastrar um novo projeto e o botão de logout.
+    
+<img width="343" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/f4288506-18c3-4465-b829-0bb5e529824a">
+
+<br>
+<figure> 
+  <figcaption>Figura 3 - Tela home page
+</figure> 
+<hr>
+
+### Tela - Perfil Voluntário 
+A tela de Perfil do Voluntário apresenta a foto de perfil, o nome do voluntário, quantidade de horas em projetos, ranqueamento, projetos em andamento, a funcionalidade de emitir um certificado e o botão de logout.
+    
+<img width="337" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/b677105e-e030-463d-a435-87389c88e7b6">
+
+<br>
+<figure> 
+  <figcaption>Figura 3 - Tela home page
+</figure> 
+<hr>
+
+### Tela - Cadastro de projeto
+A tela de cadastro de projeto contém os campos a seguir: nome do projeto, nome da instituição, quantidade de horas, link da imagem do projeto e descrição.
+    
+<img width="350" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/7a483d02-eb79-4f87-9e3e-b8a272c8992f">
+
+<br>
+<figure> 
+  <figcaption>Figura 3 - Tela home page
+</figure> 
+<hr>
+
+### Tela - Tela de certificação
+A tela de Certificado apresenta uma descrição do nível de classificação do voluntário, o total de horas dedicadas, bem como a opção de imprimir o certificado.
+    
+<img width="338" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/31db556b-fdb6-4d38-bb89-90b0622e0773">
+
+
+<br>
+<figure> 
+  <figcaption>Figura 3 - Tela home page
+</figure> 
+<hr>
+
+
+
+
  
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
->- Ferramentas:
->> - [Pencil](https://pencil.evolus.vn/)
->> - [MarvelApp](https://marvelapp.com/)
->> - [Figma](https://www.figma.com/)
 
 
 

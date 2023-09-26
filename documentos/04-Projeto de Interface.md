@@ -30,10 +30,6 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na figura 
     <figcaption>Figura 2 - Estrutura padrão do site
 </figure>
 
-
-
-
-
 ### Tela - Home page
 A tela de home page apresenta um banner rotativo, projetos publicados, depoimentos de voluntários e uma breve descrição sobre quem somos.
     
@@ -52,7 +48,7 @@ A tela de Login apresenta campos para a inserção do e-mail e da senha.
 
 <br>
 <figure> 
-  <figcaption>Figura 3 - Tela home page
+  <figcaption>Figura 4 - Tela de Login
 </figure> 
 <hr>
 
@@ -63,7 +59,7 @@ A tela de Cadastro apresenta campos para a inserção do nome, e-mail e senha.
 
 <br>
 <figure> 
-  <figcaption>Figura 3 - Tela home page
+  <figcaption>Figura 5 - Tela cadastro
 </figure> 
 <hr>
 
@@ -74,7 +70,7 @@ A tela de Perfil da Empresa apresenta a foto de perfil, o nome da empresa, quant
 
 <br>
 <figure> 
-  <figcaption>Figura 3 - Tela home page
+  <figcaption>Figura 6 - Tela de perfil da empresa
 </figure> 
 <hr>
 
@@ -85,7 +81,7 @@ A tela de Perfil do Voluntário apresenta a foto de perfil, o nome do voluntári
 
 <br>
 <figure> 
-  <figcaption>Figura 3 - Tela home page
+  <figcaption>Figura 7 - Tela de perfil do vonluntário
 </figure> 
 <hr>
 
@@ -96,21 +92,42 @@ A tela de cadastro de projeto contém os campos a seguir: nome do projeto, nome 
 
 <br>
 <figure> 
-  <figcaption>Figura 3 - Tela home page
+  <figcaption>Figura 8 - Tela de cadastro dos projetos
 </figure> 
 <hr>
 
-### Tela - Tela de certificação
+### Tela - Certificação
 A tela de Certificado apresenta uma descrição do nível de classificação do voluntário, o total de horas dedicadas, bem como a opção de imprimir o certificado.
     
 <img width="338" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/31db556b-fdb6-4d38-bb89-90b0622e0773">
 
+<br>
+<figure> 
+  <figcaption>Figura 9 - Tela de emissão do certificado
+</figure> 
+<hr>
+
+## Tela - Projetos
+A tela de Projetos apresenta os projetos de voluntariado disponíveis para inscrição e um filtro de busca por categorias.
+    
+<img width="361" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/73dd4279-c6f4-4dac-8f7b-deda670d2cfe">
 
 <br>
 <figure> 
-  <figcaption>Figura 3 - Tela home page
+  <figcaption>Figura 10 - Tela de projetos
 </figure> 
 <hr>
+
+## Modal - Projetos
+O Modal exibe o título, foto, descrição, empresa e horas do projeto selecionado.
+    
+<img width="334" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/8dd6936d-91ee-4b82-8bcc-9ee63ff0ecf9">
+
+<br>
+<figure> 
+  <figcaption>Figura 11 - Modal
+</figure> 
+
 
 
 

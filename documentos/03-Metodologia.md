@@ -24,12 +24,12 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 - To Do: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando. 
 - In progress: Quando uma tarefa tiver sido iniciada, ela é movida para cá.
 - Test and review: Chega aqui os itens que já estão aptor a serem testados e averiguados no controle de qualidade.
-- Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
+- Done: Nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
 
 O quadro kanban do grupo no GitHub está disponível no link [Quadro Kanban](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/695/views/1) e é apresentado, no estado atual, na figura abaixo:
 
-<img width="1343" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/266c1756-b540-44a2-a780-f5f0b8f3f89e">
-<p>Figura 1 - Tela do Trello utilizada pelo grupo</p>
+<img width="1800" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/266c1756-b540-44a2-a780-f5f0b8f3f89e">
+<p>Figura 1 - Tela do kanban utilizada pelo grupo</p>
 
 ### Etiquetas
 <p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>

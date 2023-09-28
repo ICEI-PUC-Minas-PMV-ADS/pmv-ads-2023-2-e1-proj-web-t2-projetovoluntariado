@@ -26,9 +26,9 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 - Test and review: Chega aqui os itens que já estão aptor a serem testados e averiguados no controle de qualidade.
 - Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
 
-O quadro kanban do grupo no Trello está disponível no link https://trello.com/b/fMOxLwr1/kanban-voluntariado e é apresentado, no estado atual, na figura abaixo:
+O quadro kanban do grupo no GitHub está disponível no link [Quadro Kanban](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/695/views/1) e é apresentado, no estado atual, na figura abaixo:
 
-<img width="1731" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/004b18ed-604e-41b3-84a8-802ce6b2104c">
+<img width="1343" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/266c1756-b540-44a2-a780-f5f0b8f3f89e">
 <p>Figura 1 - Tela do Trello utilizada pelo grupo</p>
 
 ### Etiquetas

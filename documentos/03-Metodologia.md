@@ -62,7 +62,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 |-------------------------------------|------------------------------------|----------------------------------------|
 | Repositório de Código Fonte         | GitHub                             | [Repositório de Código Fonte](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado)                            |
 | Documentos do Projeto               | GitHub                             | [Documentos do Projeto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/tree/main/documentos)                            |
-| Projeto de Interface                | Figma                              | [Projeto de Interface ](https://excalidraw.com/#json=HTnN9LrwibsVO1aQlW7kb,M7BFeiBy17n6KBBzp8FIcQ)                            |
+| Projeto de Interface                | excalidraw                              | [Projeto de Interface ](https://excalidraw.com/#json=HTnN9LrwibsVO1aQlW7kb,M7BFeiBy17n6KBBzp8FIcQ)                            |
 | Gerenciamento do Projeto            | GitHub Projects                    | [Gerenciamento do Projeto](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/695)                            |
 | Hospedagem                          | GitHub Pages                       | http://....                            |
 

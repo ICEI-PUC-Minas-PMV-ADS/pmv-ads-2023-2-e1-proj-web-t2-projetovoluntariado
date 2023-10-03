@@ -80,7 +80,7 @@ A tela de Perfil do Voluntário apresenta a foto de perfil, o nome do voluntári
 
 <br>
 <figure> 
-  <figcaption>Figura 7 - Tela de perfil do vonluntário
+  <figcaption>Figura 7 - Tela de perfil do voluntário
 </figure> 
 <hr>
 

@@ -5,7 +5,7 @@
 
 O fluxograma apresentado na figura 1 mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Protótipo de baixa fidelidade que se segue.
 
-<img width="100%" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/78032b06-80b1-4437-9b38-ff33df102ce1">
+<img width="100%" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/a83e86f0-081e-426f-aa48-a36848449e45">
 
 <figure> 
     <figcaption>Figura 1 - Fluxo de telas do usuário

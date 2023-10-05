@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil do Voluntário</title>
+    <link rel="stylesheet" href="perfilVoluntario.css">
+    <link rel="stylesheet" href="./homePage/css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./homePage/css/style.css">
+    <link rel="stylesheet" href="./homePage/css/menu.css">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-sm bg-body-tertiary navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex nav-link ms-2" href="#">
+                <img src="./logo.svg" alt="Logo" width="40" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <!-- Classe active (exemplo acima) serve para informar qual pagina a pessoa está. Colocar na pagina que for editar. -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entrar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <div class="perfil">
+        <img src="icone.png" width="200" height="200" alt="icone de perfil">
+    </div>
+
+    <div class="info">
+        <p>Nome: Letícia <br> Nivel atual: Esmeralda <br> Horas: 7</p>
+    </div>
+    <div class="rank">
+        <img src="esmeralda.png" width="150" height="150" alt="esmeralda">
+    </div>
+
+    <div class="certificado">
+        <button>Emitir Certificado</button>
+    </div>
+
+    <div class="niveis">
+        <p>
+            1 hora de voluntariado - Nível Safira <img src="safira.png" width="15" height="15" alt="safira"> <br>
+            5 horas de voluntariado - Nível Esmeralda <img src="esmeralda.png" width="15" height="15" alt="esmeralda">
+            <br>
+            20 horas de voluntariado - Nível Rubi <img src="rubi.png" width="15" height="15" alt="rubi">
+            <br>
+            40 horas de voluntariado - Nível Ametista <img src="ametista.png" width="15" height="15" alt="ametista">
+    </div>
+   
+   <h3>Projetos em andamento</h3>
+
+
+    <div class="cards">
+        <div class="titulo 1">
+            <h2>Título</h2>
+            <p>Horas:</p>
+            <img class="image" src="card.png" width="150" height="150" alt="card">
+            <br><button>Finalizar</button>
+        </div>
+
+        <div class="titulo 2">
+            <h2>Título</h2>
+            <p>Horas:</p>
+            <img class="image" src="card.png" width="150" height="150" alt="card">
+            <br><button>Finalizar</button>
+
+        </div>
+
+
+        <div class="titulo 3">
+            <h2>Título</h2>
+            <p>Horas:</p>
+            <img class="image" src="card.png" width="150" height="150" alt="card">
+            <br><button>Finalizar</button>
+
+        </div>
+
+    </div>
+
+
+
+    </p>
+
+
 </body>
+
 </html>

@@ -1,0 +1,59 @@
+.perfil {
+    padding: 20px ;
+    margin: 20px;
+ }
+ 
+ .info {
+    position: absolute;
+    top: 150px;
+    right: 800px;
+ }
+
+ .rank {
+    position: absolute;
+    top: 140px;
+    right: 400px;
+ }
+ 
+ .certificado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .niveis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ h3 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+
+ .cards {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.titulo {
+   border-radius: 5px;
+   box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
+   padding: 20px;
+   margin: 20px;
+   width: 400px;
+   transition: all 0.3s ease-out;
+}
+
+.titulo:hover {
+   transform: translateY(-5px);
+   cursor: pointer;
+}
+
+.titulo p {
+   font-size: 16px;
+}

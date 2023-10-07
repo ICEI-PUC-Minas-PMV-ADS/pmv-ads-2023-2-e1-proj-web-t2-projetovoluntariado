@@ -130,15 +130,24 @@ function register() {
 
   if (!checkbox1.checked && !checkbox2.checked) {
     errorMessage[1].textContent = "Selecione o tipo de usuário!";
-    labelRegister[3].style.color = "red";
-    labelRegister[4].style.color = "red";
+    labelregisters[3].style.color = "red";
+    labelregisters[4].style.color = "red";
     setTimeout(() => {
       errorMessage[1].textContent = "";
-      labelRegister[3].style.color = colorRegister;
-      labelRegister[4].style.color = colorRegister;
+      labelregisters[3].style.color = colorRegister;
+      labelregisters[4].style.color = colorRegister;
     }, 3000);
     return;
   }
+
+  Swal.fire({
+    position: "center",
+    title: `Bem-vindo, ${nameRegister.value}`,
+    text: "Faça login para continuar",
+    icon: "success",
+    showConfirmButton: false,
+    timer: 2000,
+  });
 
   toggleCard();
   switchCheckbox.checked = false;

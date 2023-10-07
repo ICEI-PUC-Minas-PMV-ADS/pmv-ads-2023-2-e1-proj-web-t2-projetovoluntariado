@@ -18,7 +18,35 @@
       </div>
       <div class="flip-card">
         <div class="flip-card-inner">
-          <div class="flip-card-front"></div>
+          <div class="flip-card-front">
+            <h1 class="card-front-title">Login</h1>
+            <div class="container-label-input">
+              <label class="label-default label-login">Email</label>
+              <input
+                placeholder="email@gmail.com"
+                required
+                name="email"
+                type="email"
+                id="email"
+                class="input-default input-login"
+              />
+            </div>
+            <div class="container-label-input">
+              <label class="label-default label-login">Senha</label>
+              <input
+                placeholder="P@ssw0rd"
+                required
+                name="senha"
+                id="password"
+                type="password"
+                class="input-default input-login"
+              />
+            </div>
+            <span class="error-message"></span>
+            <button type="button" class="btn-default btn-login" id="btn-login">
+              ENTRAR
+            </button>
+          </div>
         </div>
       </div>
     </main>

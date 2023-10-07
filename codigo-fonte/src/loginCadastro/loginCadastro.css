@@ -1,4 +1,4 @@
-/* CSS Global: */
+/* CSS usado em todo o arquivo: */
 :root {
   --login-color: #3c615c;
   --register-color: #4eaaff;
@@ -26,7 +26,54 @@ body {
   background-color: #000000;
 }
 
-/* Seção de estilização do switch*/
+.container-label-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.label-default {
+  font-family: sans-serif;
+  align-self: flex-start;
+  font-weight: 500;
+}
+
+.input-default {
+  width: 15rem;
+  height: 1.2rem;
+  border: none;
+  outline: none;
+}
+
+.btn-default {
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-default:hover {
+  opacity: 0.7;
+}
+
+.error-message {
+  color: red;
+  font-family: sans-serif;
+  padding-top: 1.5rem;
+  padding-bottom: 0.2rem;
+}
+
+/* ------------------ Seção de estilização do switch --------------------*/
+
 .c-switch {
   display: flex;
   gap: 1rem;
@@ -110,4 +157,66 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* --------------- Seção de Estilização geral do card de login e de registro ----------------*/
+
+.flip-card {
+  background-color: transparent;
+  width: 20rem;
+  height: 27rem;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Seção de estilização do card de login */
+
+.flip-card-front {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  border: 0.4rem solid #5b8078;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.card-front-title {
+  color: #3c615c;
+  font-family: sans-serif;
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.label-login {
+  color: #3c615c;
+}
+
+.input-login {
+  border-bottom: 0.15rem #3c615c solid;
+}
+
+.btn-login {
+  background-color: #3c615c;
 }

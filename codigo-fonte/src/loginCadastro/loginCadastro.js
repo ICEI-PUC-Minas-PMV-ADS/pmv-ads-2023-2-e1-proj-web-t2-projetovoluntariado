@@ -69,7 +69,7 @@ function login() {
     return;
   }
 
-  alert(`Email: ${inputEmail.value}, Senha: ${inputPassword.value}`);
+  alert(`Email: ${emailLogin.value}, Senha: ${passwordLogin.value}`);
 }
 
 buttonLogin.addEventListener("click", login);
@@ -92,8 +92,15 @@ function toggleCheckboxes(clickedCheckbox) {
   }
 }
 
+function clearInputsList() {
+  nameRegister.value = "";
+  emailRegister.value = "";
+  passwordRegister.value = "";
+  checkbox1.checked = false;
+  checkbox2.checked = false;
+}
+
 function register() {
-  console.log("name register", nameRegister);
   if (nameRegister.value === "") {
     errorMessage[1].textContent = "Digite seu nome!";
     labelregisters[0].style.color = "red";
@@ -149,6 +156,7 @@ function register() {
     timer: 2000,
   });
 
+  clearInputsList();
   toggleCard();
   switchCheckbox.checked = false;
   switchCheckbox.focus = false;

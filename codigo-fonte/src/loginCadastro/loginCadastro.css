@@ -196,13 +196,13 @@ input:checked + .slider:before {
   flex-direction: column;
   align-items: center;
   border-radius: 1rem;
-  border: 0.4rem solid #5b8078;
+  border: 0.4rem solid var(--login-color);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .card-front-title {
-  color: #3c615c;
+  color: var(--login-color);
   font-family: sans-serif;
   margin: 0;
   padding-top: 2rem;
@@ -210,13 +210,62 @@ input:checked + .slider:before {
 }
 
 .label-login {
-  color: #3c615c;
+  color: var(--login-color);
 }
 
 .input-login {
-  border-bottom: 0.15rem #3c615c solid;
+  border-bottom: 0.15rem var(--login-color) solid;
 }
 
 .btn-login {
-  background-color: #3c615c;
+  background-color: var(--login-color);
+}
+
+/* Seção de estilização do card de cadastro*/
+
+.flip-card-back {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 0.4rem solid var(--register-color);
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.card-back-title {
+  color: var(--register-color);
+  font-family: sans-serif;
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.label-register {
+  color: var(--register-color);
+}
+
+.input-register {
+  border-bottom: 0.15rem var(--register-color) solid;
+}
+
+.container-checkboxes {
+  display: flex;
+  align-items: center;
+  width: 15rem;
+  gap: 1rem;
+}
+
+.label-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.btn-register {
+  background-color: var(--register-color);
 }

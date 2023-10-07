@@ -2,6 +2,9 @@
 
 const errorMessage = document.getElementsByClassName("error-message");
 
+const colorLogin = "#3c615c";
+const colorRegister = "#4eaaff";
+
 function checkEmail(email) {
   const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   return regex.test(email);
@@ -38,30 +41,30 @@ switchCheckbox.addEventListener("click", toggleCard);
 // ---- Seção de código do login ----
 
 const labelLogins = document.querySelectorAll(".label-login");
-const inputPassword = document.getElementById("password");
+const passwordLogin = document.getElementById("password");
 const buttonLogin = document.getElementById("btn-login");
-const inputEmail = document.getElementById("email");
+const emailLogin = document.getElementById("email");
 
 function login() {
-  if (!checkEmail(inputEmail.value)) {
+  if (!checkEmail(emailLogin.value)) {
     errorMessage[0].textContent = "Digite um e-mail válido!";
     labelLogins[0].style.color = "red";
-    inputEmail.style.borderBottom = "0.15rem solid red";
+    emailLogin.style.borderBottom = "0.15rem solid red";
     setTimeout(() => {
       errorMessage[0].textContent = "";
-      labelLogins[0].style.color = "#3c615c";
-      inputEmail.style.borderBottom = "0.15rem solid #3c615c";
+      labelLogins[0].style.color = colorLogin;
+      emailLogin.style.borderBottom = `0.15rem solid ${colorLogin}`;
     }, 3000);
     return;
   }
-  if (inputPassword.value === "") {
+  if (passwordLogin.value === "") {
     errorMessage[0].textContent = "Digite sua senha!";
     labelLogins[1].style.color = "red";
-    inputPassword.style.borderBottom = "0.15rem solid red";
+    passwordLogin.style.borderBottom = "0.15rem solid red";
     setTimeout(() => {
       errorMessage[0].textContent = "";
-      labelLogins[1].style.color = "#3c615c";
-      inputPassword.style.borderBottom = "0.15rem solid #3c615c";
+      labelLogins[1].style.color = colorLogin;
+      passwordLogin.style.borderBottom = `0.15rem solid ${colorLogin}`;
     }, 3000);
     return;
   }
@@ -70,3 +73,76 @@ function login() {
 }
 
 buttonLogin.addEventListener("click", login);
+
+// --- Seção de código de registro ---
+
+const passwordRegister = document.getElementById("passwordRegister");
+const labelregisters = document.querySelectorAll(".label-register");
+const emailRegister = document.getElementById("emailRegister");
+const nameRegister = document.getElementById("nameRegister");
+const btnRegister = document.getElementById("btn-register");
+const checkbox1 = document.getElementById("voluntario");
+const checkbox2 = document.getElementById("empresa");
+
+function toggleCheckboxes(clickedCheckbox) {
+  if (clickedCheckbox === checkbox1) {
+    checkbox2.checked = false;
+  } else {
+    checkbox1.checked = false;
+  }
+}
+
+function register() {
+  console.log("name register", nameRegister);
+  if (nameRegister.value === "") {
+    errorMessage[1].textContent = "Digite seu nome!";
+    labelregisters[0].style.color = "red";
+    nameRegister.style.borderBottom = "0.15rem solid red";
+    setTimeout(() => {
+      errorMessage[1].textContent = "";
+      labelregisters[0].style.color = colorRegister;
+      nameRegister.style.borderBottom = `0.15rem solid ${colorRegister}`;
+    }, 3000);
+    return;
+  }
+  if (!checkEmail(emailRegister.value)) {
+    errorMessage[1].textContent = "Digite um e-mail válido!";
+    labelregisters[1].style.color = "red";
+    emailRegister.style.borderBottom = "0.15rem solid red";
+    setTimeout(() => {
+      errorMessage[1].textContent = "";
+      labelregisters[1].style.color = colorRegister;
+      emailRegister.style.borderBottom = `0.15rem solid ${colorRegister}`;
+    }, 3000);
+    return;
+  }
+  if (passwordRegister.value === "") {
+    errorMessage[1].textContent = "Digite sua senha!";
+    labelregisters[2].style.color = "red";
+    passwordRegister.style.borderBottom = "0.15rem solid red";
+    setTimeout(() => {
+      errorMessage[1].textContent = "";
+      labelregisters[2].style.color = colorRegister;
+      passwordRegister.style.borderBottom = `0.15rem solid ${colorRegister}`;
+    }, 3000);
+    return;
+  }
+
+  if (!checkbox1.checked && !checkbox2.checked) {
+    errorMessage[1].textContent = "Selecione o tipo de usuário!";
+    labelRegister[3].style.color = "red";
+    labelRegister[4].style.color = "red";
+    setTimeout(() => {
+      errorMessage[1].textContent = "";
+      labelRegister[3].style.color = colorRegister;
+      labelRegister[4].style.color = colorRegister;
+    }, 3000);
+    return;
+  }
+
+  toggleCard();
+  switchCheckbox.checked = false;
+  switchCheckbox.focus = false;
+}
+
+btnRegister.addEventListener("click", register);

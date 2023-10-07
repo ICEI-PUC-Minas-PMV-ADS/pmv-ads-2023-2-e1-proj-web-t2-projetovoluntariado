@@ -47,6 +47,76 @@
               ENTRAR
             </button>
           </div>
+          <div class="flip-card-back">
+            <h1 class="card-back-title">Cadastro</h1>
+            <div class="container-label-input">
+              <label class="label-default label-register">Nome</label>
+              <input
+                placeholder="João Pedro"
+                required
+                name="nome"
+                id="nameRegister"
+                type="text"
+                class="input-default input-register"
+              />
+            </div>
+            <div class="container-label-input">
+              <label class="label-default label-register">Email</label>
+              <input
+                placeholder="email@gmail.com"
+                required
+                name="email"
+                id="emailRegister"
+                type="email"
+                class="input-default input-register"
+              />
+            </div>
+            <div class="container-label-input">
+              <label class="label-default label-register">Senha</label>
+              <input
+                placeholder="P@ssw0rd"
+                required
+                id="passwordRegister"
+                name="senha"
+                type="password"
+                class="input-default input-register"
+              />
+            </div>
+            <div class="container-checkboxes">
+              <div class="label-checkbox">
+                <label class="label-register" for="voluntario"
+                  >Voluntário</label
+                >
+                <input
+                  type="checkbox"
+                  name="tipo"
+                  id="voluntario"
+                  value="Voluntario"
+                  class="custom-checkbox"
+                  onclick="toggleCheckboxes(this)"
+                />
+              </div>
+              <div class="label-checkbox">
+                <label class="label-register" for="empresa">Empresa</label>
+                <input
+                  type="checkbox"
+                  id="empresa"
+                  name="tipo"
+                  value="Empresa"
+                  class="custom-checkbox"
+                  onclick="toggleCheckboxes(this)"
+                />
+              </div>
+            </div>
+            <span class="error-message"></span>
+            <button
+              type="button"
+              class="btn-default btn-register"
+              id="btn-register"
+            >
+              CADASTRAR
+            </button>
+          </div>
         </div>
       </div>
     </main>

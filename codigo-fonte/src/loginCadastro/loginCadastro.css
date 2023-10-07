@@ -31,6 +31,7 @@ body {
   flex-direction: column;
   gap: 0.5rem;
   padding-bottom: 1rem;
+  position: relative;
 }
 
 .label-default {
@@ -44,6 +45,21 @@ body {
   height: 1.2rem;
   border: none;
   outline: none;
+}
+
+.eye-icon {
+  position: absolute;
+  bottom: 1.4rem;
+  right: 0.5rem;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.eye-slash-icon {
+  position: absolute;
+  bottom: 1.4rem;
+  right: 0.5rem;
+  cursor: pointer;
 }
 
 .btn-default {
@@ -227,7 +243,7 @@ input:checked + .slider:before {
   background-color: #ffffff;
   box-sizing: border-box;
   border: 0.4rem solid var(--register-color);
-  color: white;
+  color: black;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;

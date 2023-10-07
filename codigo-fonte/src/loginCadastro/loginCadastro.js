@@ -12,10 +12,9 @@ function checkEmail(email) {
 
 // ---- Seção de código do switch ----
 
-const switchCheckbox = document.querySelector(".switch-checkbox");
-const switchTextLogin = document.querySelector(".switch-text-login");
 const switchTextRegister = document.querySelector(".switch-text-register");
-
+const switchTextLogin = document.querySelector(".switch-text-login");
+const switchCheckbox = document.querySelector(".switch-checkbox");
 const flipCard = document.querySelector(".flip-card-inner");
 
 function toggleCard() {
@@ -40,10 +39,27 @@ switchCheckbox.addEventListener("click", toggleCard);
 
 // ---- Seção de código do login ----
 
+const slashEyeLoginIcon = document.getElementById("slash-eye-login");
 const labelLogins = document.querySelectorAll(".label-login");
+const eyeLoginIcon = document.getElementById("eye-login");
 const passwordLogin = document.getElementById("password");
 const buttonLogin = document.getElementById("btn-login");
 const emailLogin = document.getElementById("email");
+
+function showLoginPassword() {
+  if (passwordLogin.type === "password") {
+    passwordLogin.type = "text";
+    slashEyeLoginIcon.style.visibility = "hidden";
+    eyeLoginIcon.style.visibility = "visible";
+  } else {
+    passwordLogin.type = "password";
+    slashEyeLoginIcon.style.visibility = "visible";
+    eyeLoginIcon.style.visibility = "hidden";
+  }
+}
+
+eyeLoginIcon.addEventListener("click", showLoginPassword);
+slashEyeLoginIcon.addEventListener("click", showLoginPassword);
 
 function login() {
   if (!checkEmail(emailLogin.value)) {
@@ -76,13 +92,30 @@ buttonLogin.addEventListener("click", login);
 
 // --- Seção de código de registro ---
 
+const slashEyeRegisterIcon = document.getElementById("slash-eye-register");
 const passwordRegister = document.getElementById("passwordRegister");
 const labelregisters = document.querySelectorAll(".label-register");
+const eyeRegisterIcon = document.getElementById("eye-register");
 const emailRegister = document.getElementById("emailRegister");
 const nameRegister = document.getElementById("nameRegister");
 const btnRegister = document.getElementById("btn-register");
 const checkbox1 = document.getElementById("voluntario");
 const checkbox2 = document.getElementById("empresa");
+
+function showRegisterPassword() {
+  if (passwordRegister.type === "password") {
+    passwordRegister.type = "text";
+    slashEyeRegisterIcon.style.visibility = "hidden";
+    eyeRegisterIcon.style.visibility = "visible";
+  } else {
+    passwordRegister.type = "password";
+    slashEyeRegisterIcon.style.visibility = "visible";
+    eyeRegisterIcon.style.visibility = "hidden";
+  }
+}
+
+eyeRegisterIcon.addEventListener("click", showRegisterPassword);
+slashEyeRegisterIcon.addEventListener("click", showRegisterPassword);
 
 function toggleCheckboxes(clickedCheckbox) {
   if (clickedCheckbox === checkbox1) {

@@ -12,18 +12,49 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+.flex-none {
+  width: 100%;
 }
 
 .c-main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1rem;
   width: 100vw;
-  height: 100vh;
-  background-color: #000000;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.section-switch-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0 2rem 0;
 }
 
 .container-label-input {
@@ -42,7 +73,7 @@ body {
 
 .input-default {
   width: 15rem;
-  height: 1.2rem;
+  height: 1.5rem;
   border: none;
   outline: none;
 }
@@ -84,8 +115,8 @@ body {
 .error-message {
   color: red;
   font-family: sans-serif;
-  padding-top: 1rem;
-  padding-bottom: 0.2rem;
+  height: 0.1rem;
+  padding-bottom: 1.5rem;
 }
 
 /* ------------------ Seção de estilização do switch --------------------*/
@@ -180,7 +211,7 @@ input:checked + .slider:before {
 .flip-card {
   background-color: transparent;
   width: 20rem;
-  height: 27rem;
+  height: 27.5rem;
   perspective: 1000px;
 }
 
@@ -221,7 +252,7 @@ input:checked + .slider:before {
   color: var(--login-color);
   font-family: sans-serif;
   margin: 0;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 
 .image-sign-in {
@@ -262,8 +293,8 @@ input:checked + .slider:before {
   color: var(--register-color);
   font-family: sans-serif;
   margin: 0;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .label-register {
@@ -279,6 +310,7 @@ input:checked + .slider:before {
   align-items: center;
   width: 15rem;
   gap: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .label-checkbox {
@@ -289,4 +321,13 @@ input:checked + .slider:before {
 
 .btn-register {
   background-color: var(--register-color);
+}
+
+.footer {
+  width: 100%;
+  height: 3rem;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

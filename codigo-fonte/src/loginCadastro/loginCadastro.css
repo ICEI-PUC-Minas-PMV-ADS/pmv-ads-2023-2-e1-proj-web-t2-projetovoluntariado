@@ -84,7 +84,7 @@ body {
 .error-message {
   color: red;
   font-family: sans-serif;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   padding-bottom: 0.2rem;
 }
 
@@ -222,7 +222,12 @@ input:checked + .slider:before {
   font-family: sans-serif;
   margin: 0;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+}
+
+.image-sign-in {
+  width: 10rem;
+  height: 8rem;
+  padding-bottom: 0.3rem;
 }
 
 .label-login {

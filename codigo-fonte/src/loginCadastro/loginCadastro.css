@@ -263,7 +263,7 @@ input:checked + .slider:before {
 .label-checkbox {
   display: flex;
   align-items: center;
-  gap: 0.1rem;
+  gap: 0.4rem;
 }
 
 .btn-register {

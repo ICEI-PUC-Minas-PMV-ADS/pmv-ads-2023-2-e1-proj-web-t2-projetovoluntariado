@@ -1,0 +1,37 @@
+#logo_superior{
+   }
+.menu{
+    margin: 0;
+}
+.menu li{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.menu li:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+   
+}
+.categoria {
+    display: block;
+    background-color: blanchedalmond;
+}
+
+.menu_categoria il{
+    
+    display: block;
+}
+.footer_inf {
+    background-color: gray;
+}
+.projetos{
+}
+.card-central{
+    
+
+}
+.card{
+    margin-top: 15px;
+}

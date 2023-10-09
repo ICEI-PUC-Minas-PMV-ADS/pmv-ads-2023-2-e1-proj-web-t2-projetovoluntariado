@@ -1,4 +1,9 @@
+* { 
+    margin: 0;
+}
+
 #logo_superior{
+    width: 50px;
    }
 .menu{
     margin: 0;
@@ -6,8 +11,8 @@
 .menu li{
     list-style-type: none;
     display: inline-block;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .menu li:hover{
     transform: scale(1.1);
@@ -18,7 +23,9 @@
     display: block;
     background-color: blanchedalmond;
 }
-
+header{
+    background-color: gainsboro;
+}
 .menu_categoria il{
     
     display: block;

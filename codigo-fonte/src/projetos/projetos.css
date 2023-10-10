@@ -20,19 +20,20 @@
 }
 .menu li:hover{
     transition: transform 0.2s ease-in-out;
+    transform: scale(1.1);
 
    
 }
 .grade-menu{
 
     border-radius: 15px;
-    background-color: black;
 }
 .custom-container{
     padding: 10px;
 }
 .categoria {
     display: block;
+    padding-left: 15px;
    
 }
 .categoria h3{
@@ -49,10 +50,7 @@ header{
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
 }
-.link-menu:hover{
-    color: white;
-    background-color: gray;
-}
+
 .menu_categoria li{
     list-style-type: none;
     text-decoration: none;
@@ -71,7 +69,4 @@ header{
 }
 .footer_inf {
    
-}
-.navbar-nav .nav-link {
-    color: white; /* Cor personalizada */
 }

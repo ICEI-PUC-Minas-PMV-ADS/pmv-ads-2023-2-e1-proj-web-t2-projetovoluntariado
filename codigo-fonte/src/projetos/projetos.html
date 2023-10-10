@@ -5,6 +5,8 @@
     <meta author="Anderson da Silva Gomes">
     <link rel="stylesheet" href="projetos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9e6a074965.js" crossorigin="anonymous"></script>
+
     <title>Projetos</title>
 </head>
 <body>
@@ -14,25 +16,32 @@
         <img id="logo_superior" src="images/logo.svg" alt="Logotipo da empresa VoluntaRia">
     </div>
 
-<nav class="navbar-nav">
-    <ol class="menu ">
-        <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="../index.html">Projetos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="../index.html">Perfil</a>
-        </li>
-       
-    </ol>
-</nav>
+<div class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <nav class="collapse navbar-collapse" id="navbarNav">
+        <ul class="menu navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Projetos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Perfil</a>
+            </li>
+           
+        </ul>
+    </nav>
+</div>
+</div>
 </div>
 </header>
 
 <section class="projetos">
-<div class="container">
+<div class="custom-container">
     <div class="row">
         <div class="categoria d-none d-md-block col-md-4 col-lg-4 col-xl-4">
             <nav>
@@ -143,10 +152,10 @@
         </div>
         <div class="col-6">
             <ul>
-                <li>Belo Horizonte, MG</li>
-                <li>(31) 3344-9999</li>
-                <li>@ProjetoVolunt</li>
-                <li>projetovolunt@gmail.com</li>
+                <li><i class="fa-solid fa-location-dot"></i> Belo Horizonte, MG</li>
+                <li><i class="fa-solid fa-phone"></i> (31) 3344-9999</li>
+                <li><i class="fa-brands fa-instagram"></i> ProjetoVolunt</li>
+                <li><i class="fa-regular fa-envelope"></i> projetovolunt@gmail.com</li>
             </ul>
         </div>
     </footer>

@@ -22,6 +22,9 @@
     transition: transform 0.2s ease-in-out;
    
 }
+.custom-container{
+    padding: 10px;
+}
 .categoria {
     display: block;
    

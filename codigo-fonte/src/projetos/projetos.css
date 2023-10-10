@@ -1,7 +1,10 @@
 * { 
     margin: 0;
 }
+.projetos{
+    margin: 0;
 
+}
 #logo_superior{
     width: 50px;
    }
@@ -21,24 +24,41 @@
 }
 .categoria {
     display: block;
-    background-color: blanchedalmond;
+   
+}
+.categoria h3{
+    font-size: 1.2rem;
 }
 header{
     background-color: gainsboro;
 }
-.menu_categoria il{
-    
-    display: block;
-}
-.footer_inf {
-    background-color: gray;
-}
-.projetos{
-}
-.card-central{
-    
 
+.footer_inf {
+    
 }
 .card{
     margin-top: 15px;
+}
+.menu_categoria li:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+.menu_categoria li{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.menu_categoria li a{
+    text-decoration:  none;
+    color: black;
+}
+.footer_inf div{
+    display: inline-block;
+}
+.footer_inf ul{
+    list-style: none;
+}
+.footer_inf {
+   
 }

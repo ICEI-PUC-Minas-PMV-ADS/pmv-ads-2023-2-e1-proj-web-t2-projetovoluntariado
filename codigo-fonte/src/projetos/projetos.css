@@ -16,11 +16,17 @@
     display: inline-block;
     padding-left: 10px;
     padding-right: 10px;
+    
 }
 .menu li:hover{
-    transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
+
    
+}
+.grade-menu{
+
+    border-radius: 15px;
+    background-color: black;
 }
 .custom-container{
     padding: 10px;
@@ -43,6 +49,10 @@ header{
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
 }
+.link-menu:hover{
+    color: white;
+    background-color: gray;
+}
 .menu_categoria li{
     list-style-type: none;
     text-decoration: none;
@@ -61,4 +71,7 @@ header{
 }
 .footer_inf {
    
+}
+.navbar-nav .nav-link {
+    color: white; /* Cor personalizada */
 }

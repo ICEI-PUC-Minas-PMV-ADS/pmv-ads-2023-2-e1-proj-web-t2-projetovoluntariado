@@ -1,3 +1,22 @@
 body {
-    background-color: #1796f0;
+    background-color: #2a1b3d;
+    
 }
+
+.title h1,
+.title h6 {
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.066);
+}
+
+.carousel-item img {
+    max-height: 350px;
+    max-width: 680px;
+    object-fit: cover;
+    margin: 0 auto;
+    filter: blur(1px);
+}
+
+ .carousel-caption h5,
+ .carousel-caption p {
+     text-shadow: 2px 2px 8px rgba(0, 0, 0, 1.0);
+ }

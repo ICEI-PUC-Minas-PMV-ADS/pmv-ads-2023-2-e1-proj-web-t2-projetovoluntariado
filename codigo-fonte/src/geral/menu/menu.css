@@ -1,5 +1,13 @@
+@media (min-width: 768px) {
+    .navbar-custom {
+        padding-top: 25px;
+        /* Adicione o valor de padding desejado para o modo grande */
+
+    }
+}
+
 .nav-link:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: transform 0.2s ease-in-out;
 }
 
@@ -7,6 +15,33 @@
     font-weight: 600;
 }
 
-.navbar-custom{
+.navbar-custom {
     height: 45px;
+}
+
+.container-fluid {
+    background-color: #44318d;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+
+/* COR DE FUNDO DA NAV */
+
+.navbar {
+    position: relative;
+}
+
+.navbar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: -1;
 }

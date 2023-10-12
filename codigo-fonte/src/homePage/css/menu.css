@@ -6,11 +6,11 @@
     }
 }
 
- .nav-link:hover {
-     transform: scale(1.2);
-     transition: transform 0.2s ease-in-out;
- }
- 
+.nav-link:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+
 .nav-link.active {
     font-weight: 600;
 }
@@ -26,4 +26,22 @@
 .navbar-toggler {
     border: none;
     outline: none;
+}
+
+
+/* COR DE FUNDO DA NAV */
+
+.navbar {
+    position: relative;
+}
+
+.navbar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1796f0;
+    z-index: -1;
 }

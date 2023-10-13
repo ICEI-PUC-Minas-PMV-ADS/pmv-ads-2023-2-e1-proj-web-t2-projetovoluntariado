@@ -1,6 +1,20 @@
-body {
+body,
+html {
     background-color: #2a1b3d;
-    
+    height: 100%;
+    min-width: 400px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.section {
+    margin-top: 4%;
+}
+
+@media (max-width: 767px) {
+    .section {
+        margin-top: 10%;
+    }
 }
 
 .title h1,
@@ -13,11 +27,16 @@ body {
     max-width: 680px;
     object-fit: cover;
     margin: 0 auto;
-    filter: blur(1px);
+    filter: blur(0.8px);
+    border-radius: 20px;
 }
 
- .carousel-caption h5,
- .carousel-caption p {
-     text-shadow: 2px 2px 8px rgba(0, 0, 0, 1.0);
- }
+.carousel-caption h5,
+.carousel-caption p {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.card-projetos img {
+    padding: 8px;
+}
 

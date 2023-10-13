@@ -1,13 +1,22 @@
-body,
-html {
+html,
+body {
     background-color: #2a1b3d;
-    height: 100%;
-    min-width: 400px;
-    padding-right: 2%;
-    padding-left: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.margin-adjust {
+    margin-top: 140px;
 }
 
 .section {
+    margin-top: 8%;
+    position: relative;
+    z-index: 1;
+
+}
+
+.section-1 {
     margin-top: 4%;
 }
 
@@ -16,6 +25,7 @@ html {
         margin-top: 10%;
     }
 }
+
 
 .title h1,
 .title h6 {
@@ -27,7 +37,7 @@ html {
     max-width: 680px;
     object-fit: cover;
     margin: 0 auto;
-    filter: blur(0.8px);
+    filter: blur(1px);
     border-radius: 20px;
 }
 
@@ -40,3 +50,15 @@ html {
     padding: 8px;
 }
 
+.card-projetos h5 {
+    color: #44318d !important;
+}
+
+.btn-secondary {
+    background-color: #d83f87;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #980449;
+}

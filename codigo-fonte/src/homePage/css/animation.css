@@ -1,0 +1,64 @@
+@keyframes sway {
+    0% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+.circle-1 {
+    width: 120px;
+    height: 120px;
+    background-color: #d83f87;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    left: -40px;
+    top: 60px;
+}
+
+.circle-2{
+     width: 100px;
+    height: 100px;
+    background-color: #7f66a7;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    right: -30px;
+    top: -30px;
+}
+
+.circle-3 {
+    width: 70px;
+    height: 70px;
+    background-color: #d83f87;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    right: 10px;
+    top: 400px;
+}
+
+.circle-4 {
+    width: 200px;
+    height: 200px;
+    background-color: #7f66a7;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    left: -40px;
+    top: 600px;
+}
+
+.circle-5 {
+    width: 140px;
+    height: 140px;
+    background-color: #d83f87;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    right: 5px;
+    top: 900px;
+}

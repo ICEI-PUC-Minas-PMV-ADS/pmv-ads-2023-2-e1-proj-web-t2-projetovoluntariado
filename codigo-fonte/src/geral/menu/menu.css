@@ -1,8 +1,6 @@
 @media (min-width: 768px) {
     .navbar-custom {
         padding-top: 25px;
-        /* Adicione o valor de padding desejado para o modo grande */
-
     }
 }
 
@@ -26,22 +24,4 @@
 .navbar-toggler {
     border: none;
     outline: none;
-}
-
-
-/* COR DE FUNDO DA NAV */
-
-.navbar {
-    position: relative;
-}
-
-.navbar::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ffffff;
-    z-index: -1;
 }

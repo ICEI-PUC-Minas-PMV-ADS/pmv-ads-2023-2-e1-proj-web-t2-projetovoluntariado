@@ -5,8 +5,6 @@ body {
     margin-left: 2%;
 }
 
-
-
 .section {
     margin-top: 8%;
     position: relative;
@@ -58,5 +56,12 @@ body {
 }
 
 .btn-secondary:hover {
-    background-color: #980449;
+    background-color: #7f66a7;
+}
+
+.section-3 img{
+    border-radius: 50%;
+    max-width: 100px;
+    
+   
 }

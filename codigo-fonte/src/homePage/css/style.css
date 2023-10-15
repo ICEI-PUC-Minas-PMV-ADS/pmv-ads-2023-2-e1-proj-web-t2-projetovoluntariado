@@ -18,7 +18,11 @@ body {
 
 @media (max-width: 767px) {
     .section {
-        margin-top: 10%;
+        margin-top: 14%;
+    }
+
+    .section-1 {
+        margin-top: 4%;
     }
 }
 

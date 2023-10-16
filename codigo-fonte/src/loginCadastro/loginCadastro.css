@@ -1,7 +1,7 @@
 /* CSS usado em todo o arquivo: */
 :root {
-  --login-color: #3c615c;
-  --register-color: #4eaaff;
+  --login-color: #2a1b3d;
+  --register-color: #44318d;
 }
 
 * {
@@ -44,8 +44,8 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   gap: 1rem;
   width: 100vw;
-  background-color: #ffffff;
   min-height: 100vh;
+  background-color: #d83f87;
 }
 
 .section-switch-card {
@@ -69,6 +69,7 @@ body::-webkit-scrollbar-thumb {
   font-family: sans-serif;
   align-self: flex-start;
   font-weight: 500;
+  font-weight: bold;
 }
 
 .input-default {
@@ -103,7 +104,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: bold;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -254,6 +255,7 @@ input:checked + .slider:before {
   font-family: sans-serif;
   margin: 0;
   padding-top: 1.5rem;
+  font-weight: bold;
 }
 
 .image-sign-in {
@@ -296,6 +298,7 @@ input:checked + .slider:before {
   margin: 0;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  font-weight: bold;
 }
 
 .label-register {
@@ -318,6 +321,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  font-weight: bold;
 }
 
 .btn-register {
@@ -325,11 +329,11 @@ input:checked + .slider:before {
 }
 
 /* --Fotter de exemplo --- */
-.footer {
-  width: 100%;
-  height: 3rem;
-  background-color: #f8f9fa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.custom-footer {
+  width: 95vw;
+}
+
+.header-menu {
+  width: 95vw;
+  padding-top: 0.5rem;
 }

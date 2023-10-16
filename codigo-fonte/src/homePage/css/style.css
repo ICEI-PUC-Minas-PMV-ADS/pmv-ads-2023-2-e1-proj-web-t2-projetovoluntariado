@@ -78,19 +78,24 @@ body {
     color: #44318d !important;
 }
 
-.section-4 img{
-width: 100%;
-height: auto;
+.section-4 img {
+    width: 100%;
+    height: auto;
 }
 
 @media (max-width: 767px) {
     .section-4 img {
         width: 60%;
         height: auto;
-        padding-top: 14px !important; 
+        padding-top: 14px !important;
     }
 }
 
-.section-4 h5{
+.section-4 h5 {
     color: #44318d !important;
+}
+
+.footer {
+    background-color: #1c2331;
+    width: 100%;
 }

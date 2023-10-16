@@ -95,3 +95,14 @@
     left: 20px;
     top: 1850px;
 }
+
+.circle-9 {
+    width: 100px;
+    height: 100px;
+    background-color: #7f66a7;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    right: -40px;
+    top: 2350px;
+}

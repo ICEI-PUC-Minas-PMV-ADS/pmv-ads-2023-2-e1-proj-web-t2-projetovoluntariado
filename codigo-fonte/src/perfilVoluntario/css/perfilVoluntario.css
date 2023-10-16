@@ -1,24 +1,25 @@
 .perfil {
-    padding: 20px ;
-    margin: 20px;
+    padding: 10px ;
+    margin: 30px;
  }
  
  .info {
     position: absolute;
-    top: 150px;
-    right: 800px;
+    top: 200px;
+    right: 750px;
  }
 
  .rank {
     position: absolute;
-    top: 140px;
-    right: 400px;
+    top: 180px;
+    right: 500px;
  }
  
  .certificado {
     display: flex;
     align-items: center;
     justify-content: center;
+    
  }
 
  .niveis {
@@ -38,15 +39,19 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   border-radius: 15px;
 }
 
 .titulo {
-   border-radius: 5px;
+   border-radius: 15px;
    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
    padding: 20px;
    margin: 20px;
    width: 300px;
    transition: all 0.3s ease-out;
+   color: white;
+   
+   
 }
 
 .titulo:hover {
@@ -64,12 +69,20 @@
 }
 
 .cards:hover {
-   background-color: rgba(229, 198, 247, 0.315);
+   background-color: #44318D;
    color: black;
 }
 
 .projetos {
    margin-bottom: 200px;
-
 }
+
+.body {
+   margin: 60px;
+   background-color: #2A1B3D;
+   color: aliceblue;
+   border-radius: 15px;
+}
+
+
 

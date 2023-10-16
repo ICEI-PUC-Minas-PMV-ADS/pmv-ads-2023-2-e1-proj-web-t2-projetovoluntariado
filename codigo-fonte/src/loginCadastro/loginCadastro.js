@@ -3,7 +3,7 @@
 const errorMessage = document.getElementsByClassName("error-message");
 
 const colorLogin = "#2a1b3d";
-const colorRegister = "#44318d";
+const colorRegister = "#a4b3b6";
 
 function checkEmail(email) {
   const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;

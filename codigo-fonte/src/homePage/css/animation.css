@@ -19,8 +19,8 @@
     top: 60px;
 }
 
-.circle-2{
-     width: 100px;
+.circle-2 {
+    width: 100px;
     height: 100px;
     background-color: #7f66a7;
     border-radius: 50%;
@@ -61,4 +61,37 @@
     animation: sway 2s infinite alternate ease-in-out;
     right: 5px;
     top: 900px;
+}
+
+.circle-6 {
+    width: 100px;
+    height: 100px;
+    background-color: #d83f87;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    left: -15px;
+    top: 1100px;
+}
+
+.circle-7 {
+    width: 200px;
+    height: 200px;
+    background-color: #7f66a7;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    right: -50px;
+    top: 1500px;
+}
+
+.circle-8 {
+    width: 140px;
+    height: 140px;
+    background-color: #d83f87;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    left: 20px;
+    top: 1850px;
 }

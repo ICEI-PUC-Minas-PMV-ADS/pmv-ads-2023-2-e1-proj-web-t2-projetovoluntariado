@@ -41,7 +41,7 @@ body {
     border-radius: 20px;
 }
 
-@media (max-width: 370px) {
+@media (max-width: 376px) {
     .carousel-inner h5 {
         display: none !important;
     }

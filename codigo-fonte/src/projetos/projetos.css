@@ -22,7 +22,6 @@
     transition: transform 0.2s ease-in-out;
     transform: scale(1.1);
 
-   
 }
 .grade-menu{
 
@@ -43,8 +42,11 @@ header{
     background-color: gainsboro;
 }
 
-.card{
-    margin-top: 15px;
+.card h3{
+    font-size: 1.2rem;
+}
+.card {
+    height: 18rem;
 }
 .menu_categoria li:hover{
     transform: scale(1.1);
@@ -70,3 +72,5 @@ header{
 .footer_inf {
    
 }
+
+    

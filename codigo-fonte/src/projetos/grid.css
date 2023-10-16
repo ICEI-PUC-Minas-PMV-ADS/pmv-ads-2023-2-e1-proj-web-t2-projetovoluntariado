@@ -1,0 +1,146 @@
+.grid-wrapper >*{
+    /* min-height: 100px; */
+    border-radius: 10px;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+header{
+    background-color: aquamarine;
+}
+article {
+    background-color:cadetblue;
+}
+nav {
+    background-color: bisque;
+}
+footer {
+    background-color:chocolate;
+}
+section{
+    background-color: blueviolet;
+}
+.grid-wrapper{
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+header{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    height: 100px;
+}
+nav {
+    min-width: 1fr;
+    max-width: 1fr;
+    grid-row: 2 / 4;
+    height: 1fr;
+}
+footer{
+    height: 100px;
+    grid-column: 1 / -1;
+}
+article {
+    
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 250px;
+    box-shadow: 0 1px 5px gray;
+}
+.container-card{
+    display: flex;
+    flex-direction: column;
+}
+.image-cards{
+    align-self: flex-start;
+    width: 100%;
+    
+}
+nav{
+    box-shadow: 0 1px 5px gray;
+}
+
+@media screen and (max-width: 576px) {
+    
+    .grid-wrapper{
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    article {
+        max-width: 100%; 
+        min-width: 250px;  
+        box-shadow: 0 1px 5px gray;
+    }
+    
+
+}
+
+@media screen and (min-width: 577px) {
+    
+    .grid-wrapper{
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    article {
+        min-width: 100%;
+        max-width: 100px;   
+        box-shadow: 0 1px 5px gray;
+    }
+    nav {
+        min-width: 100%;
+        max-width: 100%;
+        grid-row: 2 / 4;
+        height: 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    .grid-wrapper{
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+}
+article {
+    
+    min-width: 300px;
+    max-width: 100%;
+    min-height: 250px;
+    box-shadow: 0 1px 5px gray;
+}
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+    .grid-wrapper{
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+
+    }
+    article {
+        
+        min-width: 300px;
+        max-width: 350px;
+        min-height: 250px;
+        box-shadow: 0 1px 5px gray;
+    }
+    nav {
+        min-width: 300px;
+        max-width: 350px;
+        grid-row: 2 / 4;
+        height: 1fr;
+}
+}

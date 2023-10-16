@@ -1,0 +1,30 @@
+.cards{
+    background-color: gray;
+    width: 250px;
+    height: 250px;
+    margin: 2px;
+    
+}
+.categoria-menu{
+    background-color: aqua;
+    height: 500px;
+    width: 33%;
+    margin: 2px;
+}
+.img-cards{
+    width: 100%;
+}
+.container-flex{
+    display: flex;
+    background-color: azure;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    flex-direction: row;
+}
+.cards-flex{
+    display: flex;
+}
+.container-geral{
+    display: flex;
+    flex-wrap: nowrap;
+}

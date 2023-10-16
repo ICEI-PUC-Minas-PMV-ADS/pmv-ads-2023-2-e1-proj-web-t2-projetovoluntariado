@@ -45,7 +45,7 @@
    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
    padding: 20px;
    margin: 20px;
-   width: 400px;
+   width: 300px;
    transition: all 0.3s ease-out;
 }
 
@@ -57,3 +57,19 @@
 .titulo p {
    font-size: 16px;
 }
+
+.icone-niveis {
+   width: 15px;
+   height: 15px;
+}
+
+.cards:hover {
+   background-color: rgba(229, 198, 247, 0.315);
+   color: black;
+}
+
+.projetos {
+   margin-bottom: 200px;
+
+}
+

@@ -2,8 +2,8 @@
 
 const errorMessage = document.getElementsByClassName("error-message");
 
-const colorLogin = "#3c615c";
-const colorRegister = "#4eaaff";
+const colorLogin = "#2a1b3d";
+const colorRegister = "#a4b3b6";
 
 function checkEmail(email) {
   const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -61,7 +61,25 @@ function showLoginPassword() {
 eyeLoginIcon.addEventListener("click", showLoginPassword);
 slashEyeLoginIcon.addEventListener("click", showLoginPassword);
 
+function authLogin(users, email, password) {
+  const findEmail = users.find((user) => user.email === email);
+
+  if (findEmail && findEmail.password === password) {
+    localStorage.setItem("loginUser", email);
+    alert("Login feito com sucesso!");
+    return true;
+  }
+
+  errorMessage[0].textContent = "E-mail ou senha incorretos";
+  setTimeout(() => {
+    errorMessage[0].textContent = "";
+  }, 3000);
+}
+
 function login() {
+  const email = emailLogin.value;
+  const password = passwordLogin.value;
+
   if (!checkEmail(emailLogin.value)) {
     errorMessage[0].textContent = "Digite um e-mail válido!";
     labelLogins[0].style.color = "red";
@@ -85,7 +103,17 @@ function login() {
     return;
   }
 
-  alert(`Email: ${emailLogin.value}, Senha: ${passwordLogin.value}`);
+  const getUsers = JSON.parse(localStorage.getItem("users"));
+
+  if (!getUsers) {
+    errorMessage[0].textContent = "E-mail ou senha incorretos";
+    setTimeout(() => {
+      errorMessage[0].textContent = "";
+    }, 3000);
+    return;
+  }
+
+  authLogin(getUsers, email, password);
 }
 
 buttonLogin.addEventListener("click", login);
@@ -133,8 +161,28 @@ function clearInputsList() {
   checkbox2.checked = false;
 }
 
+function checkAccountExists(email) {
+  const users = JSON.parse(localStorage.getItem("users"));
+
+  console.log("users", users, email);
+
+  if (users) {
+    const accountExist = users.some(
+      (user) => user.email.toLowerCase() === email.toLowerCase()
+    );
+
+    return accountExist;
+  }
+  return false;
+}
+
 function register() {
-  if (nameRegister.value === "") {
+  const name = nameRegister.value;
+  const email = emailRegister.value;
+  const password = passwordRegister.value;
+  const typeUser = checkbox1.checked ? "Voluntário" : "Empresa";
+
+  if (name === "") {
     errorMessage[1].textContent = "Digite seu nome!";
     labelregisters[0].style.color = "red";
     nameRegister.style.borderBottom = "0.15rem solid red";
@@ -145,7 +193,7 @@ function register() {
     }, 3000);
     return;
   }
-  if (!checkEmail(emailRegister.value)) {
+  if (!checkEmail(email)) {
     errorMessage[1].textContent = "Digite um e-mail válido!";
     labelregisters[1].style.color = "red";
     emailRegister.style.borderBottom = "0.15rem solid red";
@@ -156,7 +204,7 @@ function register() {
     }, 3000);
     return;
   }
-  if (passwordRegister.value === "") {
+  if (password === "") {
     errorMessage[1].textContent = "Digite sua senha!";
     labelregisters[2].style.color = "red";
     passwordRegister.style.borderBottom = "0.15rem solid red";
@@ -180,9 +228,34 @@ function register() {
     return;
   }
 
+  const registerObject = {
+    name,
+    email,
+    password,
+    typeUser,
+  };
+
+  let registers = [registerObject];
+
+  const getUsers = JSON.parse(localStorage.getItem("users"));
+
+  if (checkAccountExists(email)) {
+    errorMessage[1].textContent = "Conta já existe, faça login!";
+    setTimeout(() => {
+      errorMessage[1].textContent = "";
+    }, 3000);
+    return;
+  }
+
+  if (getUsers) {
+    registers = [...getUsers, registerObject];
+  }
+
+  localStorage.setItem("users", JSON.stringify(registers));
+
   Swal.fire({
     position: "center",
-    title: `Bem-vindo, ${nameRegister.value}`,
+    title: `Bem-vindo, ${name}`,
     text: "Faça login para continuar",
     icon: "success",
     showConfirmButton: false,

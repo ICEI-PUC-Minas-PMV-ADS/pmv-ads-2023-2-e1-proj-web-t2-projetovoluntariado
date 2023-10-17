@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login e Registro</title>
     <link rel="stylesheet" href="loginCadastro.css" />
-    <link rel="stylesheet" href="./homePage/css/menu.css" />
+    <link rel="stylesheet" href="../geral/menu/menu.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.all.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.min.css"
@@ -27,48 +27,51 @@
   </head>
   <body>
     <main class="c-main">
-      <nav
-        class="navbar navbar-expand-sm bg-body-tertiary navbar-custom flex-none"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand d-flex nav-link ms-2" href="#">
-            <img
-              src="../../assets/images/global-images/logo.svg"
-              alt="Logo"
-              width="40"
-              class="d-inline-block align-text-top"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+      <header class="header-menu">
+        <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
+          <div
+            class="container-fluid rounded-3 mx-3"
+            style="background-color: rgba(0, 0, 0, 0.3)"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../projetos/projetos.html"
-                  >Projetos</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Entrar</a>
-              </li>
-            </ul>
+            <a class="navbar-brand d-flex nav-link ms-2" href="#">
+              <img
+                src="../homePage/images/logo-white.svg"
+                alt="Logo"
+                width="45"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../projetos/projetos.html"
+                    >Projetos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Entrar</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </header>
       <section class="section-switch-card">
         <div class="c-switch">
           <span class="switch-text-login" role="button">Login</span>
@@ -206,7 +209,14 @@
           </div>
         </div>
       </section>
-      <footer class="footer"><span>VoluntaRia</span></footer>
+      <footer class="section text-center text-white custom-footer">
+        <div
+          class="text-center p-3 rounded-4 mb-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          <h6>© 2023 Copyright: VoluntaRia</h6>
+        </div>
+      </footer>
     </main>
     <script src="loginCadastro.js"></script>
     <script src="sweetalert2.all.min.js"></script>

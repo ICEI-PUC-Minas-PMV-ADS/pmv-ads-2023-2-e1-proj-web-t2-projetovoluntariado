@@ -154,6 +154,7 @@ footer{
     height: 320px;
 }
 
+
 @media screen and (max-width: 576px) {
     
     .grid-wrapper{
@@ -162,16 +163,26 @@ footer{
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
     }
+    .logotipo{
+        margin-top: 6px;
+        fill:gray;
+    }
     .container-card {
         margin: 0px 10px 0px 10px;
         min-height: 100px; 
         max-width: 100%;  
+    }
+    .ul-list li{
+        margin-bottom: 5px;
     }
     .menu-categoria{
         display: none;
     }
     .menu-categoria-1col{
         display: block;
+    }
+    .container-flex-categoria ul{
+        margin-bottom: 15px;
     }
     .botao-categoria-1col{
         height: 35px;
@@ -197,7 +208,7 @@ footer{
         width: 100%;
     }
     .lista-categoria-1col ul{
-        margin: 0;
+        margin: 8px 0px 0px 0px;
         padding: 0;
     }
 

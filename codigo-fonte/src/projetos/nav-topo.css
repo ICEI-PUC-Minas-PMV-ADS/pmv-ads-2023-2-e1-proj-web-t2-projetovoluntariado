@@ -9,11 +9,12 @@
 
 .logotipo{
     width: 45px;
+    margin-top: 7px;
 }
 
 .logotipo:hover{
-    transition: transform 0.5s ease;
-    transform: scale(1.1);
+    transition: transform 0.2s ease;
+    transform: scale(1.15);
 }
 .ul-list{
     list-style: none;
@@ -32,12 +33,12 @@
     padding-left: 25px;
     padding-right: 25px;
     border-radius: 8px;
-    height: 40px;
+    height: 45px;
     align-items: center;
 }
 
 .menu-img{
-    padding-top: 5px;
+    margin-top: 6px;
     display: none;
     text-align: end;
     width: 35px;
@@ -84,7 +85,7 @@
     }
     .shrink-menu{
         transition: height 0.5s ease;
-        height: 53px;
+        height: 45px;
     }
 
 }

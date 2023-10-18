@@ -60,6 +60,7 @@
     padding-right: 50px;
 }
 .btn-fechar-modal{
+    position: absolute;
     width: 25px;
     fill: blue;
     align-self: flex-end;

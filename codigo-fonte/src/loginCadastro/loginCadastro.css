@@ -2,6 +2,7 @@
 :root {
   --login-color: #2a1b3d;
   --register-color: #a4b3b6;
+  --background-color: #d83f87;
 }
 
 * {
@@ -14,6 +15,7 @@
 body {
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: var(--background-color) !important;
 }
 
 body::-webkit-scrollbar-track {
@@ -45,7 +47,6 @@ body::-webkit-scrollbar-thumb {
   gap: 1rem;
   width: 100vw;
   min-height: 100vh;
-  background-color: #d83f87;
 }
 
 .section-switch-card {
@@ -334,6 +335,6 @@ input:checked + .slider:before {
 }
 
 .header-menu {
-  width: 95vw;
+  width: 92vw;
   padding-top: 0.5rem;
 }

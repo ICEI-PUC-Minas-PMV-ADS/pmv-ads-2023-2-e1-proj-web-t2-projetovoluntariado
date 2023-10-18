@@ -10,6 +10,21 @@ function checkEmail(email) {
   return regex.test(email);
 }
 
+// Código menu mobile //
+
+const menuButton = document.querySelector(".navbar-toggler");
+const mainContent = document.querySelector(".section-switch-card");
+
+menuButton.addEventListener("click", () => {
+  console.log("alou");
+  console.log(mainContent);
+  mainContent.classList.toggle("margin-adjust");
+
+  if (!mainContent.classList.contains("margin-adjust")) {
+    mainContent.style.transition = "margin 0.5s ease-out";
+  }
+});
+
 // ---- Seção de código do switch ----
 
 const switchTextRegister = document.querySelector(".switch-text-register");

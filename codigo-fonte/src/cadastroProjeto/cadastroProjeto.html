@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro de Projetos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/cadastroProjeto.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+<body>
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+    <div class="circle circle-4"></div>
+    <div class="circle circle-5"></div>
+    <div class="circle circle-6"></div>
+    <div class="circle circle-7"></div>
+    <div class="circle circle-8"></div>
+
+    <header>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
+                <div class="container-fluid rounded-3 mx-3">
+                    <a class="navbar-brand d-flex nav-link ms-2" href="#">
+                        <img src="./images/logo-white.svg" alt="Logo" width="45" class="d-inline-block align-text-top">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Projetos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Entrar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </header>
+
+    <main id="mainContent">
+        <div class="section">
+            <h2 class="text-white mt-5 mb-3 d-flex justify-content-center">Cadastrar Projeto</h2>
+            <div class="card mx-3 mx-md-3 mx-lg-auto rounded-5 p-4">
+                <div class="container mt-4">
+                    <form>
+                        <div class="mb-4">
+                            <label for="input1" class="form-label">Nome do projeto:</label>
+                            <input type="text" class="form-control" id="input1" placeholder="Exemplo: Amigos do bem">
+                        </div>
+                        <div class="mb-4">
+                            <label for="input2" class="form-label">Nome de sua instituição:</label>
+                            <input type="text" class="form-control" id="input2" placeholder="Exemplo: PUC Minas">
+                        </div>
+                        <div class="mb-4">
+                            <label for="horas" class="form-label">Disponibilidade de horas necessárias:</label>
+                            <input type="number" class="form-control" id="horas" name="horas">
+                        </div>
+                        <div class="mb-4">
+                            <label for="categoria" class="form-label">Selecione a categoria do projeto:</label>
+                            <select class="form-select" id="categoria" name="categoria">
+                                <option value="" selected disabled>Escolha uma categoria</option>
+                                <option value="1">Educação e Ensino</option>
+                                <option value="2">Saúde e Bem-Estar</option>
+                                <option value="3">Meio Ambiente</option>
+                                <option value="4">Assistência Social</option>
+                                <option value="5">Animais</option>
+                                <option value="6">Crianças e Adolescentes</option>
+                                <option value="7">Idosos</option>
+                                <option value="8">Cultura e Arte</option>
+                                <option value="9">Esportes e Recreação</option>
+                                <option value="10">Tecnologia e Inovação</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="imagem" class="form-label">Selecione uma imagem de perfil do projeto:</label>
+                            <input type="file" class="form-control" id="imagem" name="imagem" accept="image/*">
+                        </div>
+                        <div class="mb-3">
+                            <label for="textoGrande" class="form-label">Descrição do projeto:</label>
+                            <textarea class="form-control" id="textoGrande" name="textoGrande" rows="7"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg mb-4 btn-secondary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <footer class="text-center text-white pt-3">
+            <hr class="my-4" />
+            <div class="container">
+                <div class="row text-center d-flex justify-content-center">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Cadastre-se</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Login</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Projetos</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Contato</a>
+                        </h6>
+                    </div>
+                </div>
+                </section>
+            </div>
+            <hr class="my-4 mb-4" />
+            <div class="text-center p-3 rounded-4 mb-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                <h6> © 2023 Copyright: VoluntaRia</h6>
+            </div>
+        </footer>
+    </footer>
+
+    <script src="./cadastroProjeto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

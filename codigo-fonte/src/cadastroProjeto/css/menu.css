@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    .navbar-custom {
+        padding-top: 25px;
+    }
+}
+
+.nav-link:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-link.active {
+    font-weight: 600;
+}
+
+.navbar-custom {
+    height: 45px;
+}
+
+.container-fluid {
+    background-color: #44318d;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.margin-adjust {
+    margin-top: 140px;
+}

@@ -1,0 +1,120 @@
+html,
+body {
+    background-color: #7f66a7;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.card {
+    max-width: 1200px;
+}
+
+.btn-secondary {
+    background-color: #d83f87;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #7f66a7;
+}
+
+
+/* BOLINHAS DE FUNDO */
+
+@keyframes sway {
+    0% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+.circle-1 {
+    width: 120px;
+    height: 120px;
+    background-color: #d83f87;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    left: -40px;
+    top: 60px;
+}
+
+.circle-2 {
+    width: 100px;
+    height: 100px;
+    background-color: #2a1b3d;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    right: -30px;
+    top: -30px;
+}
+
+.circle-3 {
+    width: 120px;
+    height: 120px;
+    background-color: #d83f87;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    right: 90px;
+    top: 300px;
+}
+
+.circle-4 {
+    width: 160px;
+    height: 160px;
+    background-color: #d83f87;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    left: -40px;
+    top: 600px;
+}
+
+.circle-5 {
+    width: 200px;
+    height: 200px;
+    background-color: #d83f87;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    right: 180px;
+    top: 780px;
+}
+
+.circle-6 {
+    width: 100px;
+    height: 100px;
+    background-color: #2a1b3d;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    right: -15px;
+    top: 600px;
+}
+
+.circle-7 {
+    width: 160px;
+    height: 160px;
+    background-color: #2a1b3d;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    left: 150px;
+    top: 870px;
+}
+
+.circle-8 {
+    width: 80px;
+    height: 80px;
+    background-color: #2a1b3d;
+    border-radius: 50%;
+    position: absolute;
+    animation: sway 2s infinite alternate ease-in-out;
+    left: 140px;
+    top: 300px;
+}

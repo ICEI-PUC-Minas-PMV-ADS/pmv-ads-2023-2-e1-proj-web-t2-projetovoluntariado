@@ -5,6 +5,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="projetos.css">
     <link rel="stylesheet" href="nav-topo.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="modal.js"></script>
     <script src="projetos.js"></script>
     <script src="https://kit.fontawesome.com/9e6a074965.js" crossorigin="anonymous"></script>
 </head>
@@ -60,7 +62,7 @@
                     <img class="image-cards" src="images/imagem-voluntarios-01.jpg"> 
                 <article>     
                     <h2>Moradores de Caucaia</h2>
-                    <p class="botao-vermais">Veja mais...</p>
+                    <p class="botao-vermais" onclick="Modal()">Veja mais...</p>
                 </article>
                 </div>
 
@@ -172,6 +174,20 @@
                     <h6> © 2023 Copyright: VoluntaRia</h6>
                 </div>
             </footer>
+        </div>
+    </div>
+    <div class="modal-container">
+        <div class="modal">
+            <svg onclick="Modal()" class="btn-fechar-modal" xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+
+            <h1 class="modal-titulo">Título do Projeto</h1>
+            <img class="modal-img"src="images/imagem-voluntarios-01.jpg">
+            <p class="modal-descricao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est enim aspernatur ipsum nesciunt. Totam porro, exercitationem quam delectus dignissimos aut at dolor in dolore, non harum, quo ut cupiditate aliquam?</p>
+            <p class="btn-participar">Participar</p>
+            <div class="modal-dados-empresa-horas">
+                <p class="modal-empresa">Por: Empresa X</p>
+                <p class="modal-horas">Horas: XX</p>
+            </div>
         </div>
     </div>
 </body>

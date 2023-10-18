@@ -1,0 +1,90 @@
+:root {
+    --background-color-page:  white;
+    --standart-color-page:  #44318d;
+    --background-cards: white;
+    --background-botao: #d83f87;
+    --background-white: white;
+  
+  }
+
+.logotipo{
+    width: 45px;
+}
+
+.logotipo:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+.ul-list{
+    list-style: none;
+}
+
+.menu-item{
+    margin-right: 15px;
+    display: inline-block;
+}
+.flex-container-header{
+
+    display: flex;
+    flex-direction: row;
+    background-color: var(--standart-color-page);
+    justify-content:space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 8px;
+    height: 40px;
+    align-items: center;
+}
+
+.menu-img{
+    padding-top: 5px;
+    display: none;
+    text-align: end;
+    width: 35px;
+}
+.menu-img:hover{
+    cursor: pointer;
+}
+.menu-item:hover{  
+    transition: transform 0.5s ease;
+    transform: scale(1.1); 
+}
+.link-menu-topo{
+    font-size: 1rem ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: rgb(187, 186, 186);
+    display: inline-block;
+}
+.link-menu-topo:hover{
+    color:white;
+}
+
+@media screen and (max-width: 576px){
+
+    .ul-list{
+      position: absolute;
+        top: 40;
+        left: 0;
+    }
+    .menu-img{
+        display: block;
+    }
+    .menu-item{
+        display: block;
+    }
+    .flex-container-header{
+        position: relative;
+        overflow: hidden;
+        align-items: flex-start;
+    }
+    .expanded-menu{
+        transition: height 0.5s ease;
+        height: 150px;
+    }
+    .shrink-menu{
+        transition: height 0.5s ease;
+        height: 53px;
+    }
+
+}

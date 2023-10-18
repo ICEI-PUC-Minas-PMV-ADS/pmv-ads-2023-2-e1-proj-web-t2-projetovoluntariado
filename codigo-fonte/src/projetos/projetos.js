@@ -15,3 +15,18 @@ function expandNav(){
         iconeExpand.classList.remove("fa-caret-down");     
     }
 }
+
+function expandMenu(){
+    element = document.getElementsByClassName('flex-container-header');
+
+    if(element[0].classList.contains("expanded-menu")){
+        element[0].classList.remove("expanded-menu");
+        element[0].classList.add("shrink-menu");
+    }
+    else
+    {
+        element[0].classList.add("expanded-menu");
+        element[0].classList.remove("shrink-menu");
+        
+    }
+}

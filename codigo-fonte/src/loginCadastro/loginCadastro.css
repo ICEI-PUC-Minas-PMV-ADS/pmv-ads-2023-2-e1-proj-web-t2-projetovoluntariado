@@ -50,7 +50,6 @@ body {
 }
 
 .label-default {
-  font-family: sans-serif;
   align-self: flex-start;
   font-weight: 500;
   font-weight: bold;
@@ -99,7 +98,6 @@ body {
 
 .error-message {
   color: red;
-  font-family: sans-serif;
   height: 0.1rem;
   padding-bottom: 1.5rem;
 }
@@ -118,7 +116,6 @@ body {
   font-weight: bold;
   color: var(--login-color);
   font-size: 1.5rem;
-  font-family: sans-serif;
   font-weight: bold;
   cursor: pointer;
   margin-left: 1.5rem;
@@ -127,7 +124,6 @@ body {
 .switch-text-register {
   font-size: 1.5rem;
   color: var(--register-color);
-  font-family: sans-serif;
   font-weight: bold;
   opacity: 0.5;
   cursor: pointer;
@@ -236,7 +232,6 @@ input:checked + .slider:before {
 
 .card-front-title {
   color: var(--login-color);
-  font-family: sans-serif;
   margin: 0;
   padding-top: 1.5rem;
   font-weight: bold;
@@ -278,7 +273,6 @@ input:checked + .slider:before {
 
 .card-back-title {
   color: var(--register-color);
-  font-family: sans-serif;
   margin: 0;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;

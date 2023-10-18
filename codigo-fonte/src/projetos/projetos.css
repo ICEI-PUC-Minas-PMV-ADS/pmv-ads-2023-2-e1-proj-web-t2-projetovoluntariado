@@ -171,7 +171,7 @@ footer{
         display: none;
     }
     .menu-categoria-1col{
-        display: inline;
+        display: block;
     }
     .botao-categoria-1col{
         height: 35px;
@@ -184,7 +184,8 @@ footer{
         align-items: center;
         background-color: #d83f87;
         border-radius: 20px;
-        color: aliceblue;    
+        color: aliceblue;
+        margin: 0;    
     }
     .botao-categoria-1col h2{
         font-size: 1.3em;
@@ -192,7 +193,12 @@ footer{
     .menu-categoria-1col{
         background-color: var(--background-cards);
         box-shadow:  1px 1px 15px gray;
-        border-radius: 20px
+        border-radius: 20px;
+        width: 100%;
+    }
+    .lista-categoria-1col ul{
+        margin: 0;
+        padding: 0;
     }
 
 }

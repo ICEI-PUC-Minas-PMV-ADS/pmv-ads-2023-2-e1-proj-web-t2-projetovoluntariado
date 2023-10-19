@@ -301,7 +301,7 @@ input:checked + .slider:before {
   box-sizing: border-box;
   border: 0.4rem solid var(--register-color);
   color: black;
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) translateZ(1px); /* Adiciona a transformação translateZ(1px) */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -315,7 +315,6 @@ input:checked + .slider:before {
   margin: 0;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  font-weight: bold;
 }
 
 .label-register {

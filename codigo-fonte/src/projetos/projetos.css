@@ -1,9 +1,9 @@
 :root {
-  --background-color-page:  white;
+  --background-color-page: #2a1b3d ;
   --standart-color-page:  #44318d;
   --background-cards: white;
   --background-botao: #d83f87;
-  --background-white: white;
+  --background-white: #2a1b3d;
 
 }
 /* 
@@ -12,9 +12,12 @@
 --background-cards: white;
 --background-botao: #d83f87;
  */
-
+body{
+    margin: 0;
+    padding-top: 10px;
+    background-color: #2a1b3d;
+}
 .corpo{
-    background-color: var(--background-color-page);
     padding: 0px 10px 0px 10px;
 }
 .grid-wrapper{
@@ -196,7 +199,7 @@ footer{
         align-items: center;
         background-color: #d83f87;
         border-radius: 20px;
-        color: aliceblue;
+        color: white;
         margin: 0;    
     }
     .botao-categoria-1col h2{
@@ -310,6 +313,12 @@ footer{
     }
 }
 
+@media (min-width: 768px) {
+    .navbar-custom {
+        padding-top: 25px;
+    }
+}
+
 .nav-link:hover {
     transform: scale(1.2);
     transition: transform 0.2s ease-in-out;
@@ -332,7 +341,6 @@ footer{
     outline: none;
 }
 
-footer{
-    border-radius: 20px;
-    background-color: #2a1b3d;
+.margin-adjust {
+    margin-top: 140px;
 }

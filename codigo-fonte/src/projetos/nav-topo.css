@@ -81,7 +81,7 @@
     }
     .expanded-menu{
         transition: height 0.5s ease;
-        height: 150px;
+        height: 180px;
     }
     .shrink-menu{
         transition: height 0.5s ease;

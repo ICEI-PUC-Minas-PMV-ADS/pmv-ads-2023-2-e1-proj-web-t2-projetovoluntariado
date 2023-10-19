@@ -13,8 +13,12 @@ body {
     width: 160px;
     height: 160px;
     object-fit: cover;
+}
+
+.perfil {
     border-radius: 50%;
 }
+
 
 .section-2 img {
     width: 40px;

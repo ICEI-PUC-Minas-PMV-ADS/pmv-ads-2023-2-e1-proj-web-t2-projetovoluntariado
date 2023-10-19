@@ -2,6 +2,7 @@
 :root {
   --login-color: #2a1b3d;
   --register-color: #a4b3b6;
+  --background-color: #d83f87;
 }
 
 * {
@@ -14,23 +15,7 @@
 body {
   overflow-y: auto;
   overflow-x: hidden;
-}
-
-body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  background-color: #f5f5f5;
-}
-
-body::-webkit-scrollbar {
-  width: 12px;
-  background-color: #f5f5f5;
-}
-
-body::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #555;
+  background-color: var(--background-color) !important;
 }
 
 .flex-none {
@@ -45,7 +30,6 @@ body::-webkit-scrollbar-thumb {
   gap: 1rem;
   width: 100vw;
   min-height: 100vh;
-  background-color: #d83f87;
 }
 
 .section-switch-card {
@@ -66,7 +50,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .label-default {
-  font-family: sans-serif;
   align-self: flex-start;
   font-weight: 500;
   font-weight: bold;
@@ -115,7 +98,6 @@ body::-webkit-scrollbar-thumb {
 
 .error-message {
   color: red;
-  font-family: sans-serif;
   height: 0.1rem;
   padding-bottom: 1.5rem;
 }
@@ -134,7 +116,6 @@ body::-webkit-scrollbar-thumb {
   font-weight: bold;
   color: var(--login-color);
   font-size: 1.5rem;
-  font-family: sans-serif;
   font-weight: bold;
   cursor: pointer;
   margin-left: 1.5rem;
@@ -143,7 +124,6 @@ body::-webkit-scrollbar-thumb {
 .switch-text-register {
   font-size: 1.5rem;
   color: var(--register-color);
-  font-family: sans-serif;
   font-weight: bold;
   opacity: 0.5;
   cursor: pointer;
@@ -252,7 +232,6 @@ input:checked + .slider:before {
 
 .card-front-title {
   color: var(--login-color);
-  font-family: sans-serif;
   margin: 0;
   padding-top: 1.5rem;
   font-weight: bold;
@@ -294,7 +273,6 @@ input:checked + .slider:before {
 
 .card-back-title {
   color: var(--register-color);
-  font-family: sans-serif;
   margin: 0;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -330,11 +308,11 @@ input:checked + .slider:before {
 
 /* --Fotter de exemplo --- */
 .custom-footer {
-  width: 95vw;
+  width: 90vw;
 }
 
 .header-menu {
-  width: 95vw;
+  width: 92vw;
   padding-top: 0.5rem;
 }
 

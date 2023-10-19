@@ -10,6 +10,21 @@ function checkEmail(email) {
   return regex.test(email);
 }
 
+// Código menu mobile //
+
+const menuButton = document.querySelector(".navbar-toggler");
+const mainContent = document.querySelector(".section-switch-card");
+
+menuButton.addEventListener("click", () => {
+  console.log("alou");
+  console.log(mainContent);
+  mainContent.classList.toggle("margin-adjust");
+
+  if (!mainContent.classList.contains("margin-adjust")) {
+    mainContent.style.transition = "margin 0.5s ease-out";
+  }
+});
+
 // ---- Seção de código do switch ----
 
 const switchTextRegister = document.querySelector(".switch-text-register");
@@ -62,12 +77,19 @@ eyeLoginIcon.addEventListener("click", showLoginPassword);
 slashEyeLoginIcon.addEventListener("click", showLoginPassword);
 
 function authLogin(users, email, password) {
-  const findEmail = users.find((user) => user.email === email);
+  const findUser = users.find((user) => user.email === email);
 
-  if (findEmail && findEmail.password === password) {
-    localStorage.setItem("loginUser", email);
-    alert("Login feito com sucesso!");
-    return true;
+  if (findUser && findUser.password === password) {
+    localStorage.setItem(
+      "loginUser",
+      JSON.stringify({ email, typeUser: findUser.typeUser })
+    );
+    if (findUser.typeUser === "Voluntário") {
+      console.log("alou");
+      window.location.href = "../perfilVoluntario/perfilVoluntario.html";
+    } else {
+      window.location.href = "../perfilEmpresa/perfilEmpresa.html";
+    }
   }
 
   errorMessage[0].textContent = "E-mail ou senha incorretos";

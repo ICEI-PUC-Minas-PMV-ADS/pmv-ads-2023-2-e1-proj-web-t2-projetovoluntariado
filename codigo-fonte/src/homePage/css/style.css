@@ -11,6 +11,8 @@ body {
     background-color: var(--cor-3);
     margin-right: 2%;
     margin-left: 2%;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 .section {

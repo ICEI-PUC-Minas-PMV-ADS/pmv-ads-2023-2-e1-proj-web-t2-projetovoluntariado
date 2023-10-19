@@ -308,11 +308,10 @@ input:checked + .slider:before {
 
 /* --Fotter de exemplo --- */
 .custom-footer {
-  width: 90vw;
+  width: 91.209%;
 }
 
 .header-menu {
-  width: 92vw;
+  width: 91.209%;
   padding-top: 0.5rem;
 }
-

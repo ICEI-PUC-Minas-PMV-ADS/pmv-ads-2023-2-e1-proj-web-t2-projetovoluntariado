@@ -1,0 +1,46 @@
+html,
+body {
+    background-color: #2a1b3d;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.section {
+    margin-bottom: 3%;
+}
+
+.section-1 img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.section-2 img {
+    width: 40px;
+}
+
+.section-2 span {
+    font-weight: 700;
+}
+
+.btn-secondary {
+    background-color: #d83f87;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #7f66a7;
+}
+
+.section-3 img {
+    padding: 8px;
+}
+
+.section-3 h5 {
+    color: #44318d !important;
+}
+
+.section-3 {
+    margin-bottom: 120px;
+}

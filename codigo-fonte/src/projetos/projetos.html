@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -6,30 +7,49 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="projetos.css">
-    <link rel="stylesheet" href="nav-topo.css">
     <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="../geral/menu/menu.css">
+    <link rel="stylesheet" href="../homePage/css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
     <script src="modal.js"></script>
     <script src="projetos.js"></script>
+
     <script src="https://kit.fontawesome.com/9e6a074965.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="corpo">
-        <div class="grid-wrapper">
-                <header class="flex-container-header">
-                    <a class="link-logotipo" href="../index.html">         
-                        <img class="logotipo" src="../geral/menu/logo-white.svg">
-                    </a>
-                    
-                    <nav>
-                    
-                    <ul class="ul-list">
-                        <li class="menu-item"><a class="link-menu-topo" href="../index.html">Home</a></li>
-                        <li class="menu-item"><a class="link-menu-topo" href="projetos.html">Projetos</a></li>
-                        <li class="menu-item"><a class="link-menu-topo" href="../perfilVoluntario/perfilVoluntario.html">Perfil</a></li>                        <li class="menu-item"><a class="link-menu-topo" href="../loginCadastro/loginCadastro.html">Entrar</a></li>
-                    </ul>
-                    </nav>
-                    <svg class= "menu-img" xmlns="http://www.w3.org/2000/svg" onclick="expandMenu()" height="1.6em" fill= "gray" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-                </header>             
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
+          <div class="container-fluid rounded-3 mx-3">
+            <a class="navbar-brand d-flex nav-link ms-2" href="#">
+              <img src="../homePage/images/logo-white.svg" alt="Logo" width="45" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="projetos.html">Projetos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../perfilVoluntario/perfilVoluntarioo.html">Perfil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../loginCadastro/loginCadastro.html">Entrar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <div class="corpo" id="mainContent">
+        <div class="grid-wrapper">               
             <div class="menu-categoria">
                 <h2 class="menu-categoria-titulo">Categorias</h2>
                 <nav class="container-flex-categoria">
@@ -139,47 +159,46 @@
                 </article>
                 </div>
 
-
-              
                 
-
-
-                <footer class="text-center text-white pt-3">
-                    <hr class="my-4" />
-                    <div class="container">
-                        <div class="row text-center d-flex justify-content-center">
-                            <div class="col-md-2">
-                                <h6 class="text-uppercase font-weight-bold">
-                                    <a href="#!" class="text-white">Cadastre-se</a>
-                                </h6>
-                            </div>
-                            <div class="col-md-2">
-                                <h6 class="text-uppercase font-weight-bold">
-                                    <a href="#!" class="text-white">Login</a>
-                                </h6>
-                            </div>
-                            <div class="col-md-2">
-                                <h6 class="text-uppercase font-weight-bold">
-                                    <a href="#!" class="text-white">Projetos</a>
-                                </h6>
-                            </div>
-                            <div class="col-md-2">
-                                <h6 class="text-uppercase font-weight-bold">
-                                    <a href="#!" class="text-white">Contato</a>
-                                </h6>
-                            </div>
-                        </div>
-                        </section>
-                    </div>
-                    <hr class="my-4 mb-4" />
-                    <div class="text-center p-3 rounded-4 mb-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                        <h6> © 2023 Copyright: VoluntaRia</h6>
-                    </div>
-                </footer>
         </div>
     </div>
+   
+    <footer class="section text-center text-white">
+    </br>
+        <hr class="my-4 mb-4"/>
+        <div class="container">
+            <div class="row text-center d-flex justify-content-center">
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!" class="text-white">Cadastre-se</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!" class="text-white">Login</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!" class="text-white">Projetos</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!" class="text-white">Contato</a>
+                    </h6>
+                </div>
+            </div>
+            </section>
+        </div>
+        <hr class="my-4 mb-4" />
+        <div class="text-center p-3 rounded-4 mb-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            <p class="mb-1">Todos os direitos reservados</p>
+            <h6> © 2023 Copyright: VoluntaRia</h6>
+        </div>
+    </footer>
     <div class="modal-container">
-        <div class="modal">
+        <div class="modal-body">
             <svg onclick="Modal()" class="btn-fechar-modal" xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
 
             <h1 class="modal-titulo">Título do Projeto</h1>
@@ -192,5 +211,9 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="../geral/menu/menu.js"></script>
 </body>
 </html>

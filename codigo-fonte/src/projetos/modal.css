@@ -1,27 +1,32 @@
 .modal-container{
-    position: relative;
+    
     display: none;
+    position:relative;
     position: fixed;
-    z-index: 1;
-    top: 0px;
-    left: 0px;
+    z-index: 5;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    margin: 0;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
     background-color:rgba(15, 15, 15, 0.1);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 }
-.modal{
-    display: flex;
+.modal-body{
+    text-align: center;
+    padding: 15px;
+    margin: 10%;
     flex-direction: column;
     border-radius: 10px;
     background-color: white;
-    width: 90%;
-    height: 90%;
-    margin: auto;  
+    width: 60%;
+    height: 60%;
     box-shadow: 2px 2px 25px gray; 
-    align-items: center;
+    overflow: hidden;
+
 }
 .fechar-modal{
     display: flex;
@@ -50,7 +55,8 @@
     width: 150px;
     display: inline-block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: pink;
+    background-color: #d83f87;
+    color: white;
 }
 .modal-dados-empresa-horas{
     width: 100%;
@@ -61,76 +67,74 @@
 }
 .btn-fechar-modal{
     position: absolute;
-    width: 25px;
-    fill: blue;
+    top: 5px;
+    right: 5px;
+    height: 1.5rem;
+    fill: #44318d;
     align-self: flex-end;
     cursor: pointer;
 }
-
+.modal-img{
+    display: inline-block;
+}
 
 
 @media screen and (max-width: 576px){
-    .modal{
-        width: 90%;
+    .modal-body{
+        width: 95%;
         padding: 15px;
         box-sizing: border-box;
     }
     .modal-img{
-        display: block;
         width: auto;
-        max-width: 70%;
+        max-width: 200px;
     }
 
 }
 
 @media screen and (min-width: 577px){
-    .modal{
+    .modal-body{
         width: 80%;
         padding: 15px;
         box-sizing: border-box;
     }
     .modal-img{
-        display: block;
-        width: auto;
-        min-width: 50%;
-        max-width: 65%;
+      
+        max-width: 40%;
     } 
 }
 
 @media screen and (min-width: 992px) {
 
-    .modal{
-        width: 60%;
-        padding: 15px;
-        box-sizing: border-box;
-    }
-    .modal-img{
-        display: block;
-        width: auto;
-        max-width: 75%;
-    }
-}
-@media screen and (min-width: 1200px){
-    .modal{
-        min-width: 30%;
+    .modal-body{
         max-width: 50%;
         padding: 15px;
         box-sizing: border-box;
     }
     .modal-img{
-        display: block;
+        
         width: auto;
-        max-width: 75%;
+        max-width: 350px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .modal-body{
+        max-width: 60%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    .modal-img{
+        width: auto;
+        max-width: 300px;
     }
 }
 @media screen and (min-width: 1500px){
-    .modal{
+    .modal-body{
         max-width: 45%;
         padding: 15px;
         box-sizing: border-box;
     }
     .modal-img{
-        display: block;
         width: auto;
         min-width: 30%;
         max-width: 35%;

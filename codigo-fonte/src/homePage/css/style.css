@@ -1,6 +1,14 @@
+:root {
+    --cor-1: #7f66a7;
+    --cor-2: #d83f87;
+    --cor-3: #2a1b3d;
+    --cor-4: #a4b3b6;
+    --cor-5: #44318d;
+}
+
 html,
 body {
-    background-color: #2a1b3d;
+    background-color: var(--cor-3);
     margin-right: 2%;
     margin-left: 2%;
 }
@@ -27,7 +35,7 @@ body {
 
 .title h1,
 .title h6 {
-    color: #44318d !important;
+    color: var(--cor-5) !important;
 }
 
 .carousel-item img {
@@ -59,12 +67,12 @@ body {
 }
 
 .btn-secondary {
-    background-color: #d83f87;
+    background-color: var(--cor-2);
     border: none;
 }
 
 .btn-secondary:hover {
-    background-color: #7f66a7;
+    background-color: var(--cor-1);
 }
 
 .section-3 img {
@@ -73,7 +81,7 @@ body {
 }
 
 .section-3 h5 {
-    color: #44318d !important;
+    color: var(--cor-5) !important;
 }
 
 .section-4 img {
@@ -90,7 +98,7 @@ body {
 }
 
 .section-4 h5 {
-    color: #44318d !important;
+    color: var(--cor-5) !important;
 }
 
 .footer {

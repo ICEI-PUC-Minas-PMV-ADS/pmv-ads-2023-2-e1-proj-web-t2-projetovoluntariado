@@ -1,3 +1,11 @@
+:root {
+    --cor-1: #7f66a7;
+    --cor-2: #d83f87;
+    --cor-3: #2a1b3d;
+    --cor-4: #a4b3b6;
+    --cor-5: #44318d;
+}
+
 @keyframes sway {
     0% {
         transform: translateX(-5px);
@@ -11,7 +19,7 @@
 .circle-1 {
     width: 120px;
     height: 120px;
-    background-color: #d83f87;
+    background-color: var(--cor-2);
     border-radius: 50%;
     position: absolute;
     animation: sway 2s infinite alternate ease-in-out;
@@ -22,7 +30,7 @@
 .circle-2 {
     width: 100px;
     height: 100px;
-    background-color: #7f66a7;
+    background-color: var(--cor-1);
     border-radius: 50%;
     position: absolute;
     animation: sway 2s infinite alternate ease-in-out;
@@ -33,7 +41,7 @@
 .circle-3 {
     width: 70px;
     height: 70px;
-    background-color: #d83f87;
+    background-color: var(--cor-2);
     border-radius: 50%;
     position: absolute;
     animation: sway 2s infinite alternate ease-in-out;
@@ -44,7 +52,7 @@
 .circle-4 {
     width: 200px;
     height: 200px;
-    background-color: #7f66a7;
+    background-color: var(--cor-1);
     border-radius: 50%;
     position: absolute;
     animation: sway 2s infinite alternate ease-in-out;
@@ -55,7 +63,7 @@
 .circle-5 {
     width: 140px;
     height: 140px;
-    background-color: #d83f87;
+    background-color: var(--cor-2);
     border-radius: 50%;
     position: absolute;
     animation: sway 2s infinite alternate ease-in-out;
@@ -66,7 +74,7 @@
 .circle-6 {
     width: 100px;
     height: 100px;
-    background-color: #d83f87;
+    background-color: var(--cor-2);
     border-radius: 50%;
     position: absolute;
     animation: sway 2s infinite alternate ease-in-out;
@@ -77,7 +85,7 @@
 .circle-7 {
     width: 200px;
     height: 200px;
-    background-color: #7f66a7;
+    background-color: var(--cor-1);
     border-radius: 50%;
     position: absolute;
     animation: sway 2s infinite alternate ease-in-out;
@@ -88,7 +96,7 @@
 .circle-8 {
     width: 140px;
     height: 140px;
-    background-color: #d83f87;
+    background-color: var(--cor-2);
     border-radius: 50%;
     position: absolute;
     animation: sway 2s infinite alternate ease-in-out;
@@ -99,7 +107,7 @@
 .circle-9 {
     width: 100px;
     height: 100px;
-    background-color: #7f66a7;
+    background-color: var(--cor-1);
     border-radius: 50%;
     position: absolute;
     animation: sway 2s infinite alternate ease-in-out;

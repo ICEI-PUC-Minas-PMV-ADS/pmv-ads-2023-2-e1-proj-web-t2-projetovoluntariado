@@ -69,7 +69,7 @@ header{
 }
 
 .container-card {
-    border-radius: 20px;
+    border-radius: 30px;
     min-height: 150px;
     background-color: var(--background-cards); 
     display: flex;
@@ -109,10 +109,10 @@ header{
 }
 
 .image-cards{
-    padding-top: 15px;
+    margin-top: 4%;
     align-self: center;
-    width: 90%;
-    border-radius: 25px;
+    width: 92%;
+    border-radius: 30px;
     
 }
 .menu-categoria ul{

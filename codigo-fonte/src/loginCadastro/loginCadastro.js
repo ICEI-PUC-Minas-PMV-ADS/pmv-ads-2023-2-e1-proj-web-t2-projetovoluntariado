@@ -86,9 +86,11 @@ function authLogin(users, email, password) {
     );
     if (findUser.typeUser === "Voluntário") {
       console.log("alou");
-      window.location.href = "../perfilVoluntario/perfilVoluntario.html";
+      window.location.href = "../perfilVoluntario/perfilVoluntarioo.html";
+      return;
     } else {
       window.location.href = "../perfilEmpresa/perfilEmpresa.html";
+      return;
     }
   }
 

@@ -100,7 +100,6 @@ header{
     text-align: center;
     align-self: center;
     padding: 4px;
-    margin-right: 15px;
     border-radius: 8px;
     transition: background-color 0.5s;
 }
@@ -165,8 +164,8 @@ header{
     height: 50px;
     justify-content: center;
     align-items: center;
-    
 }
+
 .lista-categoria-1col{
     overflow: hidden;
     height: 0px;

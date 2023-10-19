@@ -52,6 +52,7 @@ header{
     
 }
 
+
 .menu-categoria-1col{
     display: none;
     margin-left: 15px;
@@ -207,15 +208,30 @@ header{
         height: 35px;
     }
     .botao-categoria-1col{
-        padding: 5px 20px 5px 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content:space-between;
-        align-items: center;
+        text-align: center;
+        position: relative;
+        display: flex;   
         background-color: #d83f87;
         border-radius: 20px;
         color: white;
         width: 100%; 
+        display: flex;
+        align-items:center; 
+        justify-content: center;
+    }
+    #icone-dropdown{
+    
+      position: absolute;
+      right: 15px; 
+    }
+    .menu-categoria-titulo-1col{
+        margin: 0;
+        display: inline-block;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        align-self:center;
+
     }
     .botao-categoria-1col h2{
         font-size: 1.3em;

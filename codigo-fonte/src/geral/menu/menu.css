@@ -23,7 +23,7 @@
 }
 
 .navbar-toggler {
-    border: none;
+    border: none !important;
     outline: none;
 }
 

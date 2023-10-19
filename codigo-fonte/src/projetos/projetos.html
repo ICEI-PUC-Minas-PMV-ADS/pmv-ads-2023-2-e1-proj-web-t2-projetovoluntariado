@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,161 +12,165 @@
     <link rel="stylesheet" href="../geral/menu/menu.css">
     <link rel="stylesheet" href="../homePage/css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <script src="modal.js"></script>
     <script src="projetos.js"></script>
 
     <script src="https://kit.fontawesome.com/9e6a074965.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
-          <div class="container-fluid rounded-3 mx-3">
-            <a class="navbar-brand d-flex nav-link ms-2" href="#">
-              <img src="../homePage/images/logo-white.svg" alt="Logo" width="45" class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="projetos.html">Projetos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../perfilVoluntario/perfilVoluntarioo.html">Perfil</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../loginCadastro/loginCadastro.html">Entrar</a>
-                </li>
-              </ul>
+            <div class="container-fluid rounded-3 mx-3">
+                <a class="navbar-brand d-flex nav-link ms-2" href="#">
+                    <img src="../homePage/images/logo-white.svg" alt="Logo" width="45"
+                        class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="projetos.html">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../perfilVoluntario/perfilVoluntarioo.html">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../loginCadastro/loginCadastro.html">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </nav>
-      </header>
-    <div class="corpo" id="mainContent">
-        <div class="grid-wrapper">               
+    </header>
+
+    <main class="corpo" id="mainContent">
+        <div class="grid-wrapper">
             <div class="menu-categoria">
                 <h2 class="menu-categoria-titulo">Categorias</h2>
                 <nav class="container-flex-categoria">
                     <ul>
-                        <li class="item-categoria"><a class="link-categoria" href="#" >Saúde</a></li>
-                        <li class="item-categoria"><a class="link-categoria" href="#" >Educação</a></li>
-                        <li class="item-categoria"><a class="link-categoria" href="#" >Alimentação</a></li>
-                        <li class="item-categoria"><a class="link-categoria" href="#" >Doação</a></li>
-                        <li class="item-categoria"><a class="link-categoria" href="#" >Visitação</a></li>
-                        <li class="item-categoria"><a class="link-categoria" href="#" >Adoção</a></li>
+                        <li class="item-categoria"><a class="link-categoria" href="#">Saúde</a></li>
+                        <li class="item-categoria"><a class="link-categoria" href="#">Educação</a></li>
+                        <li class="item-categoria"><a class="link-categoria" href="#">Alimentação</a></li>
+                        <li class="item-categoria"><a class="link-categoria" href="#">Doação</a></li>
+                        <li class="item-categoria"><a class="link-categoria" href="#">Visitação</a></li>
+                        <li class="item-categoria"><a class="link-categoria" href="#">Adoção</a></li>
                     </ul>
                 </nav>
-             </div> 
-             <div class="menu-categoria-1col" onclick="expandNav()">
+            </div>
+            <div class="menu-categoria-1col" onclick="expandNav()">
                 <div class="botao-categoria-1col">
                     <h2 class="menu-categoria-titulo-1col">Categorias</h2>
                     <i id="icone-dropdown" class="fa-2xl fa-solid fa-caret-down"></i>
                 </div>
                 <nav class="lista-categoria-1col">
                     <ul>
-                        <li class="item-categoria"><a class="link-categoria" href="#" >Saúde</a></li>
-                        <li class="item-categoria"><a class="link-categoria" href="#" >Educação</a></li>
-                        <li class="item-categoria"><a class="link-categoria" href="#" >Alimentação</a></li>
-                        <li class="item-categoria"><a class="link-categoria" href="#" >Doação</a></li>
-                        <li class="item-categoria"><a class="link-categoria" href="#" >Visitação</a></li>
-                        <li class="item-categoria"><a class="link-categoria" href="#" >Adoção</a></li>
+                        <li class="item-categoria"><a class="link-categoria" href="#">Saúde</a></li>
+                        <li class="item-categoria"><a class="link-categoria" href="#">Educação</a></li>
+                        <li class="item-categoria"><a class="link-categoria" href="#">Alimentação</a></li>
+                        <li class="item-categoria"><a class="link-categoria" href="#">Doação</a></li>
+                        <li class="item-categoria"><a class="link-categoria" href="#">Visitação</a></li>
+                        <li class="item-categoria"><a class="link-categoria" href="#">Adoção</a></li>
                     </ul>
                 </nav>
-             </div>            
+            </div>
 
-                <div class="container-card">
-                    <img class="image-cards" src="images/imagem-voluntarios-01.jpg"> 
-                <article>     
+            <div class="container-card">
+                <img class="image-cards" src="images/imagem-voluntarios-01.jpg">
+                <article>
                     <h2>Moradores de Caucaia</h2>
                     <p class="botao-vermais" onclick="Modal()">Veja mais...</p>
                 </article>
-                </div>
+            </div>
 
-                <div class="container-card">
-                    <img class="image-cards" src="images/imagem-voluntarios-02.jpg"> 
-                <article>     
+            <div class="container-card">
+                <img class="image-cards" src="images/imagem-voluntarios-02.jpg">
+                <article>
                     <h2>Unidos pelos Idosos</h2>
                     <p class="botao-vermais" onclick="Modal()">Veja mais...</p>
                 </article>
-                </div>
+            </div>
 
 
-                <div class="container-card">
-                    <img class="image-cards" src="images/imagem-voluntarios-03.jpg"> 
-                <article>     
+            <div class="container-card">
+                <img class="image-cards" src="images/imagem-voluntarios-03.jpg">
+                <article>
                     <h2>Moradores de rua</h2>
                     <p class="botao-vermais" onclick="Modal()">Veja mais...</p>
                 </article>
-                </div>
+            </div>
 
 
-                <div class="container-card">
-                    <img class="image-cards" src="images/imagem-voluntarios-04.jpg"> 
-                <article>     
+            <div class="container-card">
+                <img class="image-cards" src="images/imagem-voluntarios-04.jpg">
+                <article>
                     <h2>Oficina de culinária</h2>
                     <p class="botao-vermais" onclick="Modal()">Veja mais...</p>
                 </article>
-                </div>
+            </div>
 
 
-                <div class="container-card">
-                    <img class="image-cards" src="images/imagem-voluntarios-05.jpg"> 
-                <article>     
+            <div class="container-card">
+                <img class="image-cards" src="images/imagem-voluntarios-05.jpg">
+                <article>
                     <h2>Projeto Alimentar</h2>
                     <p class="botao-vermais" onclick="Modal()">Veja mais...</p>
                 </article>
-                </div>
+            </div>
 
 
-                <div class="container-card">
-                    <img class="image-cards" src="images/imagem-voluntarios-06.jpg"> 
-                <article>     
+            <div class="container-card">
+                <img class="image-cards" src="images/imagem-voluntarios-06.jpg">
+                <article>
                     <h2>Acessibilidade já!</h2>
                     <p class="botao-vermais" onclick="Modal()">Veja mais...</p>
                 </article>
-                </div>
+            </div>
 
 
-                <div class="container-card">
-                    <img class="image-cards" src="images/imagem-voluntarios-07.jpg"> 
-                <article>     
+            <div class="container-card">
+                <img class="image-cards" src="images/imagem-voluntarios-07.jpg">
+                <article>
                     <h2>Limpeza das praias</h2>
                     <p class="botao-vermais" onclick="Modal()">Veja mais...</p>
                 </article>
-                </div>
+            </div>
 
 
-                <div class="container-card">
-                    <img class="image-cards" src="images/imagem-voluntarios-08.jpg"> 
-                <article>     
+            <div class="container-card">
+                <img class="image-cards" src="images/imagem-voluntarios-08.jpg">
+                <article>
                     <h2>Projeto Manguezal</h2>
                     <p class="botao-vermais" onclick="Modal()">Veja mais...</p>
                 </article>
-                </div>
+            </div>
 
 
-                <div class="container-card">
-                    <img class="image-cards" src="images/imagem-voluntarios-09.jpg"> 
-                <article>     
+            <div class="container-card">
+                <img class="image-cards" src="images/imagem-voluntarios-09.jpg">
+                <article>
                     <h2>Adote um pet</h2>
                     <p class="botao-vermais" onclick="Modal()">Veja mais...</p>
                 </article>
-                </div>
+            </div>
 
-                
+
         </div>
-    </div>
-   
+    </main>
+
     <footer class="section text-center text-white">
-    </br>
-        <hr class="my-4 mb-4"/>
+        </br>
+        <hr class="my-4 mb-4" />
         <div class="container">
             <div class="row text-center d-flex justify-content-center">
                 <div class="col-md-2">
@@ -199,11 +204,17 @@
     </footer>
     <div class="modal-container">
         <div class="modal-body">
-            <svg onclick="Modal()" class="btn-fechar-modal" xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+            <svg onclick="Modal()" class="btn-fechar-modal" xmlns="http://www.w3.org/2000/svg" height="1.2em"
+                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
+            </svg>
 
             <h1 class="modal-titulo">Título do Projeto</h1>
-            <img class="modal-img"src="images/imagem-voluntarios-01.jpg">
-            <p class="modal-descricao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est enim aspernatur ipsum nesciunt. Totam porro, exercitationem quam delectus dignissimos aut at dolor in dolore, non harum, quo ut cupiditate aliquam?</p>
+            <img class="modal-img" src="images/imagem-voluntarios-01.jpg">
+            <p class="modal-descricao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est enim aspernatur
+                ipsum nesciunt. Totam porro, exercitationem quam delectus dignissimos aut at dolor in dolore, non harum,
+                quo ut cupiditate aliquam?</p>
             <p class="btn-participar">Participar</p>
             <div class="modal-dados-empresa-horas">
                 <p class="modal-empresa">Por: Empresa X</p>
@@ -212,8 +223,9 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-    <script src="../geral/menu/menu.js"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./menu.js"></script>
 </body>
+
 </html>

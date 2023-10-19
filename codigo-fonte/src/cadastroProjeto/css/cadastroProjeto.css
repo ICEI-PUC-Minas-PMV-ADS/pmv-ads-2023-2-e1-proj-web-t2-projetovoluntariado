@@ -1,6 +1,12 @@
+:root {
+    --cor-1: #7f66a7;
+    --cor-2: #d83f87;
+    --cor-3: #2a1b3d;
+}
+
 html,
 body {
-    background-color: #7f66a7;
+    background-color: var(--cor-3);
     margin-right: 2%;
     margin-left: 2%;
 }
@@ -45,7 +51,7 @@ body {
 .circle-2 {
     width: 100px;
     height: 100px;
-    background-color: #2a1b3d;
+    background-color: var(--cor-1);
     border-radius: 50%;
     position: absolute;
     animation: sway 2s infinite alternate ease-in-out;
@@ -89,7 +95,7 @@ body {
 .circle-6 {
     width: 100px;
     height: 100px;
-    background-color: #2a1b3d;
+    background-color: var(--cor-1);
     border-radius: 50%;
     position: absolute;
     animation: sway 2s infinite alternate ease-in-out;
@@ -100,7 +106,7 @@ body {
 .circle-7 {
     width: 160px;
     height: 160px;
-    background-color: #2a1b3d;
+    background-color: var(--cor-1);
     border-radius: 50%;
     position: absolute;
     animation: sway 2s infinite alternate ease-in-out;
@@ -111,7 +117,7 @@ body {
 .circle-8 {
     width: 80px;
     height: 80px;
-    background-color: #2a1b3d;
+    background-color: var(--cor-1);
     border-radius: 50%;
     position: absolute;
     animation: sway 2s infinite alternate ease-in-out;

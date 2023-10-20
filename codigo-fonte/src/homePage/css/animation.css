@@ -125,8 +125,21 @@
         right: 0px;
     }
 
+    .circle-1,
+    .circle-4,
+    .circle-6,
+    .circle-8 {
+        left: 0px;
+    }
+
+    .circle-4 {
+        width: 120px;
+        height: 120px;
+    }
+
     .circle-7 {
         width: 100px;
         height: 100px;
     }
+
 }

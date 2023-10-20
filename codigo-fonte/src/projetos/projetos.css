@@ -6,12 +6,7 @@
   --background-white: #2a1b3d;
 
 }
-/* 
---background-color-page:  #2a1b3d;
---standart-color-page: #44318d;
---background-cards: white;
---background-botao: #d83f87;
- */
+
  html{
     background-color: #2a1b3d;
     margin-top: 8px;
@@ -33,7 +28,7 @@ header{
 }
 
 .corpo{
-    padding-top: 35px;
+    padding-top: 20px;
     padding-bottom: 20px;
     margin: 0;
     background-color: #2a1b3d;
@@ -130,6 +125,7 @@ header{
 }
 .link-categoria{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
     display: flex;
     padding: 0;
     margin: 0;

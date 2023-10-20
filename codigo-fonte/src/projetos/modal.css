@@ -123,7 +123,14 @@
     background-color: #d83f87;
     color: white;
     font-size: 1.15em;
+    transition: background-color 0.5s;
 }
+.btn-participar:hover{
+    
+    background-color: #44318d;
+
+}
+
 .modal-dados-empresa-horas{
     font-size: 1.1em;
     width: 100%;
@@ -144,14 +151,17 @@
 }
 @media screen and (max-width: 576px)  {
     .modal-empresa{
-        width: 100%;
+        margin: 0;
+        padding: 5px;
+        width: auto;
         position:relative;
         top: auto;
         left: auto;
         right: auto;
     }
     .modal-horas{    
-        width: 100%;  
+        padding: 5px;
+        width: auto;  
         position:relative;
         top: auto;
         left: auto;
@@ -163,6 +173,20 @@
         flex-direction: column;
         height: 100%;
     }
-    
+    .img-empresa{
+        width: 25px;
+    }
+    .img-horas{
+        width: 25px;
+    }
+    .modal-horas h3{
+        font-size: 1em;
+    }
+    .modal-horas h4{
+        font-size: 0.6em;
+    }
+    .modal-empresa h3{
+        font-size: 1em;
+    }
 }
 

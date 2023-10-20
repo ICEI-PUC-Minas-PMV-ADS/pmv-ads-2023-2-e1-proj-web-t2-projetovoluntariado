@@ -61,7 +61,6 @@
 .modal-descricao-container{
     display: block;
     width: 100%;
-    
     padding-bottom: 50px;
     margin: 0;
     background-color: #2a1b3d;
@@ -78,10 +77,10 @@
     background-color: white;
 }
 .img-empresa{
-    width: 80px;
+    width: 45px;
 }
 .img-horas{
-    width: 80px;
+    width: 45px;
 }
 .modal-empresa{
     padding-left: 15px;
@@ -89,7 +88,7 @@
     width: 40%;
     display: inline-block;
     position: absolute;
-    top: -40px;
+    top: -22px;
     right: 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
@@ -100,9 +99,18 @@
     width: 40%;
     display: inline-block;
     position: absolute;
-    top: -40px;
+    top: -22px;
     left: 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.modal-horas h3{
+    font-size: 1.1em;
+}
+.modal-horas h4{
+    font-size: 0.8em;
+}
+.modal-empresa h3{
+    font-size: 1.1em;
 }
 .btn-participar{
     cursor: pointer;

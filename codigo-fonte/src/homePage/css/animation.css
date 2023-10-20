@@ -114,3 +114,19 @@
     right: -40px;
     top: 2350px;
 }
+
+@media (max-width: 767px) {
+
+    .circle-2,
+    .circle-3,
+    .circle-5,
+    .circle-7,
+    .circle-9 {
+        right: 0px;
+    }
+
+    .circle-7 {
+        width: 100px;
+        height: 100px;
+    }
+}

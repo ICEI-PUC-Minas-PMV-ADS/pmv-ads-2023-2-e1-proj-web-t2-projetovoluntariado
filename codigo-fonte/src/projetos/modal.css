@@ -27,6 +27,7 @@
     width: 60%;
     height: 80%;
     overflow: hidden;
+    box-shadow: 1px 10px 22px #616161;
 
 }
 .modal-header{

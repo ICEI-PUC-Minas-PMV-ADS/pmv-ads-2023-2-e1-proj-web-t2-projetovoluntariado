@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./perfilEmpresa.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/menu.css">
+</head>
 
 <body>
     <header>
@@ -46,59 +47,103 @@
     
     <main class="container" id="mainContent">
         <div class="section section-1">
-            <div class="row mt-5">
+            <div class="row mt-5 d-flex">
                 <div class="col-3">
                     <div class="card rounded-5 p-4 text-center">
-                          <img class="mx-auto mb-4 img-fluid perfil" src="./imagens/perfilempresaRoxo.png" >
-                            <h5>Empresa:</h5>
-                            <h3> Pharma PetVitalis</h3>
+                        <h3>Empresa:</h3>
+                          <img class="mx-auto mb-4 my-3 img-fluid perfil" src="./imagens/perfilempresaRoxo.png" >
+                            <h4> Pharma PetVitalis</h4>
+                            <div class="col text-center">
+                                <button class="btn btn-secondary my-4">Cadastrar novo projeto</button>
+                               </div>
                     </div>
-            </div>
+                </div>    
        
-            <div class="col-9">
-                <div class="card rounded-5 p-4 text-center">
-                    <h3>Projetos cadastrados:</h3>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-3 col-md-3 col-sm-12 mt-3">
-                            <div class="card rounded-5 card-projetos">
-                                <img class="mx-auto mb-4 img-fluid perfil" src="./imagens/ProjetoAnimais.jpg" >
-                                <h4 class="">Adote um AUmigo</h4>
-                                <h5>12 horas</h5>
-                                <div class="col text-center">
-                                    <button class="btn btn-secondary my-2">Encerrar</button>
+                <div class="col-9">
+                   <div class="card rounded-5 p-4 text-center">
+                       <h3>Projetos cadastrados:</h3>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3 col-md-3 col-sm-12 mt-3">
+                                <div class="card rounded-5 card-projetos">
+                                    <img class="mx-auto mb-4 img-fluid perfil" src="./imagens/ProjetoAnimais.jpg" >
+                                    <h4 class="">Adote um AUmigo</h4>
+                                    <h5>12 horas</h5>
+                                    <div class="col text-center">
+                                     <button class="btn btn-secondary my-2">Encerrar</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
             
-                        <div class="col-lg-3 col-md-3 col-sm-12 mt-3">
-                            <div class="card rounded-5 card-projetos">
-                                <img class="mx-auto mb-4 img-fluid perfil" src="./imagens/ProjetoEcologia.jpg" >
-                                <h4 class="">EcoVida</h4>
-                                <h5>6 horas</h5>
-                                <div class="col text-center">
-                                    <button class="btn btn-secondary my-2">Encerrar</button>
+                            <div class="col-lg-3 col-md-3 col-sm-12 mt-3">
+                                <div class="card rounded-5 card-projetos">
+                                    <img class="mx-auto mb-4 img-fluid perfil" src="./imagens/ProjetoEcologia.jpg" >
+                                    <h4 class="">EcoVida</h4>
+                                    <h5>6 horas</h5>
+                                    <div class="col text-center">
+                                        <button class="btn btn-secondary my-2">Encerrar</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
             
-                        <div class="col-lg-3 col-md-3 col-sm-12 mt-3">
-                            <div class="card rounded-5 card-projetos">
-                                <img class="mx-auto mb-4 img-fluid perfil" src="./imagens/ProjetoEducação.jpg" >
-                                <h4 class="tittle">Inglês Solidário</h4>
-                                <h5>60 horas</h5>
-                                <div class="col text-center">
-                                    <button class="btn btn-secondary my-2">Encerrar</button>
+                            <div class="col-lg-3 col-md-3 col-sm-12 mt-3">
+                                <div class="card rounded-5 card-projetos">
+                                    <img class="mx-auto mb-4 img-fluid perfil" src="./imagens/ProjetoEducação.jpg" >
+                                    <h4 class="tittle">Inglês Solidário</h4>
+                                    <h5>60 horas</h5>
+                                    <div class="col text-center">
+                                        <button class="btn btn-secondary my-2">Encerrar</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     
     </main>
 
+    
+    <footer>
+        <footer class="section text-center text-white">
+            <hr class="my-4" />
+            <div class="container">
+                <div class="row text-center d-flex justify-content-center">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Cadastre-se</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Login</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Projetos</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Contato</a>
+                        </h6>
+                    </div>
+                </div>
+                </section>
+            </div>
+            <hr class="my-4 mb-4" />
+            <div class="text-center p-3 rounded-4 mb-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                <p class="mb-1">Todos os direitos reservados</p>
+                <h6> © 2023 Copyright: VoluntaRia</h6>
+            </div>
+        </footer>
+    </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./perfilVoluntarioo.js"></script>
 
 </body>
+
+</html>

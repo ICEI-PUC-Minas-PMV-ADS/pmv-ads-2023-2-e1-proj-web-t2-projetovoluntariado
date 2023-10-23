@@ -19,10 +19,12 @@ A fonte padrão utilizada neste projeto é a "Monospace" fornecida pelo Bootstra
 O projeto utiliza um esquema de cores específico para manter uma identidade visual consistente. Abaixo estão as cores principais utilizadas no projeto:
 
 <img height="310" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/9bfb1bda-b197-4a3b-9048-ab6f00436718">
+<p>Figura 1 - Esquema de cores padrões utilizadas</p>
 
 ### Logo
 
 Nossa logo é uma parte essencial da identidade visual do projeto. Ela consiste no nome "VoluntaRia" escrito em estilo personalizado, com um grande sorriso que simboliza a alegria e a positividade associadas ao voluntariado. A escolha de incorporar um sorriso na logo representa o conceito de "ria" como sorrir, refletindo o espírito alegre e otimista do projeto.
 
 <img width="300" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/2d1f1c5f-cbed-4ef1-8520-26c25d4ae780">
+<p>Figura 2 - Imagem da logo desenvolvida para o projeto</p>
 

@@ -5,8 +5,9 @@
 }
 
 .nav-link:hover {
-    transform: scale(1.2);
-    transition: transform 0.2s ease-in-out;
+    font-size: 18px;
+    font-weight: 500;
+    transition: transform 0.4s ease-in-out;
 }
 
 .nav-link.active {
@@ -22,10 +23,14 @@
 }
 
 .navbar-toggler {
-    border: none;
+    border: none !important;
     outline: none;
 }
 
 .margin-adjust {
     margin-top: 190px;
+}
+
+#mainContent {
+    transition: margin 0.5s ease-in-out;
 }

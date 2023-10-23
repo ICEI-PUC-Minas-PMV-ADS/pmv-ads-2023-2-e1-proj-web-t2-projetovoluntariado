@@ -24,13 +24,5 @@ O projeto utiliza um esquema de cores específico para manter uma identidade vis
 
 Nossa logo é uma parte essencial da identidade visual do projeto. Ela consiste no nome "VoluntaRia" escrito em estilo personalizado, com um grande sorriso que simboliza a alegria e a positividade associadas ao voluntariado. A escolha de incorporar um sorriso na logo representa o conceito de "ria" como sorrir, refletindo o espírito alegre e otimista do projeto.
 
+<img width="300" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/2d1f1c5f-cbed-4ef1-8520-26c25d4ae780">
 
-
-[Apresente a estrutura padrão da sua aplicação.]
-
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)

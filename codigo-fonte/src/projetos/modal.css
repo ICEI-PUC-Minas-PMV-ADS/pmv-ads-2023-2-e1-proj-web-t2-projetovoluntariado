@@ -25,14 +25,14 @@
     border-radius: 10px;
     background-color: #2a1b3d;
     width: 60%;
-    height: 80%;
+    max-height: 80%;
     overflow: hidden;
     box-shadow: 1px 10px 22px #616161;
 
 }
 .modal-header{
     position: relative;
-    height: 80px;
+    max-height: 80px;
     background-color: #d83f87;
 }
 .modal-imagem-container{
@@ -41,19 +41,21 @@
     background: url("images/imagem-voluntarios-01.jpg");
     background-repeat: no-repeat;
     background-size:cover;
+    max-height: 100%;
     
 }
 .modal-footer{
     display: flex;
     align-self: center;
     margin: 0;
-    height: 100px;
+    height: 60px;
 }
 .modal-titulo{
     display: block;
     width: 100%;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
 
 }
 .fechar-modal{
@@ -62,7 +64,7 @@
 .modal-descricao-container{
     display: block;
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     margin: 0;
     background-color: #2a1b3d;
 
@@ -173,6 +175,9 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+    }
+    .modal-descricao-container{
+        padding-bottom: 0;
     }
     .img-empresa{
         width: 25px;

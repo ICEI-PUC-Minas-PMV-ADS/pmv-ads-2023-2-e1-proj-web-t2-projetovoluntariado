@@ -97,7 +97,7 @@ header{
     transition: background-color 0.5s;
 }
 .botao-vermais:hover{
-    background-color: #44318d;
+    background-color: #7f66a7;
 
 }
 
@@ -138,7 +138,7 @@ header{
 }
 
 .item-categoria:hover {
-    background-color: #d83f87;
+    background-color: #7f66a7;
 }
 .link-categoria:hover{
     color: white;

@@ -4,9 +4,9 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 [Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
 
-### Título da funcionalidade
+### HomePage
 
-[Adicione imagem da funcionalidade/tela]
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/145074016/40f7a7d7-30b3-43e3-b761-a3c4e1a4cee6)
 
 
 #### Requisito atendido
@@ -16,22 +16,65 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+●	index.html
+●	animation.css
+●	menu.css
+●	reset.css
+●	style.css
+●	variables.css
+● script.js
 
 
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
+[index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/blob/main/codigo-fonte/src/index.html)
 
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
+Abra um navegador de Internet e informe a seguinte URL: [HomePage](https://voluntaria.vercel.app/)
 
 
 #### Responsável
 
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+[Aleksander Romero](https://github.com/AleksanderRomero)
+
+
+
+### Tela de Projetos
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/145074016/64cd62dd-b393-40c5-8658-ab0fefb08734)
+
+
+
+#### Requisito atendido
+
+[RF-X: adicione a descrição do requisito atendido]
+
+
+#### Artefatos da funcionalidade
+
+●	menu.js
+●	modal - Copia.js
+●	modal.css
+●	modal.js
+●	projetos.css
+●	projetos.html
+●	projetos.js
+
+#### Estrutura de Dados
+
+[projetos.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/blob/main/codigo-fonte/src/projetos/projetos.html))
+
+
+#### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL: [Projetos](https://voluntaria.vercel.app/projetos/projetos.html)
+
+
+#### Responsável
+
+[Anderson Gomes](https://github.com/Dinhoop)
 
 
 

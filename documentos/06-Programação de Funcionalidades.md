@@ -220,7 +220,8 @@ Gabriela Araújo | [Gabriela Araújo](https://github.com/araujogabrielaa)
 
 ## Tela de certificado
 
-<img width="1001" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/84386289/98e0da1c-47c2-4bbd-89cf-f04505bd389f">
+<img width="950" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/6a36893c-9b44-47bf-bbc4-e0d179fe6aee">
+
 
 
 

@@ -183,3 +183,36 @@ Gabriela Araújo | [Gabriela Araújo](https://github.com/araujogabrielaa)
 
 ***
 
+## Tela de cadastro de projetos
+
+<img width="963" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/84386289/9dc930ea-589f-4beb-886b-19ea85116410">
+
+
+
+#### Requisito atendido
+
+RF-04: A aplicação deve possuir a funcionalidade para as organizações publicarem projetos.
+
+
+#### Artefatos da funcionalidade
+
+●	cadastroProjeto.css<br>
+●	cadastroProjeto.html<br>
+●	cadastroProjeto.js<br>
+
+
+#### Estrutura de Dados
+
+[cadastroProjeto.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/blob/main/codigo-fonte/src/cadastroProjeto/cadastroProjeto.html)
+
+
+#### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL: [PerfilEmpresa](https://voluntaria.vercel.app/cadastroProjeto/cadastroProjeto.html)
+
+#### Responsável
+
+Gabriela Araújo | [Gabriela Araújo](https://github.com/araujogabrielaa)
+
+***
+

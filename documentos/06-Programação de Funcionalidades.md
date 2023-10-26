@@ -47,6 +47,9 @@ Aleksander Cunha Garcia Romero | [Aleksander Romero](https://github.com/Aleksand
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/145074016/64cd62dd-b393-40c5-8658-ab0fefb08734)
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/e1c0143a-dab7-4c68-a336-00105890722c)
+
+
 
 #### Requisito atendido
 

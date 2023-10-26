@@ -48,11 +48,14 @@
 |ID    | Descrição                | Prioridade |
 |-------|---------------------------------|----|
 | RF-01 |  A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário.                    | Alta   | 
-| RF-02 |  Por parte do voluntário, a aplicação deve possuir um mecanismo de busca e filtro de projetos de acordo com a área de interesse.                    | Médio   |
+| RF-02 |  Por parte do voluntário, a aplicação deve possuir um mecanismo de filtro de projetos de acordo com a área de interesse.                    | Médio   |
 | RF-03 |  A aplicação deve permitir que o voluntário se inscreva em projetos.                    | Alta   |
 | RF-04 |  A aplicação deve possuir a funcionalidade para as organizações publicarem projetos.                    | Alta   |
 | RF-05 |  A aplicação deve possuir um mecanismo de rastreamento de horas de voluntariado.                    | Baixo   |
 | RF-06 |  A aplicação deve possuir um sistema de gamificação para reconhecimento e certificação dos voluntários.                     | Médio   |
+| RF-07 |  A aplicação deve permitir que o usuário registre-se no site.                    | Alta   |
+| RF-08 |  A aplicação deve possuir na tela de perfil voluntário uma forma de alterar avatares                    | Alta   |
+| RF-09 |  A aplicação deve possuir na tela de perfil voluntário uma forma de acompanhar os projetos em andamento.                    | Alta   |
 
 **Prioridade: Alta / Média / Baixa. 
 

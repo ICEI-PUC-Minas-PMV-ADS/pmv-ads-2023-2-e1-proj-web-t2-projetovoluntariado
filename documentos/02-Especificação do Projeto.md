@@ -56,6 +56,7 @@
 | RF-07 |  A aplicação deve permitir que o usuário registre-se no site.                    | Alta   |
 | RF-08 |  A aplicação deve possuir na tela de perfil voluntário uma forma de alterar avatares                    | Baixo   |
 | RF-09 |  A aplicação deve possuir nas telas de perfis uma forma de acompanhar os projetos em andamento e finalizá-los.                    | Médio   |
+| RF-10 |  A aplicação deve possuir uma tela inicial atrativa e convidativa com acesso aos outros fluxos de telas.                  | Alta   |
 
 **Prioridade: Alta / Média / Baixa. 
 

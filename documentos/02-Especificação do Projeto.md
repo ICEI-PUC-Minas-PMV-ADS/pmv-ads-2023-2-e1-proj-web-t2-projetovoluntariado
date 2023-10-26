@@ -54,8 +54,8 @@
 | RF-05 |  A aplicação deve possuir um mecanismo de rastreamento de horas de voluntariado.                    | Baixo   |
 | RF-06 |  A aplicação deve possuir um sistema de gamificação para reconhecimento e certificação dos voluntários.                     | Médio   |
 | RF-07 |  A aplicação deve permitir que o usuário registre-se no site.                    | Alta   |
-| RF-08 |  A aplicação deve possuir na tela de perfil voluntário uma forma de alterar avatares                    | Alta   |
-| RF-09 |  A aplicação deve possuir na tela de perfil voluntário uma forma de acompanhar os projetos em andamento.                    | Alta   |
+| RF-08 |  A aplicação deve possuir na tela de perfil voluntário uma forma de alterar avatares                    | Baixo   |
+| RF-09 |  A aplicação deve possuir na tela de perfil voluntário uma forma de acompanhar os projetos em andamento.                    | Médio   |
 
 **Prioridade: Alta / Média / Baixa. 
 

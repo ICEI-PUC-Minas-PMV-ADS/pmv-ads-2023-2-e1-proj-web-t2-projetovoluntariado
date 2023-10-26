@@ -8,7 +8,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 ## HomePage
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/145074016/40f7a7d7-30b3-43e3-b761-a3c4e1a4cee6)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/145074016/cbed1cb8-2e0d-4daf-8312-03d8fba6f795)
 
 
 #### Requisito atendido
@@ -116,7 +116,7 @@ Arthur de Andrade Simões | [Arthur Simões](https://github.com/ArthurSimoess)
 
 ## Tela de Perfil Voluntário
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/145074016/10da46d1-f83d-4ec2-83db-8b95cd459325)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/145074016/ddc07546-7959-4e6d-8b6a-fd3f8bd1df1e)
 
 
 #### Requisito atendido

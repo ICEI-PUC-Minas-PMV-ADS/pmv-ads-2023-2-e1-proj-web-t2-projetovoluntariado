@@ -51,6 +51,8 @@
     height: 60px;
 }
 .modal-titulo{
+    padding-top: 6px;
+    padding-bottom: 6px;
     display: block;
     width: 100%;
     color: white;

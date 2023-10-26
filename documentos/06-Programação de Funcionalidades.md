@@ -124,7 +124,7 @@ Arthur de Andrade Simões | [Arthur Simões](https://github.com/ArthurSimoess)
 RF-05: A aplicação deve possuir um mecanismo de rastreamento de horas de voluntariado.
 RF-06: A aplicação deve possuir um sistema de gamificação para reconhecimento e certificação dos voluntários.
 RF-08: A aplicação deve possuir na tela de perfil voluntário uma forma de alterar avatares.
-RF-09: A aplicação deve possuir na tela de perfil voluntário uma forma de acompanhar os projetos em andamento.
+RF-09: A aplicação deve possuir nas telas de perfis uma forma de acompanhar os projetos em andamento e finaliza-los.
 
 
 
@@ -150,9 +150,36 @@ Abra um navegador de Internet e informe a seguinte URL: [PerfilVoluntario](https
 
 ***
 
-> **Links Úteis**:
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+## Tela de Perfil Empresa
+
+<img width="766" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/84386289/8253e995-9fcf-4ae7-bcbc-09ad68109384">
+
+
+#### Requisito atendido
+
+RF-09: A aplicação deve possuir nas telas de perfis uma forma de acompanhar os projetos em andamento e finaliza-los.
+
+
+
+#### Artefatos da funcionalidade
+
+●	perfilEmpresa.css<br>
+●	perfilEmpresa.html<br>
+●	perfilEmpresa.js<br>
+
+
+#### Estrutura de Dados
+
+[perfilEmpresa.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/blob/main/codigo-fonte/src/perfilEmpresa/perfilEmpresa.html)
+
+
+#### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL: [PerfilEmpresa](https://voluntaria.vercel.app/perfilEmpresa/perfilEmpresa.html)
+
+#### Responsável
+
+Gabriela Araújo | [Gabriela Araújo](https://github.com/araujogabrielaa)
+
+***
 

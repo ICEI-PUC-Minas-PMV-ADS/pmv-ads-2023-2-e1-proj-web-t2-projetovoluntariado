@@ -240,7 +240,7 @@ RF-06: A aplicação deve possuir um sistema de gamificação para reconheciment
 
 #### Estrutura de Dados
 
-[cadastroProjeto.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/blob/main/codigo-fonte/src/certificacao/certificacao.html)
+[cerficacao.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/blob/main/codigo-fonte/src/certificacao/certificacao.html)
 
 
 #### Instruções de acesso

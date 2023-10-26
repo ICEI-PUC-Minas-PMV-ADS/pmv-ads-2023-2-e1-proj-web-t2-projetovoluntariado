@@ -208,11 +208,45 @@ RF-04: A aplicação deve possuir a funcionalidade para as organizações public
 
 #### Instruções de acesso
 
-Abra um navegador de Internet e informe a seguinte URL: [PerfilEmpresa](https://voluntaria.vercel.app/cadastroProjeto/cadastroProjeto.html)
+Abra um navegador de Internet e informe a seguinte URL: [CadastroProjeto](https://voluntaria.vercel.app/cadastroProjeto/cadastroProjeto.html)
 
 #### Responsável
 
 Gabriela Araújo | [Gabriela Araújo](https://github.com/araujogabrielaa)
 
 ***
+
+***
+
+## Tela de certificado
+
+<img width="1001" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/84386289/98e0da1c-47c2-4bbd-89cf-f04505bd389f">
+
+
+
+
+#### Requisito atendido
+
+RF-06: A aplicação deve possuir um sistema de gamificação para reconhecimento e certificação dos voluntários.
+
+
+#### Artefatos da funcionalidade
+
+●	certificacao.css<br>
+●	certificacao.html<br>
+●	certificacao.js<br>
+
+
+#### Estrutura de Dados
+
+[cadastroProjeto.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/blob/main/codigo-fonte/src/certificacao/certificacao.html)
+
+
+#### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL: [Certificado](https://voluntaria.vercel.app/certificacao/certificacao.html)
+
+#### Responsável
+
+Gabriela Araújo | [Gabriela Araújo](https://github.com/araujogabrielaa)
 

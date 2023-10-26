@@ -11,11 +11,6 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/145074016/cbed1cb8-2e0d-4daf-8312-03d8fba6f795)
 
 
-#### Requisito atendido
-
-[RF-X: adicione a descrição do requisito atendido]
-
-
 #### Artefatos da funcionalidade
 
 ●	index.html<br>
@@ -53,7 +48,8 @@ Aleksander Cunha Garcia Romero | [Aleksander Romero](https://github.com/Aleksand
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+RF-02: Por parte do voluntário, a aplicação deve possuir um mecanismo de filtro de projetos de acordo com a área de interesse.
+RF-03: A aplicação deve permitir que o voluntário se inscreva em projetos.
 
 
 #### Artefatos da funcionalidade
@@ -91,7 +87,8 @@ Anderson da Silva Gomes | [Anderson Gomes](https://github.com/Dinhoop)
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+RF-01: A aplicação deve disponibilizar uma forma de autenticação do usuário.
+RF-07: A aplicação deve permitir que o usuário registre-se no site.
 
 
 #### Artefatos da funcionalidade
@@ -124,19 +121,23 @@ Arthur de Andrade Simões | [Arthur Simões](https://github.com/ArthurSimoess)
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+RF-05: A aplicação deve possuir um mecanismo de rastreamento de horas de voluntariado.
+RF-06: A aplicação deve possuir um sistema de gamificação para reconhecimento e certificação dos voluntários.
+RF-08: A aplicação deve possuir na tela de perfil voluntário uma forma de alterar avatares.
+RF-09: A aplicação deve possuir na tela de perfil voluntário uma forma de acompanhar os projetos em andamento.
+
 
 
 #### Artefatos da funcionalidade
 
-●	perfilEmpresa.css<br>
-●	perfilEmpresa.html<br>
-●	perfilEmpresa.js<br>
+●	perfilVoluntarioo.css<br>
+●	perfilVoluntarioo.html<br>
+●	perfilVoluntarioo.js<br>
 
 
 #### Estrutura de Dados
 
-[perfilEmpresa.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/blob/main/codigo-fonte/src/perfilEmpresa/perfilEmpresa.html)
+[perfilVoluntarioo.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/blob/main/codigo-fonte/src/perfilVoluntario/perfilVoluntarioo.html)
 
 
 #### Instruções de acesso

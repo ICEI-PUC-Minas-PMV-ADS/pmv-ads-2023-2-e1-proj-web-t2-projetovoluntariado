@@ -6,11 +6,9 @@
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/145074016/cbed1cb8-2e0d-4daf-8312-03d8fba6f795)
 
 
-
 #### Requisito atendido
 
 RF-10: A aplicação deve possuir uma tela inicial atrativa e convidativa com acesso aos outros fluxos de telas.
-
 
 
 #### Artefatos da funcionalidade
@@ -45,7 +43,6 @@ Aleksander Cunha Garcia Romero | [Aleksander Romero](https://github.com/Aleksand
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/145074016/64cd62dd-b393-40c5-8658-ab0fefb08734)
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/e1c0143a-dab7-4c68-a336-00105890722c)
-
 
 
 #### Requisito atendido
@@ -129,7 +126,6 @@ RF-08: A aplicação deve possuir na tela de perfil voluntário uma forma de alt
 RF-09: A aplicação deve possuir nas telas de perfis uma forma de acompanhar os projetos em andamento e finaliza-los.
 
 
-
 #### Artefatos da funcionalidade
 
 ●	perfilVoluntarioo.css<br>
@@ -162,7 +158,6 @@ Abra um navegador de Internet e informe a seguinte URL: [PerfilVoluntario](https
 RF-09: A aplicação deve possuir nas telas de perfis uma forma de acompanhar os projetos em andamento e finaliza-los.
 
 
-
 #### Artefatos da funcionalidade
 
 ●	perfilEmpresa.css<br>
@@ -188,7 +183,6 @@ Gabriela Araújo | [Gabriela Araújo](https://github.com/araujogabrielaa)
 ## Tela de cadastro de projetos
 
 <img width="963" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/84386289/9dc930ea-589f-4beb-886b-19ea85116410">
-
 
 
 #### Requisito atendido
@@ -218,14 +212,9 @@ Gabriela Araújo | [Gabriela Araújo](https://github.com/araujogabrielaa)
 
 ***
 
-***
-
 ## Tela de certificado
 
 <img width="950" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/6a36893c-9b44-47bf-bbc4-e0d179fe6aee">
-
-
-
 
 
 #### Requisito atendido

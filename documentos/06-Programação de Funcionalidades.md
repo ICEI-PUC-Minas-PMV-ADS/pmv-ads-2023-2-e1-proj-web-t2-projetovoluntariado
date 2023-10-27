@@ -11,6 +11,13 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/145074016/cbed1cb8-2e0d-4daf-8312-03d8fba6f795)
 
 
+
+#### Requisito atendido
+
+RF-10: A aplicação deve possuir uma tela inicial atrativa e convidativa com acesso aos outros fluxos de telas.
+
+
+
 #### Artefatos da funcionalidade
 
 ●	index.html<br>

@@ -84,4 +84,13 @@ function deleteAllNodes(parentNodeClass){
     }
 }
 
+function deleteAllCards(parentName){
+    let parent = document.querySelector(parentName);
+    let cards = document.querySelectorAll(".container-card");
+    cards.forEach(function(card) {
+        console.log(card.textContent);
+        parent.removeChild(card);
+      });
+}
+
 

@@ -98,4 +98,27 @@ function categoryFilter(project, category){
         return project;
     }
 }
+//==============================================================================
+// Execucao
+var queryString = location.search;
+if(queryString){
+    
+    let categoryName=decodeURI(queryString.trim().split("=")[1]);
+    var filtrado = listaProjetos.filter(projeto =>categoryFilter(projeto, categoryName));
+    for(projeto in filtrado)
+    {
+      createCards(".grid-wrapper", filtrado[projeto], filtrado[projeto].id);
+    }
+}
+else
+{
+    for(const index in listaProjetos){
+   
+        createCards(".grid-wrapper", listaProjetos[index], listaProjetos[index].id);
+    }
+}
+
+
+createMenuLateral(categorias, ".menu-ul");
+createMenuLateral(categorias, ".menu-ul2");
 

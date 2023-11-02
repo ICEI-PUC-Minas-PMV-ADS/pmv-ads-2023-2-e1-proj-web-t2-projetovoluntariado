@@ -92,5 +92,10 @@ function deleteAllCards(parentName){
         parent.removeChild(card);
       });
 }
-
+function categoryFilter(project, category){
+    if(project.categoryName==category)
+    {
+        return project;
+    }
+}
 

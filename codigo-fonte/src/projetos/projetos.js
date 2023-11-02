@@ -63,4 +63,19 @@ function createCards(querySelector, projeto, indice)
 
 }
 
+function createMenuLateral(categorias, classNode){
+    let node = document.querySelector(classNode);
+    for(var categoria in categorias){
+        let li = document.createElement("li");
+        li.setAttribute("class", "item-categoria");
+        let a = document.createElement("a");
+        a.setAttribute("class", "link-categoria");
+        a.innerText = categorias[categoria];
+        a.setAttribute("href", "projetos.html?categoryName=" + encodeURI(categorias[categoria]));
+        li.appendChild(a);
+        node.appendChild(li);
+    }    
+}
+
+
 

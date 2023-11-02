@@ -31,5 +31,36 @@
     }
 }
 
+function createCards(querySelector, projeto, indice)
+{
+    let containerCard = document.createElement("div");
+    containerCard.setAttribute("class", "container-card");
+    
+    let imageCards = document.createElement("img");
+    imageCards.setAttribute("class", "image-cards");
+    imageCards.setAttribute("src", projeto.imgLink);
+    
+    let article = document.createElement("article");
+    
+    let h2 = document.createElement("h2");
+    h2.innerText = projeto.projectName;
+    
+    let p = document.createElement("p");
+    p.setAttribute("class", "botao-vermais");
+    p.innerText = "ver detalhes";
+    p.addEventListener("click",function(){
+        modal(indice);
+    });
+
+    containerCard.appendChild(imageCards);
+    article.appendChild(h2);
+    article.appendChild(p);
+    containerCard.appendChild(article);
+
+
+    var nodeLocal = document.querySelector(querySelector);
+    nodeLocal.appendChild(containerCard);
+
+}
 
 

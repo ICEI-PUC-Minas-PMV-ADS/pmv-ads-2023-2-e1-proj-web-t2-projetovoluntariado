@@ -77,5 +77,11 @@ function createMenuLateral(categorias, classNode){
     }    
 }
 
+function deleteAllNodes(parentNodeClass){
+    let parent = document.querySelector(parentNodeClass);
+    while(parent.firstChild){
+        parent.removeChild(parent.firstChild);
+    }
+}
 
 

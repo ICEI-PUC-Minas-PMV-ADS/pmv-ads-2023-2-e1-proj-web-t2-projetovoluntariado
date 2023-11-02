@@ -167,7 +167,7 @@ header{
 }
 
 .expanded-menu-1col{
-    height: 320px;
+    height: 520px;
 }
 
 
@@ -309,6 +309,9 @@ header{
     .menu-categoria {
         max-width: 260px;
         grid-row: 1 / 3;
+    }
+    .modal-body{
+        max-width: 50%;
     }
 
 }

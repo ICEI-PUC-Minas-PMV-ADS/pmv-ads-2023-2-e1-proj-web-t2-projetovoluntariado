@@ -1,7 +1,7 @@
-function expandNav(){
+ 
+ function expandNav(){
     element = document.getElementsByClassName('lista-categoria-1col');
     var iconeExpand = document.getElementById("icone-dropdown");
-    console.log(iconeExpand);
     if(element[0].classList.contains("expanded-menu-1col"))
     {
         element[0].classList.remove("expanded-menu-1col");
@@ -16,7 +16,7 @@ function expandNav(){
     }
 }
 
-function expandMenu(){
+ function expandMenu(){
     element = document.getElementsByClassName('flex-container-header');
 
     if(element[0].classList.contains("expanded-menu")){
@@ -30,3 +30,98 @@ function expandMenu(){
         
     }
 }
+
+function createCards(querySelector, projeto, indice)
+{
+    let containerCard = document.createElement("div");
+    containerCard.setAttribute("class", "container-card");
+    
+    let imageCards = document.createElement("img");
+    imageCards.setAttribute("class", "image-cards");
+    imageCards.setAttribute("src", projeto.imgLink);
+    
+    let article = document.createElement("article");
+    
+    let h2 = document.createElement("h2");
+    h2.innerText = projeto.projectName;
+    
+    let p = document.createElement("p");
+    p.setAttribute("class", "botao-vermais");
+    p.innerText = "ver detalhes";
+    p.addEventListener("click",function(){
+        modal(indice);
+    });
+
+    containerCard.appendChild(imageCards);
+    article.appendChild(h2);
+    article.appendChild(p);
+    containerCard.appendChild(article);
+
+
+    var nodeLocal = document.querySelector(querySelector);
+    nodeLocal.appendChild(containerCard);
+
+}
+
+function createMenuLateral(categorias, classNode){
+    let node = document.querySelector(classNode);
+    for(var categoria in categorias){
+        let li = document.createElement("li");
+        li.setAttribute("class", "item-categoria");
+        let a = document.createElement("a");
+        a.setAttribute("class", "link-categoria");
+        a.innerText = categorias[categoria];
+        a.setAttribute("href", "projetos.html?categoryName=" + encodeURI(categorias[categoria]));
+        li.appendChild(a);
+        node.appendChild(li);
+    }    
+}
+function deleteAllNodes(parentNodeClass){
+    let parent = document.querySelector(parentNodeClass);
+    while(parent.firstChild){
+        parent.removeChild(parent.firstChild);
+    }
+}
+function deleteAllCards(parentName){
+    let parent = document.querySelector(parentName);
+    let cards = document.querySelectorAll(".container-card");
+    cards.forEach(function(card) {
+        console.log(card.textContent);
+        parent.removeChild(card);
+      });
+}
+
+function categoryFilter(project, category){
+    if(project.categoryName==category)
+    {
+        return project;
+    }
+}
+
+
+//==============================================================================
+// Execucao
+var queryString = location.search;
+if(queryString){
+    
+    let categoryName=decodeURI(queryString.trim().split("=")[1]);
+    var filtrado = listaProjetos.filter(projeto =>categoryFilter(projeto, categoryName));
+    for(projeto in filtrado)
+    {
+      createCards(".grid-wrapper", filtrado[projeto], filtrado[projeto].id);
+    }
+}
+else
+{
+    for(const index in listaProjetos){
+   
+        createCards(".grid-wrapper", listaProjetos[index], listaProjetos[index].id);
+    }
+}
+
+
+createMenuLateral(categorias, ".menu-ul");
+createMenuLateral(categorias, ".menu-ul2");
+
+
+

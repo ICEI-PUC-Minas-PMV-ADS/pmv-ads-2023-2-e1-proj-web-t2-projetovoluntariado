@@ -31,25 +31,25 @@
     }
 }
 
-function createCards(querySelector, projeto, indice)
+function createCards(querySelector, project, index) // cria dinamicamente os cards e os anexa na classe passada como parametro
 {
     let containerCard = document.createElement("div");
     containerCard.setAttribute("class", "container-card");
     
     let imageCards = document.createElement("img");
     imageCards.setAttribute("class", "image-cards");
-    imageCards.setAttribute("src", projeto.imgLink);
+    imageCards.setAttribute("src", project.imgLink);
     
     let article = document.createElement("article");
     
     let h2 = document.createElement("h2");
-    h2.innerText = projeto.projectName;
+    h2.innerText = project.projectName;
     
     let p = document.createElement("p");
     p.setAttribute("class", "botao-vermais");
     p.innerText = "ver detalhes";
     p.addEventListener("click",function(){
-        modal(indice);
+        modal(index);
     });
 
     containerCard.appendChild(imageCards);
@@ -63,28 +63,28 @@ function createCards(querySelector, projeto, indice)
 
 }
 
-function createMenuLateral(categorias, classNode){
+function createMenuLateral(categories, classNode){ //Preenche o menu lateral com as categorias e seus links dinamicamente
     let node = document.querySelector(classNode);
-    for(var categoria in categorias){
+    for(var category in categories){
         let li = document.createElement("li");
         li.setAttribute("class", "item-categoria");
         let a = document.createElement("a");
         a.setAttribute("class", "link-categoria");
-        a.innerText = categorias[categoria];
-        a.setAttribute("href", "projetos.html?categoryName=" + encodeURI(categorias[categoria]));
+        a.innerText = categories[category];
+        a.setAttribute("href", "projetos.html?categoryName=" + encodeURI(categories[category]));
         li.appendChild(a);
         node.appendChild(li);
     }    
 }
 
-function deleteAllNodes(parentNodeClass){
+function deleteAllNodes(parentNodeClass){ // Deleta todos os nós abaixo do nó passado como parametro
     let parent = document.querySelector(parentNodeClass);
     while(parent.firstChild){
         parent.removeChild(parent.firstChild);
     }
 }
 
-function deleteAllCards(parentName){
+function deleteAllCards(parentName){ // deleta todos os cards
     let parent = document.querySelector(parentName);
     let cards = document.querySelectorAll(".container-card");
     cards.forEach(function(card) {
@@ -92,25 +92,25 @@ function deleteAllCards(parentName){
         parent.removeChild(card);
       });
 }
-function categoryFilter(project, category){
+function categoryFilter(project, category){ //Funcao para filtrar os projetos por categoria, usados com filter
     if(project.categoryName==category)
     {
         return project;
     }
 }
 //==============================================================================
-// Execucao
-var queryString = location.search;
+
+var queryString = location.search; //Verifica se há na barre de navegacao alguma query de filtro de categoria
 if(queryString){
     
     let categoryName=decodeURI(queryString.trim().split("=")[1]);
-    var filtrado = listaProjetos.filter(projeto =>categoryFilter(projeto, categoryName));
-    for(projeto in filtrado)
+    var filtered = listaProjetos.filter(project =>categoryFilter(project, categoryName));
+    for(project in filtered)
     {
-      createCards(".grid-wrapper", filtrado[projeto], filtrado[projeto].id);
+      createCards(".grid-wrapper", filtered[project], filtered[project].id);
     }
 }
-else
+else // sem query de pesquisa, carrega todos os cards
 {
     for(const index in listaProjetos){
    
@@ -119,6 +119,6 @@ else
 }
 
 
-createMenuLateral(categorias, ".menu-ul");
-createMenuLateral(categorias, ".menu-ul2");
+createMenuLateral(categorias, ".menu-ul"); // Cria o menu lateral
+createMenuLateral(categorias, ".menu-ul2"); //Cria o menu lateral expansivo
 

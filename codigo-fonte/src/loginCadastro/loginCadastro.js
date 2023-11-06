@@ -82,7 +82,11 @@ function authLogin(users, email, password) {
   if (findUser && findUser.password === password) {
     localStorage.setItem(
       "loginUser",
-      JSON.stringify({ email, typeUser: findUser.typeUser })
+      JSON.stringify({
+        email,
+        typeUser: findUser.typeUser,
+        projects: findUser.projects,
+      })
     );
     if (findUser.typeUser === "Voluntário") {
       console.log("alou");
@@ -257,6 +261,7 @@ function register() {
     email,
     password,
     typeUser,
+    projects: [],
   };
 
   let registers = [registerObject];

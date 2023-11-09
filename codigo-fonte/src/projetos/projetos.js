@@ -73,7 +73,8 @@ function createMenuLateral(categories, classNode){ //Preenche o menu lateral com
         a.innerText = categories[category];
         a.setAttribute("href", "projetos.html?categoryName=" + encodeURI(categories[category]));
         li.appendChild(a);
-        node.appendChild(li);
+        node.appendChi
+        ld(li);
     }    
 }
 
@@ -99,7 +100,14 @@ function categoryFilter(project, category){ //Funcao para filtrar os projetos po
     }
 }
 
-
+function isLogged() //Retorna o objeto LoginUser caso esteja logado do contrário null
+{
+    user = JSON.parse(localStorage.getItem("loginUser"));
+    if(user == null || user == undefined)
+        return null;
+    else
+        return user;
+}
 
 
 

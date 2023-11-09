@@ -148,7 +148,10 @@ function subscribe(index){
         }
     }
     else 
+    {
         window.alert("O usuário nao está logado");
+        window.location.replace("../loginCadastro/loginCadastro.html");
+    }
 }
 
 function getProjects(){
@@ -160,7 +163,9 @@ function getProjects(){
 }
 
 function setProjectsToLocalStorage(){
-    localStorage.setItem("projects", JSON.stringify(listaProjetos));
+    let projects = localStorage.getItem("projects");
+    if (projects == null || projects == undefined)
+      localStorage.setItem("projects", JSON.stringify(listaProjetos));
 }
 
 function checkisLoggedInMenu(){
@@ -189,7 +194,7 @@ else // sem query de pesquisa, carrega todos os cards
         createCards(".grid-wrapper", listaProjetos[index], listaProjetos[index].id);
     }
 }
-//setProjectsToLocalStorage();
+setProjectsToLocalStorage();
 
 createMenuLateral(categorias, ".menu-ul"); // Cria o menu lateral
 createMenuLateral(categorias, ".menu-ul2"); //Cria o menu lateral expansivo

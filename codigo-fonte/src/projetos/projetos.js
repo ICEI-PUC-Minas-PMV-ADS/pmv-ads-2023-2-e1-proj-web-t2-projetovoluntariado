@@ -132,7 +132,7 @@ function subscribe(index){
                     {   
                         if(!Array.isArray(users[user].projects))
                             users[user].projects =[];
-                        if(users[user].projects.length < 10){
+                        if(users[user].projects.length < 3){
                             users[user].projects.push(projects[project]);
                             localStorage.setItem("users", JSON.stringify(users));
                             modal(-1);

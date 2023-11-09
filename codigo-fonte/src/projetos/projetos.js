@@ -73,8 +73,7 @@ function createMenuLateral(categories, classNode){ //Preenche o menu lateral com
         a.innerText = categories[category];
         a.setAttribute("href", "projetos.html?categoryName=" + encodeURI(categories[category]));
         li.appendChild(a);
-        node.appendChi
-        ld(li);
+        node.appendChild(li);
     }    
 }
 
@@ -127,12 +126,21 @@ function subscribe(index){
             if(users[user].email == userLogged.email)
             {
                 console.log(users[user].name);
-                let userTemp = {
+                let userTemp = [{
                     name : users[user].name,
                     email : users[user].email,
                     password: users[user].password,
                     typeUser: users[user].typeUser,
                     projects: users[user].projects
+                }]
+                let projects = getProjects();
+                for(IndexProject in projects)
+                {
+                    if(index = projects[IndexProject].id)
+                    {   
+                        users[user].projects = projects[IndexProject];
+                        localStorage.setItem("users", JSON.stringify(users));
+                    }
                 }
 
             
@@ -141,6 +149,18 @@ function subscribe(index){
     }
     else 
         window.alert("O usuário nao está logado");
+}
+
+function getProjects(){
+    let projects = JSON.parse(localStorage.getItem("projects"));
+    if(projects != null)
+        return projects;
+    else
+        return null;
+}
+
+function setProjectsToLocalStorage(){
+    localStorage.setItem("projects", JSON.stringify(listaProjetos));
 }
 
 //==============================================================================
@@ -162,7 +182,7 @@ else // sem query de pesquisa, carrega todos os cards
         createCards(".grid-wrapper", listaProjetos[index], listaProjetos[index].id);
     }
 }
-
+//setProjectsToLocalStorage();
 
 createMenuLateral(categorias, ".menu-ul"); // Cria o menu lateral
 createMenuLateral(categorias, ".menu-ul2"); //Cria o menu lateral expansivo

@@ -109,6 +109,14 @@ function isLogged() //Retorna o objeto LoginUser caso esteja logado do contrári
         return user;
 }
 
+function getUsers()
+{
+    users = localStorage.getItem("users");
+    if(users != null)
+        return JSON.parse(users);
+    else
+        return null;
+}
 
 
 //==============================================================================

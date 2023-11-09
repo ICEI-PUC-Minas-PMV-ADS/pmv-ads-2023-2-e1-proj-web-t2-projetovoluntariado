@@ -136,6 +136,7 @@ function subscribe(index){
                             users[user].projects.push(projects[project]);
                             localStorage.setItem("users", JSON.stringify(users));
                             modal(-1);
+                            window.alert("Você se inscreveu com sucesso");
                             window.location.replace("../perfilVoluntario/perfilvoluntarioo.html");
                         }                        
                         else
@@ -160,6 +161,13 @@ function getProjects(){
 
 function setProjectsToLocalStorage(){
     localStorage.setItem("projects", JSON.stringify(listaProjetos));
+}
+
+function checkisLoggedInMenu(){
+    let loggedNodeText = document.querySelector(".entrar-sair");
+    userLogged = isLogged();
+    if(userLogged != null)
+        loggedNodeText.innerText = "Sair";
 }
 
 //==============================================================================
@@ -187,4 +195,5 @@ createMenuLateral(categorias, ".menu-ul"); // Cria o menu lateral
 createMenuLateral(categorias, ".menu-ul2"); //Cria o menu lateral expansivo
 
 console.log(isLogged());
+checkisLoggedInMenu();
 

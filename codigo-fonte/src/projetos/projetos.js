@@ -125,25 +125,22 @@ function subscribe(index){
         for(user in users){
             if(users[user].email == userLogged.email)
             {
-                console.log(users[user].name);
-                let userTemp = [{
-                    name : users[user].name,
-                    email : users[user].email,
-                    password: users[user].password,
-                    typeUser: users[user].typeUser,
-                    projects: users[user].projects
-                }]
                 let projects = getProjects();
-                for(IndexProject in projects)
+                for(project in projects)
                 {
-                    if(index = projects[IndexProject].id)
+                    if(index == projects[project].id)
                     {   
-                        users[user].projects = projects[IndexProject];
-                        localStorage.setItem("users", JSON.stringify(users));
+                        if(!Array.isArray(users[user].projects))
+                            users[user].projects =[];
+                        if(users[user].projects.length < 3){
+                            users[user].projects.push(projects[project]);
+                            localStorage.setItem("users", JSON.stringify(users));
+                        }                        
+                        else
+                            window.alert("Voce só pode se increver em até 3 projetos.");
+                   
                     }
                 }
-
-            
             }
         }
     }

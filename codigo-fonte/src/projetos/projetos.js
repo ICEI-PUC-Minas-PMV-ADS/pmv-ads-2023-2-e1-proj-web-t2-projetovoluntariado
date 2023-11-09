@@ -118,6 +118,30 @@ function getUsers()
         return null;
 }
 
+function subscribe(index){
+    userLogged = isLogged();
+    if(userLogged != null)
+    {
+        users = getUsers();
+        for(user in users){
+            if(users[user].email == userLogged.email)
+            {
+                console.log(users[user].name);
+                let userTemp = {
+                    name : users[user].name,
+                    email : users[user].email,
+                    password: users[user].password,
+                    typeUser: users[user].typeUser,
+                    projects: users[user].projects
+                }
+
+            
+            }
+        }
+    }
+    else 
+        window.alert("O usuário nao está logado");
+}
 
 //==============================================================================
 

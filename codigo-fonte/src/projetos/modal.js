@@ -23,6 +23,7 @@ function modal(indice){
         let modal_disponibilidade = document.querySelector(".disponibilidade");
         let modal_instituicao = document.querySelector(".nomeEmpresa");
         let modal_image_container = document.getElementById("modalImg");
+        let modal_link = document.querySelector(".btn-participar");
         
 
         for(projeto in listaProjetos)
@@ -35,6 +36,7 @@ function modal(indice){
                 modal_instituicao.innerText = listaProjetos[parseInt(projeto)].instituitionName;
                 let novaImagem = "url("+ listaProjetos[parseInt(projeto)].imgLink + ")";
                 modal_image_container.style.backgroundImage =  novaImagem;
+                modal_link.setAttribute("onclick", "subscribe(" + indice + ")");
             }
         }
         

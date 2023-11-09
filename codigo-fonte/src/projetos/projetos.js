@@ -98,9 +98,14 @@ function categoryFilter(project, category){ //Funcao para filtrar os projetos po
         return project;
     }
 }
+
+
+
+
+
 //==============================================================================
 
-var queryString = location.search; //Verifica se há na barre de navegacao alguma query de filtro de categoria
+var queryString = location.search; //Verifica se há na barra de navegacao alguma query de filtro de categoria
 if(queryString){
     
     let categoryName=decodeURI(queryString.trim().split("=")[1]);
@@ -121,4 +126,6 @@ else // sem query de pesquisa, carrega todos os cards
 
 createMenuLateral(categorias, ".menu-ul"); // Cria o menu lateral
 createMenuLateral(categorias, ".menu-ul2"); //Cria o menu lateral expansivo
+
+console.log(isLogged());
 

@@ -43,3 +43,15 @@ function modal(indice){
        
     }
 }
+
+function modalSubscribe(){
+    const modal = document.getElementById("exampleModal");
+    if(modal){
+        modal.addEventListener('click', event=>{
+          var meumodal = new bootstrap.Modal(document.getElementById("exampleModal"));
+          meumodal.show();
+
+        })
+    }
+
+}

@@ -47,7 +47,7 @@ function createCards(querySelector, project, index) // cria dinamicamente os car
     
     let p = document.createElement("p");
     p.setAttribute("class", "botao-vermais");
-    p.innerText = "ver detalhes";
+    p.innerText = "Ver detalhes";
     p.addEventListener("click",function(){
         modal(index);
     });
@@ -132,12 +132,14 @@ function subscribe(index){
                     {   
                         if(!Array.isArray(users[user].projects))
                             users[user].projects =[];
-                        if(users[user].projects.length < 3){
+                        if(users[user].projects.length < 20){
                             users[user].projects.push(projects[project]);
                             localStorage.setItem("users", JSON.stringify(users));
                             modal(-1);
-                            window.alert("Você se inscreveu com sucesso");
-                            window.location.replace("../perfilVoluntario/perfilvoluntarioo.html");
+                            modalSubscribe();
+                           // window.alert("Você se inscreveu com sucesso");
+                            //window.location.replace("../perfilVoluntario/perfilvoluntarioo.html");
+                            
                         }                        
                         else
                             window.alert("Voce só pode se increver em até 3 projetos.");
@@ -173,6 +175,18 @@ function checkisLoggedInMenu(){
     userLogged = isLogged();
     if(userLogged != null)
         loggedNodeText.innerText = "Sair";
+}
+
+function modalSubscribe(){
+    var modal = document.getElementById("exampleModal");
+    if(modal){
+        modal.addEventListener('click', function(){
+          var meumodal = new bootstrap.Modal.getOrCreateInstance(document.getElementById("exampleModal"));
+          meumodal.show();
+
+        })
+    }
+
 }
 
 //==============================================================================

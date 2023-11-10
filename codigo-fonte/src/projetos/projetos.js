@@ -132,13 +132,19 @@ function subscribe(index){
                     {   
                         if(!Array.isArray(users[user].projects))
                             users[user].projects =[];
-                        if(users[user].projects.length < 40){
+                        if(users[user].projects.length < 50){
                             users[user].projects.push(projects[project]);
                             localStorage.setItem("users", JSON.stringify(users));
                             modal(-1);
-                            modalSubscribe();
-                           // window.alert("Você se inscreveu com sucesso");
-                           // window.location.replace("../perfilVoluntario/perfilVoluntarioo.html");
+                            Swal.fire({
+                                position: "center",
+                                title: `Parabéns!`,
+                                text: "Sua inscrição foi efetuada com sucesso",
+                                icon: "success",
+                                showConfirmButton: false,
+                                timer: 2000,
+                              });
+                           window.location.replace("../perfilVoluntario/perfilVoluntarioo.html");
                             
                         }                        
                         else
@@ -177,12 +183,6 @@ function checkisLoggedInMenu(){
         loggedNodeText.innerText = "Sair";
 }
 
-function modalSubscribe(){
-    let modal = document.getElementById("exampleModal");
-    let meumodalBootstrap = new bootstrap.Modal(document.getElementById("exampleModal"));
-    meumodalBootstrap.show();
-
-}
 
 //==============================================================================
 

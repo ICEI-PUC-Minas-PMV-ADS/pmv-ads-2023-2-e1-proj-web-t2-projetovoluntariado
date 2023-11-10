@@ -168,8 +168,18 @@ function subscribe(index){
     }
     else 
     {
-        window.alert("O usuário nao está logado");
-        window.location.replace("../loginCadastro/loginCadastro.html");
+        Swal.fire({
+            position: "center",
+            title: `Erro!`,
+            text: "Você precisa estar logado para se inscrever nos projetos.",
+            icon: "error",
+            showConfirmButton: false,
+            timer: 2000,
+          });
+          setInterval(()=>{
+            window.location.replace("../loginCadastro/loginCadastro.html");
+       },3700);
+        
     }
 }
 

@@ -132,7 +132,7 @@ function subscribe(index){
                     {   
                         if(!Array.isArray(users[user].projects))
                             users[user].projects =[];
-                        if(users[user].projects.length < 50){
+                        if(users[user].projects.length < 3){
                             users[user].projects.push(projects[project]);
                             localStorage.setItem("users", JSON.stringify(users));
                             modal(-1);
@@ -142,7 +142,7 @@ function subscribe(index){
                                 text: "Sua inscrição foi efetuada com sucesso",
                                 icon: "success",
                                 showConfirmButton: false,
-                                timer: 2000,
+                                timer: 4000,
                               });
                            setInterval(()=>{
                                 window.location.replace("../perfilVoluntario/perfilVoluntarioo.html");
@@ -150,7 +150,16 @@ function subscribe(index){
                             
                         }                        
                         else
-                            window.alert("Voce só pode se increver em até 3 projetos.");
+                            {
+                                Swal.fire({
+                                    position: "center",
+                                    title: `Erro!`,
+                                    text: "Só é possível se inscrever em até 3 projetos.",
+                                    icon: "error",
+                                    showConfirmButton: false,
+                                    timer: 2000,
+                                  });
+                            }
                    
                     }
                 }

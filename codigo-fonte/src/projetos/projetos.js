@@ -144,7 +144,9 @@ function subscribe(index){
                                 showConfirmButton: false,
                                 timer: 2000,
                               });
-                           window.location.replace("../perfilVoluntario/perfilVoluntarioo.html");
+                           setInterval(()=>{
+                                window.location.replace("../perfilVoluntario/perfilVoluntarioo.html");
+                           },2500);
                             
                         }                        
                         else

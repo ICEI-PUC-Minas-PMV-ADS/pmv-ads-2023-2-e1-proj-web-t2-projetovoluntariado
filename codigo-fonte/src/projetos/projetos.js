@@ -138,7 +138,7 @@ function subscribe(index){
                             modal(-1);
                             modalSubscribe();
                            // window.alert("Você se inscreveu com sucesso");
-                            window.location.replace("../perfilVoluntario/perfilvoluntarioo.html");
+                            window.location.replace("../perfilVoluntario/perfilVoluntarioo.html");
                             
                         }                        
                         else

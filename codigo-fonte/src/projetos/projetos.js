@@ -126,19 +126,19 @@ function subscribe(index){
             if(users[user].email == userLogged.email)
             {
                 let projects = getProjects();
-                for(project in projects)
+                for(let project in projects)
                 {
                     if(index == projects[project].id)
                     {   
                         if(!Array.isArray(users[user].projects))
                             users[user].projects =[];
-                        if(users[user].projects.length < 20){
+                        if(users[user].projects.length < 40){
                             users[user].projects.push(projects[project]);
                             localStorage.setItem("users", JSON.stringify(users));
                             modal(-1);
                             modalSubscribe();
                            // window.alert("Você se inscreveu com sucesso");
-                            window.location.replace("../perfilVoluntario/perfilVoluntarioo.html");
+                           // window.location.replace("../perfilVoluntario/perfilVoluntarioo.html");
                             
                         }                        
                         else
@@ -178,14 +178,9 @@ function checkisLoggedInMenu(){
 }
 
 function modalSubscribe(){
-    var modal = document.getElementById("exampleModal");
-    if(modal){
-        modal.addEventListener('click', function(){
-          var meumodal = new bootstrap.Modal.getOrCreateInstance(document.getElementById("exampleModal"));
-          meumodal.show();
-
-        })
-    }
+    let modal = document.getElementById("exampleModal");
+    let meumodalBootstrap = new bootstrap.Modal(document.getElementById("exampleModal"));
+    meumodalBootstrap.show();
 
 }
 

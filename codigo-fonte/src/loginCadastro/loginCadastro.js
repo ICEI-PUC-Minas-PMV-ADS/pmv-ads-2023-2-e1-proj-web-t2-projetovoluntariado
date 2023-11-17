@@ -85,7 +85,6 @@ function authLogin(users, email, password) {
       JSON.stringify({
         email,
         typeUser: findUser.typeUser,
-        projects: findUser.projects,
       })
     );
     if (findUser.typeUser === "Voluntário") {
@@ -298,8 +297,3 @@ function register() {
 }
 
 btnRegister.addEventListener("click", register);
-
-
-// atila local storage
-const nomeUsuario = "Jonas";
-localStorage.setItem('nomeUsuario', nomeUsuario);

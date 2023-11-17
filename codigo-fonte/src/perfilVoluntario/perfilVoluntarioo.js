@@ -26,7 +26,7 @@ function finalizar() {
 }
 
 
-
+// imagem perfil botao next e back
 const imageButton = document.querySelector('.btn-imagem-perfil');
 const backButton = document.querySelector('.btn-back');
 const nextButton = document.querySelector('.btn-next');
@@ -65,7 +65,17 @@ nextButton.addEventListener('click' , () => {
     perfilImagem.src = images[atualIndex];
 });
 
-
+// link certificado
 document.getElementById("emitirCertificadoBtn").addEventListener('click', function(){
     window.open('../certificacao/certificacao.html', '_blank')
 })
+
+
+// local storage
+
+const nomeUsuario = localStorage.getItem('nomeUsuario');
+if(nomeUsuario){
+    document.getElementById('nomeUsuario').textContent = nomeUsuario;
+} else {
+    console.log('Nome de usuario não encontrado.');
+}

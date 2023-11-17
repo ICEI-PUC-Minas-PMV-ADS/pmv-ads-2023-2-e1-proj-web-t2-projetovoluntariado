@@ -298,3 +298,8 @@ function register() {
 }
 
 btnRegister.addEventListener("click", register);
+
+
+// atila local storage
+const nomeUsuario = "Jonas";
+localStorage.setItem('nomeUsuario', nomeUsuario);

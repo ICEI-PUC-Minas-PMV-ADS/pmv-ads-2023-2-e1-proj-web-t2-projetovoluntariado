@@ -84,6 +84,7 @@ function authLogin(users, email, password) {
       "loginUser",
       JSON.stringify({
         email,
+        name: findUser.name,
         typeUser: findUser.typeUser,
       })
     );

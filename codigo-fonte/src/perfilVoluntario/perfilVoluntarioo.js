@@ -73,7 +73,7 @@ document.getElementById("emitirCertificadoBtn").addEventListener('click', functi
 
 // local storage
 
-const nomeUsuario = JSON.stringify(localStorage.getItem('loginUsers'));
+const nomeUsuario = JSON.stringify(localStorage.getItem('loginUser'));
 if(nomeUsuario){
     document.getElementById('nomeUsuario').textContent = nomeUsuario.name;
 } else {

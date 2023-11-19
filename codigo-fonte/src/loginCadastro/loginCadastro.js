@@ -298,11 +298,11 @@ function register() {
 }
 
 btnRegister.addEventListener("click", register);
-<<<<<<< HEAD
+// <<<<<<< HEAD
 
 
-// atila local storage
-const nomeUsuario = 
-localStorage.setItem('nomeUsuario', nomeUsuario);
-=======
->>>>>>> 01281746c3c484693a49c4696479a3e5f66aca1a
+// // atila local storage
+// const nomeUsuario = 
+// localStorage.setItem('nomeUsuario', nomeUsuario);
+// =======
+// >>>>>>> 01281746c3c484693a49c4696479a3e5f66aca1a

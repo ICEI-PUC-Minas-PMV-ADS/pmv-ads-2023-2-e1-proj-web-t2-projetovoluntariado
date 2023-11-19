@@ -73,9 +73,9 @@ document.getElementById("emitirCertificadoBtn").addEventListener('click', functi
 
 // local storage
 
-const nomeUsuario = localStorage.getItem('nomeUsuario');
+const nomeUsuario = JSON.stringify(localStorage.getItem('loginUsers'));
 if(nomeUsuario){
-    document.getElementById('nomeUsuario').textContent = nomeUsuario;
+    document.getElementById('nomeUsuario').textContent = nomeUsuario.name;
 } else {
     console.log('Nome de usuario não encontrado.');
 }

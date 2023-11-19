@@ -44,7 +44,9 @@ header{
     
 }
 
-
+.my-4{
+    
+}
 .menu-categoria-1col{
     display: none;
     margin-left: 15px;
@@ -305,6 +307,9 @@ header{
     .container-card {
         max-width: 260px;
         margin:0;
+    }
+    .container-card h2{
+        text-align: center;
     }
     .menu-categoria {
         max-width: 260px;

@@ -84,13 +84,13 @@ function deleteAllNodes(parentNodeClass){ // Deleta todos os nós abaixo do nó 
     }
 }
 
-function deleteAllCards(parentName){ // deleta todos os cards
-    let parent = document.querySelector(parentName);
-    let cards = document.querySelectorAll(".container-card");
-    cards.forEach(function(card) {
-        parent.removeChild(card);
-      });
-}
+// function deleteAllCards(parentName){ // deleta todos os cards
+//     let parent = document.querySelector(parentName);
+//     let cards = document.querySelectorAll(".container-card");
+//     cards.forEach(function(card) {
+//         parent.removeChild(card);
+//       });
+// }
 function categoryFilter(project, category){ //Funcao para filtrar os projetos por categoria, usados com filter
     if(project.categoryName==category && project.isActive ==1)
     {
@@ -211,7 +211,7 @@ function getProjects(){
         return null;
 }
 
-function setProjectsToLocalStorage(){
+function setProjectsToLocalStorage(){ //Faz a primeira gravacao do localStorage caso nao existam projetos salvos no navegador
     let projects = localStorage.getItem("projects");
     if (projects == null || projects == undefined)
       localStorage.setItem("projects", JSON.stringify(listaProjetos));

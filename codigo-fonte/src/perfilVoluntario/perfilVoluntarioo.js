@@ -55,18 +55,18 @@ imageButton.addEventListener('click', () => {
 
 
 
-backButton.addEventListener('click' , () => {
+backButton.addEventListener('click', () => {
     atualIndex = (atualIndex - 1 + images.length) % images.length;
     perfilImagem.src = images[atualIndex];
 });
 
-nextButton.addEventListener('click' , () => {
+nextButton.addEventListener('click', () => {
     atualIndex = (atualIndex + 1) % images.length;
     perfilImagem.src = images[atualIndex];
 });
 
 // link certificado
-document.getElementById("emitirCertificadoBtn").addEventListener('click', function(){
+document.getElementById("emitirCertificadoBtn").addEventListener('click', function () {
     window.open('../certificacao/certificacao.html', '_blank')
 })
 

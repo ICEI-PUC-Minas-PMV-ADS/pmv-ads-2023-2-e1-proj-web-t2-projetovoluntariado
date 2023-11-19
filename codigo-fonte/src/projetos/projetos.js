@@ -84,54 +84,53 @@ function deleteAllNodes(parentNodeClass){ // Deleta todos os nós abaixo do nó 
     }
 }
 
-function deleteAllCards(parentName){ // deleta todos os cards
-    let parent = document.querySelector(parentName);
-    let cards = document.querySelectorAll(".container-card");
-    cards.forEach(function(card) {
-        parent.removeChild(card);
-      });
-}
+// function deleteAllCards(parentName){ // deleta todos os cards
+//     let parent = document.querySelector(parentName);
+//     let cards = document.querySelectorAll(".container-card");
+//     cards.forEach(function(card) {
+//         parent.removeChild(card);
+//       });
+// }
 function categoryFilter(project, category){ //Funcao para filtrar os projetos por categoria, usados com filter
-    if(project.categoryName==category)
+    if(project.categoryName==category && project.isActive ==1)
     {
         return project;
     }
 }
 
-function isLogged() //Retorna o objeto LoginUser caso esteja logado do contrário null
-{
-    user = JSON.parse(localStorage.getItem("loginUser"));
-    if(user == null || user == undefined)
-        return null;
-    else
-        return user;
-}
-
-function getUsers()
-{
-    users = localStorage.getItem("users");
-    if(users != null)
-        return JSON.parse(users);
-    else
-        return null;
-}
-
 function subscribe(index){
     userLogged = isLogged();
+    let = numProjectsSubscribed = 0;
     if(userLogged != null)
     {
         users = getUsers();
         for(user in users){
             if(users[user].email == userLogged.email)
             {
-                let projects = getProjects();
+                if(users[user].typeUser=="Empresa")
+                {
+                    Swal.fire({
+                        position: "center",
+                        title: `Erro!`,
+                        text: "Empresas e(ou) organizações não podem se inscrever em projetos.",
+                        icon: "error",
+                        showConfirmButton: false,
+                        timer: 2000,
+                      });
+                }
+                else{
+                    let projects = getProjects();
                 for(let project in projects)
                 {
                     if(index == projects[project].id)
                     {   
                         if(!Array.isArray(users[user].projects))
                             users[user].projects =[];
-                        if(users[user].projects.length < 3){
+                        users[user].projects.forEach(project => {
+                            if(project.userCompleted === 0)
+                                numProjectsSubscribed++;
+                        });
+                        if(numProjectsSubscribed < 3){
                             users[user].projects.push(projects[project]);
                             localStorage.setItem("users", JSON.stringify(users));
                             modal(-1);
@@ -162,6 +161,10 @@ function subscribe(index){
                    
                     }
                 }
+
+
+                }
+                
             }
         }
     }
@@ -182,45 +185,6 @@ function subscribe(index){
     }
 }
 
-function getProjects(){
-    let projects = JSON.parse(localStorage.getItem("projects"));
-    if(projects != null)
-        return projects;
-    else
-        return null;
-}
-
-function setProjectsToLocalStorage(){
-    let projects = localStorage.getItem("projects");
-    if (projects == null || projects == undefined)
-      localStorage.setItem("projects", JSON.stringify(listaProjetos));
-}
-
-function checkisLoggedInMenu(){
-    let loggedNodeText = document.querySelector(".entrar-sair");
-    userLogged = isLogged();
-    if(userLogged != null)
-    {
-        loggedNodeText.innerText = "Sair";
-        loggedNodeText.setAttribute("href","#");
-        loggedNodeText.addEventListener("click", ()=>{
-            localStorage.setItem("loginUser", null);
-            Swal.fire({
-                position: "center",
-                title: `Logout... `,
-                text: "Logout feito com sucesso, você será redirecionado para a página principal",
-                icon: "success",
-                showConfirmButton: false,
-                timer: 2000,
-              });
-              setInterval(()=>{
-                location.replace("../index.html");
-           },3700);
-            
-        });
-    }
-}
-
 
 //==============================================================================
 
@@ -236,16 +200,14 @@ if(queryString){
 }
 else // sem query de pesquisa, carrega todos os cards
 {
-    for(const index in listaProjetos){
+    listaProjetos.forEach( (project)=>{createCards(".grid-wrapper", project, project.id);} );
+    // for(const index in listaProjetos){
    
-        createCards(".grid-wrapper", listaProjetos[index], listaProjetos[index].id);
-    }
+    //     createCards(".grid-wrapper", listaProjetos[index], listaProjetos[index].id);
+    // }
 }
 setProjectsToLocalStorage();
-
 createMenuLateral(categorias, ".menu-ul"); // Cria o menu lateral
 createMenuLateral(categorias, ".menu-ul2"); //Cria o menu lateral expansivo
-
-console.log(isLogged());
 checkisLoggedInMenu();
 

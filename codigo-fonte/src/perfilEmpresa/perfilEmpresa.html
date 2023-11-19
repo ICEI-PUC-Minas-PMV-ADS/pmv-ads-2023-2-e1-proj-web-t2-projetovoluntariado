@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./perfilEmpresa.css">
     <link rel="stylesheet" href="./css/menu.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.all.min.js"></script>
 </head>
 
 <body>
@@ -37,7 +38,7 @@
                             <a class="nav-link active" href="./perfilEmpresa/perfilEmpresa.html">Perfil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sair</a>
+                            <a class="nav-link .entrar-sair" href="#">Sair</a>
                         </li>
                     </ul>
                 </div>
@@ -47,56 +48,55 @@
 
     <main class="container" id="mainContent">
         <div class="section section-1">
-            <div class="row mt-5 d-flex"> <!-- largura/altura da row-->
+            <div class="row mt-5 d-flex">
                 <div class="col-lg-3 col-md-12 col-sm-12 text-white text-center mt-lg-5 mt-md-2 mt-sm-2">
-                    <!-- colunas row-->
                     <h3>Empresa</h3>
-                    <div class="card rounded-5 card-projetos border-0"> <!-- classe arredondando-->
-                        <img class="mx-auto mb-4 img-fluid perfil rounded-5" src="./imagens/perfilempresaRoxo.png">
+                    <div class="card rounded-5 card-projetos border-0">
+                        <img class="mx-auto mb-4 img-fluid perfil rounded-5" src="./imagens/perfilEmpresa.png">
                         <h4 class="">Pet Vitallis</h4>
-                        <h5>3 projetos</h5>
-                        <div class="col text-center margin">
-                            <button class="btn btn-secondary my-2">Cadastrar Projeto</button>
+                        <h5> <span id="totalProjetos">3</span> projetos </h5>
+                         <div class="col text-center margin">
+                            <button id="cadastrarProjetoBtn" class="btn btn-secondary my-2">Cadastrar projeto</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-9 col-md-12 col-sm-12 text-white text-center mt-5"> <!-- colunas row-->
+                <div class="col-lg-9 col-md-12 col-sm-12 text-white text-center mt-5"> 
                     <h3>Projetos ativos</h3>
                     <div class="card rounded-5 text-center">
-                        <div class="row justify-content-center"> <!-- largura/altura da row-->
-                            <div class="col-lg-3 col-md-12 col-sm-12 mx-3"> <!-- colunas row-->
-                                <div class="card rounded-5 card-projetos border-0"> <!-- classe arredondando-->
+                        <div class="row justify-content-center"> 
+                            <div class="col-lg-3 col-md-12 col-sm-12 mx-3"> 
+                                <div class="card rounded-5 card-projetos border-0">
                                     <img class="mx-auto mb-4 img-fluid perfil rounded-5"
                                         src="../projetos/images/imagem-voluntarios-05.jpg">
                                     <h4 class="">Adote um AUmigo</h4>
                                     <h5>12 horas</h5>
                                     <div class="col text-center margin">
-                                        <button class="btn btn-secondary my-2">Encerrar</button>
+                                        <button class="btn btn-secondary my-2" id="encerrarBtn1">Encerrar</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-12 col-sm-12 mx-3"> <!-- colunas row-->
-                                <div class="card rounded-5 card-projetos border-0"> <!-- classe arredondando-->
+                            <div class="col-lg-3 col-md-12 col-sm-12 mx-3">
+                                <div class="card rounded-5 card-projetos border-0">
                                     <img class="mx-auto mb-4 img-fluid perfil rounded-5"
                                         src="../projetos/images/imagem-voluntarios-09.jpg">
                                     <h4 class="">EcoVida</h4>
                                     <h5>6 horas</h5>
                                     <div class="col text-center margin">
-                                        <button class="btn btn-secondary my-2">Encerrar</button>
+                                        <button class="btn btn-secondary my-2" id="encerrarBtn2">Encerrar</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-12 col-sm-12 mx-3"> <!-- colunas row-->
-                                <div class="card rounded-5 card-projetos border-0"> <!-- classe arredondando-->
+                            <div class="col-lg-3 col-md-12 col-sm-12 mx-3"> 
+                                <div class="card rounded-5 card-projetos border-0">
                                     <img class="mx-auto mb-4 img-fluid perfil rounded-5"
                                         src="../projetos/images/imagem-voluntarios-06.jpg">
                                     <h4 class="tittle">Inglês Solidário</h4>
                                     <h5>60 horas</h5>
                                     <div class="col text-center margin">
-                                        <button class="btn btn-secondary my-2">Encerrar</button>
+                                        <button class="btn btn-secondary my-2" id="encerrarBtn3">Encerrar</button>
                                     </div>
                                 </div>
                             </div>
@@ -144,7 +144,7 @@
         </footer>
     </footer>
 
-
+    <script src="../geral/scripts/globalscript.js"></script>  
     <script src="./perfilEmpresa.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

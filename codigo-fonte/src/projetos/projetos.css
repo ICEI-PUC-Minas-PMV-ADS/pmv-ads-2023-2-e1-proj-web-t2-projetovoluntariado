@@ -6,6 +6,9 @@
   --background-white: #2a1b3d;
 
 }
+main{
+    background-color: #2a1b3d;
+}
 
  html{
     background-color: #2a1b3d;
@@ -305,6 +308,9 @@ header{
     .container-card {
         max-width: 260px;
         margin:0;
+    }
+    .container-card h2{
+        text-align: center;
     }
     .menu-categoria {
         max-width: 260px;

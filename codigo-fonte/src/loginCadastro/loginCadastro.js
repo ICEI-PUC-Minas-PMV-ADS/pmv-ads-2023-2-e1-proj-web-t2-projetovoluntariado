@@ -84,8 +84,8 @@ function authLogin(users, email, password) {
       "loginUser",
       JSON.stringify({
         email,
+        name: findUser.name,
         typeUser: findUser.typeUser,
-        projects: findUser.projects,
       })
     );
     if (findUser.typeUser === "Voluntário") {
@@ -298,8 +298,11 @@ function register() {
 }
 
 btnRegister.addEventListener("click", register);
+<<<<<<< HEAD
 
 
 // atila local storage
 const nomeUsuario = 
 localStorage.setItem('nomeUsuario', nomeUsuario);
+=======
+>>>>>>> 01281746c3c484693a49c4696479a3e5f66aca1a

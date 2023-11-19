@@ -125,7 +125,18 @@ function subscribe(index){
         for(user in users){
             if(users[user].email == userLogged.email)
             {
-                
+                if(users[user].typeUser=="Empresa")
+                {
+                    Swal.fire({
+                        position: "center",
+                        title: `Erro!`,
+                        text: "Empresas e(ou) organizações não podem se inscrever em projetos.",
+                        icon: "error",
+                        showConfirmButton: false,
+                        timer: 2000,
+                      });
+                }
+                else{
                     let projects = getProjects();
                 for(let project in projects)
                 {

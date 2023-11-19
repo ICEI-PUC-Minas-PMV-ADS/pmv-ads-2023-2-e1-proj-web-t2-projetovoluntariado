@@ -29,4 +29,27 @@ function checkisLoggedInMenu(){
         });
     }
 }
+function getUsers()
+{
+    users = localStorage.getItem("users");
+    if(users != null)
+        return JSON.parse(users);
+    else
+        return null;
+}
+
+function getProjects(){
+    let projects = JSON.parse(localStorage.getItem("projects"));
+    if(projects != null)
+        return projects;
+    else
+        return null;
+}
+
+function setProjectsToLocalStorage(){ //Faz a primeira gravacao do localStorage caso nao existam projetos salvos no navegador
+    let projects = localStorage.getItem("projects");
+    if (projects == null || projects == undefined)
+      localStorage.setItem("projects", JSON.stringify(listaProjetos));
+}
+
 checkisLoggedInMenu();

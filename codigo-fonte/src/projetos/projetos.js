@@ -98,17 +98,6 @@ function categoryFilter(project, category){ //Funcao para filtrar os projetos po
     }
 }
 
-
-
-function getUsers()
-{
-    users = localStorage.getItem("users");
-    if(users != null)
-        return JSON.parse(users);
-    else
-        return null;
-}
-
 function subscribe(index){
     userLogged = isLogged();
     let = numProjectsSubscribed = 0;
@@ -196,22 +185,6 @@ function subscribe(index){
     }
 }
 
-function getProjects(){
-    let projects = JSON.parse(localStorage.getItem("projects"));
-    if(projects != null)
-        return projects;
-    else
-        return null;
-}
-
-function setProjectsToLocalStorage(){ //Faz a primeira gravacao do localStorage caso nao existam projetos salvos no navegador
-    let projects = localStorage.getItem("projects");
-    if (projects == null || projects == undefined)
-      localStorage.setItem("projects", JSON.stringify(listaProjetos));
-}
-
-
-
 
 //==============================================================================
 
@@ -234,10 +207,7 @@ else // sem query de pesquisa, carrega todos os cards
     // }
 }
 setProjectsToLocalStorage();
-
 createMenuLateral(categorias, ".menu-ul"); // Cria o menu lateral
 createMenuLateral(categorias, ".menu-ul2"); //Cria o menu lateral expansivo
-
-console.log(isLogged());
 checkisLoggedInMenu();
 

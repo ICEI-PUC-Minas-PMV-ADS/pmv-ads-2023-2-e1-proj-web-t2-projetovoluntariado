@@ -51,5 +51,5 @@ function setProjectsToLocalStorage(){ //Faz a primeira gravacao do localStorage 
     if (projects == null || projects == undefined)
       localStorage.setItem("projects", JSON.stringify(listaProjetos));
 }
-
+setProjectsToLocalStorage();
 checkisLoggedInMenu();

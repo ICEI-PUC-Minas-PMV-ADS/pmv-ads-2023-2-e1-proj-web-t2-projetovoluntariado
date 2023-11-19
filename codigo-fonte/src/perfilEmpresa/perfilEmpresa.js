@@ -8,3 +8,11 @@ menuButton.addEventListener('click', () => {
         mainContent.style.transition = 'margin 0.5s ease-out';
     }
 });
+
+document.querySelectorAll('.btn-secondary').forEach((button) => {
+    button.addEventListener('click', () => {
+        const projetoCard = button.closest('.card-projetos');
+
+        projetoCard.classList.add('d-none');
+    });
+});

@@ -301,5 +301,5 @@ btnRegister.addEventListener("click", register);
 
 
 // atila local storage
-const nomeUsuario = "Jonas";
+const nomeUsuario = 
 localStorage.setItem('nomeUsuario', nomeUsuario);

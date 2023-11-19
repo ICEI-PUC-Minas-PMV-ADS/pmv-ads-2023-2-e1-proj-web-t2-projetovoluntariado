@@ -55,27 +55,27 @@ imageButton.addEventListener('click', () => {
 
 
 
-backButton.addEventListener('click' , () => {
+backButton.addEventListener('click', () => {
     atualIndex = (atualIndex - 1 + images.length) % images.length;
     perfilImagem.src = images[atualIndex];
 });
 
-nextButton.addEventListener('click' , () => {
+nextButton.addEventListener('click', () => {
     atualIndex = (atualIndex + 1) % images.length;
     perfilImagem.src = images[atualIndex];
 });
 
 // link certificado
-document.getElementById("emitirCertificadoBtn").addEventListener('click', function(){
+document.getElementById("emitirCertificadoBtn").addEventListener('click', function () {
     window.open('../certificacao/certificacao.html', '_blank')
 })
 
 
 // local storage
 
-const nomeUsuario = localStorage.getItem('nomeUsuario');
+const nomeUsuario = JSON.stringify(localStorage.getItem('loginUsers'));
 if(nomeUsuario){
-    document.getElementById('nomeUsuario').textContent = nomeUsuario;
+    document.getElementById('nomeUsuario').textContent = nomeUsuario.name;
 } else {
     console.log('Nome de usuario não encontrado.');
 }

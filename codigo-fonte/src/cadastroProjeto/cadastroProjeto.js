@@ -36,12 +36,12 @@ document.getElementById('btnEscolherImagem').addEventListener('click', () => {
         const imagemElement = document.createElement('img');
         imagemElement.src = imagemURL;
         imagemElement.alt = 'Imagem de perfil do projeto';
-        imagemElement.className = 'img-thumbnail m-2'; // Adiciona a classe img-thumbnail
+        imagemElement.className = 'img-thumbnail img-fluid m-2'; // Adiciona as classes img-thumbnail e img-fluid
         imagemElement.style.maxWidth = '150px'; // Define a largura máxima da imagem
         imagemElement.style.maxHeight = '150px'; // Define a altura máxima da imagem
+        imagemElement.style.cursor = 'pointer'; // Adiciona um cursor indicando que é clicável
 
         linkElement.appendChild(imagemElement); // Adiciona a imagem ao link
-
         galeriaImagens.appendChild(linkElement);
 
         linkElement.addEventListener('click', (event) => {
@@ -62,6 +62,6 @@ document.getElementById('btnEscolherImagem').addEventListener('click', () => {
         });
     });
 
-    galeriaImagens.style.display = 'flex';
+    galeriaImagens.style.display = 'block'; // Exibe a galeria como bloco
     document.getElementById('imagem').style.display = 'none';
 });

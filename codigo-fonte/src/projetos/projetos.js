@@ -92,7 +92,7 @@ function deleteAllCards(parentName){ // deleta todos os cards
       });
 }
 function categoryFilter(project, category){ //Funcao para filtrar os projetos por categoria, usados com filter
-    if(project.categoryName==category)
+    if(project.categoryName==category && project.isActive ==1)
     {
         return project;
     }
@@ -118,20 +118,26 @@ function getUsers()
 
 function subscribe(index){
     userLogged = isLogged();
+    let = numProjectsSubscribed = 0;
     if(userLogged != null)
     {
         users = getUsers();
         for(user in users){
             if(users[user].email == userLogged.email)
             {
-                let projects = getProjects();
+                
+                    let projects = getProjects();
                 for(let project in projects)
                 {
                     if(index == projects[project].id)
                     {   
                         if(!Array.isArray(users[user].projects))
                             users[user].projects =[];
-                        if(users[user].projects.length < 3){
+                        users[user].projects.forEach(project => {
+                            if(project.userCompleted === 0)
+                                numProjectsSubscribed++;
+                        });
+                        if(numProjectsSubscribed < 3){
                             users[user].projects.push(projects[project]);
                             localStorage.setItem("users", JSON.stringify(users));
                             modal(-1);
@@ -162,6 +168,10 @@ function subscribe(index){
                    
                     }
                 }
+
+
+                }
+                
             }
         }
     }
@@ -198,8 +208,7 @@ function setProjectsToLocalStorage(){
 
 function checkisLoggedInMenu(){
     let loggedNodeText = document.querySelector(".entrar-sair");
-    userLogged = isLogged();
-    if(userLogged != null)
+    if(isLogged() != null)
     {
         loggedNodeText.innerText = "Sair";
         loggedNodeText.setAttribute("href","#");
@@ -215,7 +224,7 @@ function checkisLoggedInMenu(){
               });
               setInterval(()=>{
                 location.replace("../index.html");
-           },3700);
+           },2800);
             
         });
     }
@@ -236,10 +245,11 @@ if(queryString){
 }
 else // sem query de pesquisa, carrega todos os cards
 {
-    for(const index in listaProjetos){
+    listaProjetos.forEach( (project)=>{createCards(".grid-wrapper", project, project.id);} );
+    // for(const index in listaProjetos){
    
-        createCards(".grid-wrapper", listaProjetos[index], listaProjetos[index].id);
-    }
+    //     createCards(".grid-wrapper", listaProjetos[index], listaProjetos[index].id);
+    // }
 }
 setProjectsToLocalStorage();
 

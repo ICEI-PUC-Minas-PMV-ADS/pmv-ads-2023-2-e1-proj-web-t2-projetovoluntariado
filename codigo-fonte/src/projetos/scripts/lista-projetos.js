@@ -6,7 +6,9 @@ var listaProjetos = [
         "instituitionName": "Red Blood",
         "availability": 15,
         "categoryName": "Saúde",
-        "imgLink": "images/imagem-voluntarios-01.jpg"
+        "imgLink": "images/imagem-voluntarios-01.jpg",
+        "isActive": 1,
+        "userCompleted":0
     },
     {   
         "id":2,
@@ -15,7 +17,9 @@ var listaProjetos = [
         "instituitionName": "Food Bank",
         "availability": 10,
         "categoryName": "Alimentação",
-        "imgLink": "images/imagem-voluntarios-02.jpg"
+        "imgLink": "images/imagem-voluntarios-02.jpg",
+        "isActive": 1,
+        "userCompleted":0
     },
     {
         "id":3,
@@ -24,7 +28,9 @@ var listaProjetos = [
         "instituitionName": "Education Foundation",
         "availability": 8,
         "categoryName": "Educação",
-        "imgLink": "images/imagem-voluntarios-03.jpg"
+        "imgLink": "images/imagem-voluntarios-03.jpg",
+        "isActive": 1,
+        "userCompleted":0
     },
     {
         "id":4,
@@ -33,7 +39,9 @@ var listaProjetos = [
         "instituitionName": "Green Earth",
         "availability": 12,
         "categoryName": "Meio Ambiente",
-        "imgLink": "images/imagem-voluntarios-04.jpg"
+        "imgLink": "images/imagem-voluntarios-04.jpg",
+        "isActive": 1,
+        "userCompleted":0
     },
     {
         "id":5,
@@ -42,7 +50,9 @@ var listaProjetos = [
         "instituitionName": "Human Rights Watch",
         "availability": 7,
         "categoryName": "Direitos Humanos",
-        "imgLink": "images/imagem-voluntarios-05.jpg"
+        "imgLink": "images/imagem-voluntarios-05.jpg",
+        "isActive": 1,
+        "userCompleted":0
     },
     {
         "id":6,
@@ -51,7 +61,9 @@ var listaProjetos = [
         "instituitionName": "Cultural Society",
         "availability": 9,
         "categoryName": "Cultura",
-        "imgLink": "images/imagem-voluntarios-06.jpg"
+        "imgLink": "images/imagem-voluntarios-06.jpg",
+        "isActive": 1,
+        "userCompleted":0
     },
     {
         "id":7,
@@ -60,7 +72,9 @@ var listaProjetos = [
         "instituitionName": "Sports Foundation",
         "availability": 6,
         "categoryName": "Esportes",
-        "imgLink": "images/imagem-voluntarios-07.jpg"
+        "imgLink": "images/imagem-voluntarios-07.jpg",
+        "isActive": 1,
+        "userCompleted":0
     },
     {
         "id":8,
@@ -69,7 +83,9 @@ var listaProjetos = [
         "instituitionName": "Tech Innovators",
         "availability": 11,
         "categoryName": "Tecnologia",
-        "imgLink": "images/imagem-voluntarios-08.jpg"
+        "imgLink": "images/imagem-voluntarios-08.jpg",
+        "isActive": 1,
+        "userCompleted":0
     },
     {
         "id":9,
@@ -78,7 +94,9 @@ var listaProjetos = [
         "instituitionName": "Animal Rescue",
         "availability": 14,
         "categoryName": "Proteção aos Animais",
-        "imgLink": "images/imagem-voluntarios-09.jpg"
+        "imgLink": "images/imagem-voluntarios-09.jpg",
+        "isActive": 1,
+        "userCompleted":0
     },
     {
         "id":10,
@@ -87,7 +105,9 @@ var listaProjetos = [
         "instituitionName": "Community Builders",
         "availability": 13,
         "categoryName": "Desenvolvimento Comunitário",
-        "imgLink": "images/imagem-voluntarios-01.jpg"
+        "imgLink": "images/imagem-voluntarios-01.jpg",
+        "isActive": 1,
+        "userCompleted":0
     },
     {
         "id":11,
@@ -96,7 +116,9 @@ var listaProjetos = [
         "instituitionName": "Green World",
         "availability": 9,
         "categoryName": "Meio Ambiente",
-        "imgLink": "images/imagem-voluntarios-02.jpg"
+        "imgLink": "images/imagem-voluntarios-02.jpg",
+        "isActive": 1,
+        "userCompleted":0
     },
     {
         "id":12,
@@ -105,7 +127,9 @@ var listaProjetos = [
         "instituitionName": "Children's Education Fund",
         "availability": 7,
         "categoryName": "Educação",
-        "imgLink": "images/imagem-voluntarios-05.jpg"
+        "imgLink": "images/imagem-voluntarios-05.jpg",
+        "isActive": 1,
+        "userCompleted":0
     },
     {
         "id":13,
@@ -114,7 +138,9 @@ var listaProjetos = [
         "instituitionName": "Wildlife Rescue",
         "availability": 10,
         "categoryName": "Proteção aos Animais",
-        "imgLink": "images/imagem-voluntarios-04.jpg"
+        "imgLink": "images/imagem-voluntarios-04.jpg",
+        "isActive": 1,
+        "userCompleted":0
     },
     {
         "id":14,
@@ -123,7 +149,9 @@ var listaProjetos = [
         "instituitionName": "Mental Health Advocates",
         "availability": 6,
         "categoryName": "Saúde",
-        "imgLink": "images/imagem-voluntarios-05.jpg"
+        "imgLink": "images/imagem-voluntarios-05.jpg",
+        "isActive": 1,
+        "userCompleted":0
     },
     {
         "id":15,
@@ -132,6 +160,8 @@ var listaProjetos = [
         "instituitionName": "Habitat for Humanity",
         "availability": 12,
         "categoryName": "Desenvolvimento Comunitário",
-        "imgLink": "images/imagem-voluntarios-06.jpg"
+        "imgLink": "images/imagem-voluntarios-06.jpg",
+        "isActive": 1,
+        "userCompleted":0
     }
 ]

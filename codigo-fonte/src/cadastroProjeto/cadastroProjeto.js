@@ -29,6 +29,7 @@ document.getElementById('btnEscolherImagem').addEventListener('click', () => {
 
     // Adiciona cada imagem à galeria
     imagens.forEach((imagemURL) => {
+       
         const linkElement = document.createElement('a');
         linkElement.href = '#'; // Pode ser um link vazio ou para alguma outra página
 
@@ -45,7 +46,7 @@ document.getElementById('btnEscolherImagem').addEventListener('click', () => {
 
         linkElement.addEventListener('click', (event) => {
             event.preventDefault(); // Impede que o link siga para outra página
-
+            console.log("arquivo imagem " + imagemURL);
             // Define o valor do campo de arquivo para a imagem selecionada
             document.getElementById('imagem').value = imagemURL;
 

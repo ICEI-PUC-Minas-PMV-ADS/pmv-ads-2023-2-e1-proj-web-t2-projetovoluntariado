@@ -11,30 +11,13 @@ menuButton.addEventListener('click', () => {
 
 
 
-function getHours() {
-    usuarioLogado = isLogged()
-    let horas = 0
-    if (usuarioLogado) {
-        usuarios = getUsers()
-        usuarios.forEach(usuario => {
-            if (usuario.email == usuarioLogado.email) {
-                usuario.projects.forEach(projeto => {
-                    if (projeto.userCompleted == 1) {
-                        horas = horas + projeto.availability
-                    }
-
-                })
-
-            }
-        })
-        return horas
-    }
-}
-
 
 function certificadoVar() {
-    let usernameCertificado = getUsers();
+    let usernameCertificado = isLogged();
     let horasCertificado = getHours();
+
+    console.log(usernameCertificado)
+    console.log(horasCertificado)
     
 
 
@@ -43,7 +26,7 @@ function certificadoVar() {
 
 }
 
-certificadoVar()
+
 
 
 

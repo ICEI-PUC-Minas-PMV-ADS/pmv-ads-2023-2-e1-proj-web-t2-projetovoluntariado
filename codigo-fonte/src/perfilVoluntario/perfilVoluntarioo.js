@@ -141,23 +141,7 @@ if (loginUserInfo) {
   console.log("Nome de usuario não encontrado.");
 }
 
-function getHours() {
-  usuarioLogado = isLogged();
-  let horas = 0;
-  if (usuarioLogado) {
-    usuarios = getUsers();
-    usuarios.forEach((usuario) => {
-      if (usuario.email == usuarioLogado.email) {
-        usuario.projects.forEach((projeto) => {
-          if (projeto.userCompleted == 1) {
-            horas = horas + projeto.availability;
-          }
-        });
-      }
-    });
-    return horas;
-  }
-}
+
 
 document.getElementById("hours").textContent = getHours() + " horas";
 

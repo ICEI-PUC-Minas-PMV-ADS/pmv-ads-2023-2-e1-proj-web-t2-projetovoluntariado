@@ -29,13 +29,21 @@ function getHours() {
         })
         return horas
     }
-} 
+}
 
 
-
+function certificadoVar() {
     let usernameCertificado = getUsers();
     let horasCertificado = getHours();
     
+
+
+    document.getElementById("username").textContent = usernameCertificado.name
+    document.getElementById("horasCertificado").textContent = horasCertificado
+
+}
+
+certificadoVar()
 
 
 

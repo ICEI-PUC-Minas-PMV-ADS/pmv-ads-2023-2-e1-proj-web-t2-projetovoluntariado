@@ -40,7 +40,7 @@ function listarProjetos() {
                     "../projetos/" + projeto.imgLink
                   }" class="rounded-5 pb-2" alt="...">
                   <h5 class="tittle">${projeto.projectName}</h5>
-                  <h3>${projeto.availability}</h3>
+                  <h3>${projeto.availability} horas</h3>
                   <div class="col text-center">
                       <button class="btn btn-secondary my-2 botao" id="botao" 
                       onclick="finalizarProjeto(${projectNumber++})">Finalizar</button>

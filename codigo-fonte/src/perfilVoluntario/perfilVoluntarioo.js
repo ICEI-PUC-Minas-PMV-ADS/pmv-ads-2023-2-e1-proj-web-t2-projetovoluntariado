@@ -181,20 +181,32 @@ listarProjetos()
 
 
 
-/* function icone() {
+ function icone() {
     let horas = getHours()
+    iconePerfil = document.getElementById("icone")
 
-    if (horas > 2 && horas <= 10) {
+    if (horas > 2 && horas < 10) {
         console.log(horas)
-        document.getElementById('icone').innerHTML = '<img class="mx-auto mb-4 img-fluid" id="icone" src="./imagens/safira.png"></img>'
+        iconePerfil.src = "./imagens/safira.png"
 
-    } 
+    } else if (horas >= 10 && horas < 30) {
+        console.log(horas)
+        iconePerfil.src = "./imagens/ametista.png"
 
+        
+    } else if (horas >= 30 && horas < 60) {
+        console.log(horas)
+        iconePerfil.src = "./imagens/esmeralda.png"
 
+    } else if (horas <= 60) {
+        console.log(horas)
+        iconePerfil.src = "./imagens/vazio.png"
 
+    } else {
+        console.log(horas)
+        iconePerfil.src = "./imagens/rubi.png"
 
-
-}
-
-icone()  */
+    }
+ }
+icone()  
 

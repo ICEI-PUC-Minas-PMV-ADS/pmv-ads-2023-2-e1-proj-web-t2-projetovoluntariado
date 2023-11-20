@@ -172,6 +172,12 @@ body .my-4{
     height: 520px;
 }
 
+.container-card h2{
+    text-align: center;
+}
+article h2 {
+    text-align: center;
+}
 
 @media screen and (max-width: 576px) {
     
@@ -308,9 +314,7 @@ body .my-4{
         max-width: 260px;
         margin:0;
     }
-    .container-card h2{
-        text-align: center;
-    }
+
     .menu-categoria {
         max-width: 260px;
         grid-row: 1 / 3;

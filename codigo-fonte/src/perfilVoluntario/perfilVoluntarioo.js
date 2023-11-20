@@ -67,9 +67,8 @@ function finalizarProjeto(projectNumber){
         usuarios.forEach(usuario => {
             if (usuario.email == usuarioLogado.email) {
                 usuario.projects.forEach(projeto => {
-                    if (contador == projectNumber) {
+                    if (contador === projectNumber) {
                         projeto.userCompleted = 1 
-                        localStorage.setItem("users" , JSON.stringify(usuarios))
                         Swal.fire({
                             position: "center",
                             title: `Pronto!`,
@@ -79,9 +78,7 @@ function finalizarProjeto(projectNumber){
                             timer: 2000,
                           });
 
-                          setInterval(()=>{
-                            window.location.reload()
-                          },3000)
+                          
                        
                     }else{ contador++
 
@@ -91,7 +88,11 @@ function finalizarProjeto(projectNumber){
 
             }
         })
-        
+        localStorage.setItem("users" , JSON.stringify(usuarios))
+        setInterval(()=>{
+            window.location.reload()
+          },3000)
+
     }
 
 }

@@ -16,13 +16,32 @@ function finalizar() {
     botoes.forEach(botao => {
         botao.addEventListener('click', function () {
 
-            this.innerHTML = "Finaliza-do";
+            this.innerHTML = "Finalizado";
             this.style.backgroundColor = "gray";
 
             botao.removeEventListener('click', handleClick);
 
         });
     });
+}
+
+function listarProjetos(){
+    let usuarios = getUsers()
+    let usuarioLogado = isLogged()
+    usuarios.forEach(usuario => {
+        if (usuario.email == usuarioLogado.email) {
+            usuario.projects.forEach(projeto => {
+                if (projeto.userCompleted == 0) {
+                    
+                }
+
+            })
+            
+        }
+    })
+
+
+    
 }
 
 
@@ -107,16 +126,20 @@ document.getElementById('hours').textContent = getHours() + " horas"
 
 
 
-function icone() {
+
+/* function icone() {
     let horas = getHours()
 
     if (horas > 2 && horas <= 10) {
+        console.log(horas)
         document.getElementById('icone').innerHTML = '<img class="mx-auto mb-4 img-fluid" id="icone" src="./imagens/safira.png"></img>'
-    }
+
+    } 
+
 
 
 
 
 }
 
-icone()
+icone()  */

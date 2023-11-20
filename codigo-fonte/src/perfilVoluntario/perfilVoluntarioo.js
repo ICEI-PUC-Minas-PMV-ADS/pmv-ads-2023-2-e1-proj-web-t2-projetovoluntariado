@@ -28,21 +28,20 @@ function finalizar() {
 function listarProjetos() {
     let usuarios = getUsers()
     let usuarioLogado = isLogged()
+    let projectNumber = 0
 
 
     usuarios.forEach(usuario => {
         if (usuario.email == usuarioLogado.email) {
-            console.log("passou aqui 1")
             usuario.projects.forEach(projeto => {
-                console.log("passou aqui 2")
                 if (projeto.userCompleted === 0) {
-                    console.log("passou aqui 3")
                     document.getElementById('containerCards').innerHTML = document.getElementById('containerCards').innerHTML + `<div class="card rounded-5 card-projetos">
                   <img src="${"../projetos/" + projeto.imgLink}" class="rounded-5 pb-2" alt="...">
                   <h5 class="tittle">${projeto.projectName}</h5>
                   <h3>${projeto.availability}</h3>
                   <div class="col text-center">
-                      <button class="btn btn-secondary my-2 botao" id="botao" onclick="finalizar()">Finalizar</button>
+                      <button class="btn btn-secondary my-2 botao" id="botao" 
+                      onclick="finalizarProjeto(${projectNumber++})">Finalizar</button>
                   </div>
               </div>`
 
@@ -58,6 +57,44 @@ function listarProjetos() {
 }
 
 
+function finalizarProjeto(projectNumber){
+
+        usuarioLogado = isLogged()
+        let contador = 0
+   
+    if (usuarioLogado) {
+        usuarios = getUsers()
+        usuarios.forEach(usuario => {
+            if (usuario.email == usuarioLogado.email) {
+                usuario.projects.forEach(projeto => {
+                    if (contador == projectNumber) {
+                        projeto.userCompleted = 1 
+                        localStorage.setItem("users" , JSON.stringify(usuarios))
+                        Swal.fire({
+                            position: "center",
+                            title: `Pronto!`,
+                            text: "Projeto finalizado com sucesso!!",
+                            icon: "success",
+                            showConfirmButton: false,
+                            timer: 2000,
+                          });
+
+                          setInterval(()=>{
+                            window.location.reload()
+                          },3000)
+                       
+                    }else{ contador++
+
+                    }
+
+                })
+
+            }
+        })
+        
+    }
+
+}
 
 // imagem perfil botao next e back
 const imageButton = document.querySelector('.btn-imagem-perfil');

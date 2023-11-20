@@ -59,18 +59,18 @@ function listarProjetos() {
 }
 
 
-function finalizarProjeto(projectNumber){
+function finalizarProjeto(projectNumber) {
 
-        usuarioLogado = isLogged()
-        let contador = 0
-   
+    usuarioLogado = isLogged()
+    let contador = 0
+
     if (usuarioLogado) {
         usuarios = getUsers()
         usuarios.forEach(usuario => {
             if (usuario.email == usuarioLogado.email) {
                 usuario.projects.forEach(projeto => {
                     if (contador === projectNumber) {
-                        projeto.userCompleted = 1 
+                        projeto.userCompleted = 1
                         contador++
                         Swal.fire({
                             position: "center",
@@ -79,11 +79,12 @@ function finalizarProjeto(projectNumber){
                             icon: "success",
                             showConfirmButton: false,
                             timer: 2000,
-                          });
+                        });
 
-                          
-                       
-                    }else{ contador++
+
+
+                    } else {
+                        contador++
 
                     }
 
@@ -91,10 +92,10 @@ function finalizarProjeto(projectNumber){
 
             }
         })
-        localStorage.setItem("users" , JSON.stringify(usuarios))
-        setInterval(()=>{
+        localStorage.setItem("users", JSON.stringify(usuarios))
+        setInterval(() => {
             window.location.reload()
-          },3000)
+        }, 3000)
 
     }
 
@@ -184,7 +185,7 @@ listarProjetos()
 
 
 
- function icone() {
+function icone() {
     let horas = getHours()
     iconePerfil = document.getElementById("icone")
 
@@ -196,7 +197,7 @@ listarProjetos()
         console.log(horas)
         iconePerfil.src = "./imagens/ametista.png"
 
-        
+
     } else if (horas >= 30 && horas < 60) {
         console.log(horas)
         iconePerfil.src = "./imagens/esmeralda.png"
@@ -210,6 +211,28 @@ listarProjetos()
         iconePerfil.src = "./imagens/rubi.png"
 
     }
- }
-icone()  
+}
+icone()
+
+
+function getNivel(horas) {
+    if (horas > 2 && horas < 10) {
+        return 'Safira';
+    } else if (horas >= 10 && horas < 30) {
+        return 'Ametista';
+    } else if (horas >= 30 && horas < 60) {
+        return 'Esmeralda';
+    } else if (horas <= 60) {
+        return 'Vazio';
+    } else {
+        return 'Rubi';
+    }
+}
+
+
+
+
+
+
+
 

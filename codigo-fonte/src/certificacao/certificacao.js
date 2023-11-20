@@ -26,7 +26,7 @@ function certificadoVar() {
 
 }
 
-certificadoVar()
+
 
 
 

@@ -5,7 +5,28 @@ function isLogged() //Retorna o objeto LoginUser caso esteja logado do contrári
         return null;
     else
         return user;
+
 }
+
+function getHours() {
+    usuarioLogado = isLogged();
+    let horas = 0;
+    if (usuarioLogado) {
+      usuarios = getUsers();
+      usuarios.forEach((usuario) => {
+        if (usuario.email == usuarioLogado.email) {
+          usuario.projects.forEach((projeto) => {
+            if (projeto.userCompleted == 1) {
+              horas = horas + projeto.availability;
+            }
+          });
+        }
+      });
+      return horas;
+    }
+  }
+
+
 function checkisLoggedInMenu(){
     let loggedNodeText = document.querySelector(".entrar-sair");
     if(isLogged() != null)

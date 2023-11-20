@@ -11,6 +11,36 @@ menuButton.addEventListener('click', () => {
 
 
 
+function getHours() {
+    usuarioLogado = isLogged()
+    let horas = 0
+    if (usuarioLogado) {
+        usuarios = getUsers()
+        usuarios.forEach(usuario => {
+            if (usuario.email == usuarioLogado.email) {
+                usuario.projects.forEach(projeto => {
+                    if (projeto.userCompleted == 1) {
+                        horas = horas + projeto.availability
+                    }
+
+                })
+
+            }
+        })
+        return horas
+    }
+} 
+
+
+
+    let usernameCertificado = getUsers();
+    let horasCertificado = getHours();
+    
+
+
+
+
+
 
 
 

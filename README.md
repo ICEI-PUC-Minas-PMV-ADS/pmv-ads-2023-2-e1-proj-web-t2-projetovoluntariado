@@ -14,7 +14,6 @@ O objetivo deste projeto é a criação de uma aplicação web que permita as pe
 * Anderson da Silva Gomes
 * Arthur de Andrade Simões
 * Átila Eduardo de Pádua Ribeiro
-* David Oliveira Neves
 * Gabriela Aparecida de Araújo
 
 ## Orientador

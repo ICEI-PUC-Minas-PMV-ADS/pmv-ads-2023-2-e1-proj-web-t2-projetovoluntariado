@@ -8,7 +8,7 @@ var listaProjetos = [
         "categoryName": "Saúde",
         "imgLink": "images/imagem-voluntarios-01.jpg",
         "isActive": 1,
-        "userCompleted":0
+        "userCompleted":1
     },
     {   
         "id":2,
@@ -19,7 +19,7 @@ var listaProjetos = [
         "categoryName": "Alimentação",
         "imgLink": "images/imagem-voluntarios-02.jpg",
         "isActive": 1,
-        "userCompleted":0
+        "userCompleted":1
     },
     {
         "id":3,
@@ -30,7 +30,7 @@ var listaProjetos = [
         "categoryName": "Educação",
         "imgLink": "images/imagem-voluntarios-03.jpg",
         "isActive": 1,
-        "userCompleted":0
+        "userCompleted":1
     },
     {
         "id":4,
@@ -41,7 +41,7 @@ var listaProjetos = [
         "categoryName": "Meio Ambiente",
         "imgLink": "images/imagem-voluntarios-04.jpg",
         "isActive": 1,
-        "userCompleted":0
+        "userCompleted":1
     },
     {
         "id":5,
@@ -52,7 +52,7 @@ var listaProjetos = [
         "categoryName": "Direitos Humanos",
         "imgLink": "images/imagem-voluntarios-05.jpg",
         "isActive": 1,
-        "userCompleted":0
+        "userCompleted":1
     },
     {
         "id":6,
@@ -63,7 +63,7 @@ var listaProjetos = [
         "categoryName": "Cultura",
         "imgLink": "images/imagem-voluntarios-06.jpg",
         "isActive": 1,
-        "userCompleted":0
+        "userCompleted":1
     },
     {
         "id":7,
@@ -74,7 +74,7 @@ var listaProjetos = [
         "categoryName": "Esportes",
         "imgLink": "images/imagem-voluntarios-07.jpg",
         "isActive": 1,
-        "userCompleted":0
+        "userCompleted":1
     },
     {
         "id":8,
@@ -85,7 +85,7 @@ var listaProjetos = [
         "categoryName": "Tecnologia",
         "imgLink": "images/imagem-voluntarios-08.jpg",
         "isActive": 1,
-        "userCompleted":0
+        "userCompleted":1
     },
     {
         "id":9,
@@ -96,7 +96,7 @@ var listaProjetos = [
         "categoryName": "Proteção aos Animais",
         "imgLink": "images/imagem-voluntarios-09.jpg",
         "isActive": 1,
-        "userCompleted":0
+        "userCompleted":1
     },
     {
         "id":10,
@@ -107,7 +107,7 @@ var listaProjetos = [
         "categoryName": "Desenvolvimento Comunitário",
         "imgLink": "images/imagem-voluntarios-01.jpg",
         "isActive": 1,
-        "userCompleted":0
+        "userCompleted":1
     },
     {
         "id":11,
@@ -118,7 +118,7 @@ var listaProjetos = [
         "categoryName": "Meio Ambiente",
         "imgLink": "images/imagem-voluntarios-02.jpg",
         "isActive": 1,
-        "userCompleted":0
+        "userCompleted":1
     },
     {
         "id":12,

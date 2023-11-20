@@ -86,6 +86,7 @@ function authLogin(users, email, password) {
         email,
         name: findUser.name,
         typeUser: findUser.typeUser,
+        perfilImage: findUser.perfilImage,
       })
     );
     if (findUser.typeUser === "Voluntário") {
@@ -262,6 +263,7 @@ function register() {
     password,
     typeUser,
     projects: [],
+    perfilImage: "../homePage/images/perfil-1.jpeg",
   };
 
   let registers = [registerObject];
@@ -298,11 +300,3 @@ function register() {
 }
 
 btnRegister.addEventListener("click", register);
-// <<<<<<< HEAD
-
-
-// // atila local storage
-// const nomeUsuario = 
-// localStorage.setItem('nomeUsuario', nomeUsuario);
-// =======
-// >>>>>>> 01281746c3c484693a49c4696479a3e5f66aca1a

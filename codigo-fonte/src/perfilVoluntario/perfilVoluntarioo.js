@@ -45,6 +45,8 @@ function listarProjetos() {
                   </div>
               </div>`
 
+                } else {
+                    projectNumber++
                 }
 
             })
@@ -69,6 +71,7 @@ function finalizarProjeto(projectNumber){
                 usuario.projects.forEach(projeto => {
                     if (contador === projectNumber) {
                         projeto.userCompleted = 1 
+                        contador++
                         Swal.fire({
                             position: "center",
                             title: `Pronto!`,

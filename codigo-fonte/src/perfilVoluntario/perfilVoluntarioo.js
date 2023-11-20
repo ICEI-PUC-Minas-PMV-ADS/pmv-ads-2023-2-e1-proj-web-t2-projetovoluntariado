@@ -90,38 +90,37 @@ function finalizarProjeto(projectNumber) {
 
 // imagem perfil botao next e back
 const imageButton = document.querySelector(".btn-imagem-perfil");
-const backButton = document.querySelector(".btn-back");
-const nextButton = document.querySelector(".btn-next");
-const perfilImagem = document.querySelector(".perfil");
+const perfilImagem = document.getElementById("perfilImage");
 
 const images = [
   "../homePage/images/perfil-1.jpeg",
-  "./perfilVoluntario/imagens/perfil/h1.jpg",
-  "./perfilVoluntario/imagens/perfil/j1.jpg",
-  "./perfilVoluntario/imagens/perfil/j2.jpg",
-  "./perfilVoluntario/imagens/perfil/j3.jpg",
-  "./perfilVoluntario/imagens/perfil/m1.jpg",
-  "./perfilVoluntario/imagens/perfil/m2.jpg",
-  "./perfilVoluntario/imagens/perfil/v1.jpg",
-  "./perfilVoluntario/imagens/perfil/v2.jpg",
+  "./imagens/perfil/h1.jpg",
+  "./imagens/perfil/j1.jpg",
+  "./imagens/perfil/j2.jpg",
+  "./imagens/perfil/j3.jpg",
+  "./imagens/perfil/m1.jpg",
+  "./imagens/perfil/m2.jpg",
+  "./imagens/perfil/v1.jpg",
+  "./imagens/perfil/v2.jpg",
 ];
 
 let atualIndex = 0;
 
 imageButton.addEventListener("click", () => {
-  backButton.style.display = "inline-block";
-  nextButton.style.display = "inline-block";
-  perfilImagem.src = images[atualIndex];
-});
-
-backButton.addEventListener("click", () => {
-  atualIndex = (atualIndex - 1 + images.length) % images.length;
-  perfilImagem.src = images[atualIndex];
-});
-
-nextButton.addEventListener("click", () => {
-  atualIndex = (atualIndex + 1) % images.length;
-  perfilImagem.src = images[atualIndex];
+  if (atualIndex === 8) {
+    atualIndex = 0;
+    perfilImagem.src = images[0];
+  } else {
+    atualIndex = atualIndex += 1;
+    perfilImagem.src = images[atualIndex];
+    const loginUser = JSON.parse(localStorage.getItem("loginUser"));
+    console.log(loginUser);
+    const updatedUser = {
+      ...loginUser,
+      perfilImage: images[atualIndex],
+    };
+    localStorage.setItem("loginUser", JSON.stringify(updatedUser));
+  }
 });
 
 // link certificado
@@ -133,10 +132,11 @@ document
 
 // local storage
 
-const nomeUsuario = JSON.parse(localStorage.getItem("loginUser"));
-if (nomeUsuario) {
-  console.log(nomeUsuario);
-  document.getElementById("nomeUsuario").textContent = nomeUsuario.name;
+const loginUserInfo = JSON.parse(localStorage.getItem("loginUser"));
+if (loginUserInfo) {
+  console.log(loginUserInfo);
+  document.getElementById("nomeUsuario").textContent = loginUserInfo.name;
+  document.getElementById("perfilImage").src = `${loginUserInfo.perfilImage}`;
 } else {
   console.log("Nome de usuario não encontrado.");
 }

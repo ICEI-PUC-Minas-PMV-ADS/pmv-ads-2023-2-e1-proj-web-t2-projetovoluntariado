@@ -6,9 +6,7 @@
   --background-white: #2a1b3d;
 
 }
-main{
-    background-color: #2a1b3d;
-}
+
 
  html{
     background-color: #2a1b3d;
@@ -23,16 +21,16 @@ main{
 }
 footer{
     background-color: #2a1b3d;
-    height: auto;
+    margin: 0;
 }
+
 header{
     background-color: #2a1b3d;
 }
 
-
 .corpo{
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     background-color: #2a1b3d;
     padding-left: 2%;
     padding-right: 2%;
@@ -46,7 +44,6 @@ header{
     grid-template-columns: repeat(3, 1fr);
     
 }
-
 
 .menu-categoria-1col{
     display: none;
@@ -63,7 +60,9 @@ header{
     align-content: flex-start;
     align-self: center;
 }
-
+body .my-4{
+   margin-top: 0rem!important;
+}
 .container-card {
     border-radius: 30px;
     min-height: 150px;

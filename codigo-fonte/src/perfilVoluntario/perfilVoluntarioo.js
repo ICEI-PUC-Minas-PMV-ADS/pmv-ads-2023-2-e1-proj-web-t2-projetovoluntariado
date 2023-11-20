@@ -25,17 +25,20 @@ function finalizar() {
     });
 }
 
-function listarProjetos(){
+function listarProjetos() {
     let usuarios = getUsers()
     let usuarioLogado = isLogged()
-    
-    
+
+
     usuarios.forEach(usuario => {
         if (usuario.email == usuarioLogado.email) {
+            console.log("passou aqui 1")
             usuario.projects.forEach(projeto => {
-                if (projeto.userCompleted == 0) {
-                  document.getElementById('containerCards').innerHTML = document.getElementById('containerCards').innerHTML + `<div class="card rounded-5 card-projetos">
-                  <img src="${projeto.imgLink}" class="rounded-5 pb-2" alt="...">
+                console.log("passou aqui 2")
+                if (projeto.userCompleted === 0) {
+                    console.log("passou aqui 3")
+                    document.getElementById('containerCards').innerHTML = document.getElementById('containerCards').innerHTML + `<div class="card rounded-5 card-projetos">
+                  <img src="${"../projetos/" + projeto.imgLink}" class="rounded-5 pb-2" alt="...">
                   <h5 class="tittle">${projeto.projectName}</h5>
                   <h3>${projeto.availability}</h3>
                   <div class="col text-center">
@@ -46,12 +49,12 @@ function listarProjetos(){
                 }
 
             })
-            
+
         }
     })
 
 
-    
+
 }
 
 
@@ -124,7 +127,7 @@ function getHours() {
                     }
 
                 })
-                
+
             }
         })
         return horas

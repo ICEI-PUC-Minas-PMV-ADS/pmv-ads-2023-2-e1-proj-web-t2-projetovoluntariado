@@ -28,11 +28,21 @@ function finalizar() {
 function listarProjetos(){
     let usuarios = getUsers()
     let usuarioLogado = isLogged()
+    
+    
     usuarios.forEach(usuario => {
         if (usuario.email == usuarioLogado.email) {
             usuario.projects.forEach(projeto => {
                 if (projeto.userCompleted == 0) {
-                    
+                  document.getElementById('containerCards').innerHTML = document.getElementById('containerCards').innerHTML + `<div class="card rounded-5 card-projetos">
+                  <img src="${projeto.imgLink}" class="rounded-5 pb-2" alt="...">
+                  <h5 class="tittle">${projeto.projectName}</h5>
+                  <h3>${projeto.availability}</h3>
+                  <div class="col text-center">
+                      <button class="btn btn-secondary my-2 botao" id="botao" onclick="finalizar()">Finalizar</button>
+                  </div>
+              </div>`
+
                 }
 
             })
@@ -43,6 +53,7 @@ function listarProjetos(){
 
     
 }
+
 
 
 // imagem perfil botao next e back
@@ -124,6 +135,8 @@ function getHours() {
 
 document.getElementById('hours').textContent = getHours() + " horas"
 
+listarProjetos()
+
 
 
 
@@ -143,3 +156,4 @@ document.getElementById('hours').textContent = getHours() + " horas"
 }
 
 icone()  */
+

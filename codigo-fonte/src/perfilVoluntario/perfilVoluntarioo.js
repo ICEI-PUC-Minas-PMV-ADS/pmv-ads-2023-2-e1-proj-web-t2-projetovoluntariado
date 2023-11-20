@@ -89,30 +89,34 @@ function getHours() {
         usuarios.forEach(usuario => {
             if (usuario.email == usuarioLogado.email) {
                 usuario.projects.forEach(projeto => {
-                    if(projeto.userCompleted == 1){
-                        horas = horas + projeto.availability                      
+                    if (projeto.userCompleted == 1) {
+                        horas = horas + projeto.availability
                     }
-                    
-                })
 
-                document.getElementById('hours').textContent = horas + " horas"
+                })
+                
             }
         })
+        return horas
     }
 
 }
 
-getHours()
+
+document.getElementById('hours').textContent = getHours() + " horas"
 
 
-function icone(){
-    let horas = 0
 
-    if(horas > 2 && horas<= 10){
-        document.getElementById('icone').innerHTML = '<img src="./imagens/safira.png"></img>'
-    } 
-    
+function icone() {
+    let horas = getHours()
+
+    if (horas > 2 && horas <= 10) {
+        document.getElementById('icone').innerHTML = '<img class="mx-auto mb-4 img-fluid" id="icone" src="./imagens/safira.png"></img>'
+    }
+
 
 
 
 }
+
+icone()

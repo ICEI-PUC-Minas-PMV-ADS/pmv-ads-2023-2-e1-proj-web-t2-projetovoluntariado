@@ -203,7 +203,11 @@ else // sem query de pesquisa, carrega todos os cards
 {
     projects = JSON.parse(localStorage.getItem("projects"));
     if(projects){
-        projects.forEach( (project)=>{createCards(".grid-wrapper", project, project.id);} );
+        projects.forEach( (project)=>{
+            createCards(".grid-wrapper", project, project.id);
+            console.log(project)
+        } );
+        
     }
 }
 

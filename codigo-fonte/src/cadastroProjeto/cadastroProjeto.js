@@ -101,12 +101,13 @@ document.addEventListener("DOMContentLoaded",function(){
     let userLogged = isLogged();
     let users = getUsers();
     let projects = JSON.parse(localStorage.getItem("projects"));
+    let newId = projects.length+1;
     if(userLogged){
         users.forEach((user)=>{
             if(user.email === userLogged.email && projects){
                 tempProjects = user.projects;
                 let project = {
-                    id: projects.length-1,
+                    id: newId,
                     projectName: projectName,
                     projectDescription: description,
                     instituitionName: institutionName,

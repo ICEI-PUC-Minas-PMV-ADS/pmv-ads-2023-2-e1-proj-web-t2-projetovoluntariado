@@ -25,16 +25,16 @@ function modal(indice){
         let modal_image_container = document.getElementById("modalImg");
         let modal_link = document.querySelector(".btn-participar");
         
-
-        for(projeto in listaProjetos)
+        let projects = getProjects();
+        for(projeto in projects)
         {
-            if(listaProjetos[projeto].id == indice)
+            if(projects[projeto].id == indice)
             {   
-                modal_titulo.innerText = listaProjetos[parseInt(projeto)].projectName;
-                modal_descricao.innerText = listaProjetos[parseInt(projeto)].projectDescription;
-                modal_disponibilidade.innerText = listaProjetos[parseInt(projeto)].availability + " horas";
-                modal_instituicao.innerText = listaProjetos[parseInt(projeto)].instituitionName;
-                let novaImagem = "url("+ listaProjetos[parseInt(projeto)].imgLink + ")";
+                modal_titulo.innerText = projects[parseInt(projeto)].projectName;
+                modal_descricao.innerText = projects[parseInt(projeto)].projectDescription;
+                modal_disponibilidade.innerText = projects[parseInt(projeto)].availability + " horas";
+                modal_instituicao.innerText = projects[parseInt(projeto)].instituitionName;
+                let novaImagem = "url("+ projects[parseInt(projeto)].imgLink + ")";
                 modal_image_container.style.backgroundImage =  novaImagem;
                 modal_link.setAttribute("onclick", "subscribe(" + indice + ")");
             }

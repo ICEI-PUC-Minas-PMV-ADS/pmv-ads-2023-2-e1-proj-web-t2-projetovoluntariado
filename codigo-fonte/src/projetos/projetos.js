@@ -188,7 +188,7 @@ function subscribe(index){
 
 
 //==============================================================================
-
+setProjectsToLocalStorage();
 var queryString = location.search; //Verifica se há na barra de navegacao alguma query de filtro de categoria
 if(queryString){
     
@@ -201,13 +201,12 @@ if(queryString){
 }
 else // sem query de pesquisa, carrega todos os cards
 {
-    listaProjetos.forEach( (project)=>{createCards(".grid-wrapper", project, project.id);} );
-    // for(const index in listaProjetos){
-   
-    //     createCards(".grid-wrapper", listaProjetos[index], listaProjetos[index].id);
-    // }
+    projects = JSON.parse(localStorage.getItem("projects"));
+    if(projects){
+        projects.forEach( (project)=>{createCards(".grid-wrapper", project, project.id);} );
+    }
 }
-setProjectsToLocalStorage();
+
 createMenuLateral(categorias, ".menu-ul"); // Cria o menu lateral
 createMenuLateral(categorias, ".menu-ul2"); //Cria o menu lateral expansivo
 checkisLoggedInMenu();

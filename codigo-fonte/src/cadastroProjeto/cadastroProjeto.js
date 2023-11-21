@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded",function(){
             if(user.email === userLogged.email && projects){
                 tempProjects = user.projects;
                 let project = {
-                    id: projects.length,
+                    id: projects.length-1,
                     projectName: projectName,
                     projectDescription: description,
                     instituitionName: institutionName,
@@ -116,26 +116,41 @@ document.addEventListener("DOMContentLoaded",function(){
                     isActive: 1,
                     userCompleted: 0
                 }
-                projects.push(project);
-                localStorage.setItem("projects", JSON.stringify(projects));
+                if(tempProjects.length>=3)
+                {
+                    Swal.fire({
+                        position: "center",
+                        title: `Erro`,
+                        text: "Você só pode cadastrar até 3 projetos",
+                        icon: "error",
+                        showConfirmButton: false,
+                        timer: 2000,
+                      });
+                }
+                else{
+                    projects.push(project);
+                    localStorage.setItem("projects", JSON.stringify(projects));
 
-                tempProjects.push(project);
-                user.projects =[];
-                user.projects = tempProjects;
-                localStorage.setItem("users", JSON.stringify(users));
+                    tempProjects.push(project);
+                    user.projects =[];
+                    user.projects = tempProjects;
+                    localStorage.setItem("users", JSON.stringify(users));
+                    
+                    console.log("Adicionado com sucesso")
+                    Swal.fire({
+                        position: "center",
+                        title: `Pronto`,
+                        text: "Projeto cadastrado com sucesso",
+                        icon: "success",
+                        showConfirmButton: false,
+                        timer: 2000,
+                    });
+                    setInterval(()=>{
+                        window.location.replace("../perfilEmpresa/perfilEmpresa.html");
+                },2000);
+
+                }
                 
-                console.log("Adicionado com sucesso")
-                Swal.fire({
-                    position: "center",
-                    title: `Pronto`,
-                    text: "Projeto cadastrado com sucesso",
-                    icon: "success",
-                    showConfirmButton: false,
-                    timer: 2000,
-                  });
-                  setInterval(()=>{
-                    window.location.replace("../perfilEmpresa/perfilEmpresa.html");
-               },2000);
             }
         })
     }

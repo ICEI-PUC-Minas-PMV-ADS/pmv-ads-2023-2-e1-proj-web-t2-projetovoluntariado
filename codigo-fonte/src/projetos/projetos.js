@@ -141,11 +141,11 @@ function subscribe(index){
                                 text: "Sua inscrição foi efetuada com sucesso",
                                 icon: "success",
                                 showConfirmButton: false,
-                                timer: 4000,
+                                timer: 2000,
                               });
                            setInterval(()=>{
                                 window.location.replace("../perfilVoluntario/perfilVoluntarioo.html");
-                           },2000);
+                           },1000);
                             
                         }                        
                         else
@@ -205,7 +205,7 @@ else // sem query de pesquisa, carrega todos os cards
     if(projects){
         projects.forEach( (project)=>{
             createCards(".grid-wrapper", project, project.id);
-            console.log(project)
+            
         } );
         
     }

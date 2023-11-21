@@ -28,16 +28,22 @@ function getHours() {
 
 
 function checkisLoggedInMenu(){
-    let loggedNodeText = document.querySelector(".entrar-sair");
+
+    
     const listaNav = document.querySelector(".navbar-nav");
     const links = listaNav.querySelectorAll(".nav-link") ;
+    const linkHome = links[0];
+    const linkProjetos = links[1];
+    const linkPerfil = links[2];
+    const linkSair = links[3];
+    
     let userLogged = isLogged();
-    console.log(userLogged);
+ 
     if(userLogged != null)
     {
-      loggedNodeText.textContent = "Sair";
-        loggedNodeText.setAttribute("href","#");
-        loggedNodeText.addEventListener("click", ()=>{
+      linkSair.textContent = "Sair";
+      linkSair.setAttribute("href","#");
+      linkSair.addEventListener("click", ()=>{
             localStorage.setItem("loginUser", "");
             Swal.fire({
                 position: "center",
@@ -49,11 +55,11 @@ function checkisLoggedInMenu(){
               });
               setInterval(()=>{
                 location.replace("../index.html");
-           },2000);
+           },1000);
             
         });
         if(userLogged.typeUser === "Empresa"){
-          let linkPerfil = links[2];
+          
           linkPerfil.setAttribute("href", "../perfilEmpresa/perfilEmpresa.html")
         }
     

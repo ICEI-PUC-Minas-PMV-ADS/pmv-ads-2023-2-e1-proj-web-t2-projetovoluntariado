@@ -98,6 +98,8 @@ document.addEventListener("DOMContentLoaded",function(){
     const imageLink = document.getElementById("imagem").value;
     const description = document.getElementById("descricao").value;
 
+    // Falta Validar os dados que estao no form
+
     let userLogged = isLogged();
     let users = getUsers();
     let projects = JSON.parse(localStorage.getItem("projects"));
@@ -159,12 +161,6 @@ document.addEventListener("DOMContentLoaded",function(){
 
 
 })
-
-
-
-
-
-// Tratar os campos antes de postar no localStorage
 
 
 

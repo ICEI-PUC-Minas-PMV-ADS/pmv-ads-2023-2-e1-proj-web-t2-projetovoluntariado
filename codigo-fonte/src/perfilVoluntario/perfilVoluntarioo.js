@@ -183,3 +183,14 @@ function getNivel(horas) {
     return "Rubi";
   }
 }
+
+function inibBotao(){
+  horas = getHours()
+  if(horas <= 0){
+    let botao = document.getElementById("emitirCertificadoBtn")
+    botao.style.display = "none"
+    
+}
+}
+
+inibBotao()

@@ -47,7 +47,9 @@ function getNivel(horas) {
 
 
 function iconeCertificado() {
+
     let horas = getHours()
+    
     if (horas > 2 && horas < 10) {
         document.getElementById("imagemNivel").src ="../perfilVoluntario/imagens/esmeralda.png";
     } else if (horas >= 10 && horas < 30) {

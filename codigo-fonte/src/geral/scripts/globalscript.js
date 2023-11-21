@@ -29,9 +29,11 @@ function getHours() {
 
 function checkisLoggedInMenu(){
     let loggedNodeText = document.querySelector(".entrar-sair");
+    const listaNav = document.querySelector(".navbar-nav");
+    const links = listaNav.querySelectorAll(".nav-link") ;
     if(isLogged() != null)
     {
-        loggedNodeText.innerText = "Sair";
+      loggedNodeText.innerText = "Sair";
         loggedNodeText.setAttribute("href","#");
         loggedNodeText.addEventListener("click", ()=>{
             localStorage.setItem("loginUser", null);
@@ -48,6 +50,10 @@ function checkisLoggedInMenu(){
            },2800);
             
         });
+    }
+    else{
+      const linkPerfil = links[2];
+      linkPerfil.style.display = "none" ;
     }
 }
 function getUsers()

@@ -177,6 +177,13 @@ body .my-4{
 }
 article h2 {
     text-align: center;
+   
+}
+.container-card{
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: space-between;   
+    text-align: center;    
 }
 
 @media screen and (max-width: 576px) {

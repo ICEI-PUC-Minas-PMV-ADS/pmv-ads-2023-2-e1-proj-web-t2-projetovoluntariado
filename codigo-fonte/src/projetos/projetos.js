@@ -54,8 +54,9 @@ function createCards(querySelector, project, index) // cria dinamicamente os car
 
     containerCard.appendChild(imageCards);
     article.appendChild(h2);
-    article.appendChild(p);
+    // article.appendChild(p);
     containerCard.appendChild(article);
+    containerCard.appendChild(p);
 
 
     var nodeLocal = document.querySelector(querySelector);

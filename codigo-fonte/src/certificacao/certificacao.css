@@ -42,10 +42,10 @@ body {
 }
 
 @media print {
-    /* Estilos para a impressão */
+
     body {
-      /* Exemplo de estilo: fonte maior para impressão */
       font-size: 16px;
+      color: black;
     }
     header{
         display: none;

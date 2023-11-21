@@ -64,6 +64,11 @@ function iconeCertificado() {
 
 }
 
+document.getElementById("imprimirButton").addEventListener("click", ()=>{
+    console.log("imprimir")
+    window.print();
+})
+
 iconeCertificado()
 
 

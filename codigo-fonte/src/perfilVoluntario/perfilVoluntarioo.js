@@ -97,7 +97,7 @@ const images = [
   "./imagens/perfil/golden-dog.webp",
   "./imagens/perfil/other-dog.jpg",
   "./imagens/perfil/h1.jpg",
-  "./imagens/perfil/j1.jpg",
+  "./imagens/perfil/j1.2.jpg",
   "./imagens/perfil/j2.jpg",
   "./imagens/perfil/j3.jpg",
   "./imagens/perfil/m1.jpg",

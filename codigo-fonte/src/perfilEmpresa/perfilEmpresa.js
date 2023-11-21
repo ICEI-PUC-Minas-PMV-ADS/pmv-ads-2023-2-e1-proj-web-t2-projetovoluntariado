@@ -10,7 +10,7 @@ menuButton.addEventListener('click', () => {
 });
 
 document.getElementById('cadastrarProjetoBtn').addEventListener('click', function() {
-    window.location.href = "http://127.0.0.1:5500/codigo-fonte/src/cadastroProjeto/cadastroProjeto.html";
+    window.location.href = "../cadastroProjeto/cadastroProjeto.html";
 });
 
 document.querySelectorAll('.btn-secondary').forEach((button) => {

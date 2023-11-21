@@ -91,12 +91,12 @@ document.addEventListener("DOMContentLoaded",function(){
     formulario.addEventListener('submit', function(event){ 
     event.preventDefault();
     
-    const projectName = document.getElementById("nome-projeto");
-    const institutionName = document.getElementById("nome-instituicao");
-    const availability = document.getElementById("horas");
-    const categoryName = document.getElementById("categoria");
-    const imageLink = document.getElementById("imagem");
-    const description = document.getElementById("descricao");
+    const projectName = document.getElementById("nome-projeto").value;
+    const institutionName = document.getElementById("nome-instituicao").value;
+    const availability = document.getElementById("horas").value;
+    const categoryName = document.getElementById("categoria").value;
+    const imageLink = document.getElementById("imagem").value;
+    const description = document.getElementById("descricao").value;
 
     let userLogged = isLogged();
     let users = getUsers();
@@ -104,6 +104,7 @@ document.addEventListener("DOMContentLoaded",function(){
     if(userLogged){
         users.forEach((user)=>{
             if(user.email === userLogged.email && projects){
+                tempProjects = user.projects;
                 let project = {
                     id: projects.length,
                     projectName: projectName,
@@ -117,7 +118,23 @@ document.addEventListener("DOMContentLoaded",function(){
                 }
                 projects.push(project);
                 localStorage.setItem("projects", JSON.stringify(projects));
+                
+                tempProjects.push(project);
+                user.projects = tempProjects;
+                localStorage.setItem("users", user);
+                
                 console.log("Adicionado com sucesso")
+                Swal.fire({
+                    position: "center",
+                    title: `Pronto`,
+                    text: "Projeto cadastrado com sucesso",
+                    icon: "success",
+                    showConfirmButton: false,
+                    timer: 2000,
+                  });
+                  setInterval(()=>{
+                    window.location.replace("../perfilEmpresa/perfilEmpresa.html");
+               },2000);
             }
         })
     }

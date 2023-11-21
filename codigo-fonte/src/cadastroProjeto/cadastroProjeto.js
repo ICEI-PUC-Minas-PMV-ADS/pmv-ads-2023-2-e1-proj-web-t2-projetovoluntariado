@@ -65,6 +65,8 @@ document.getElementById('btnEscolherImagem').addEventListener('click', () => {
     galeriaImagens.style.display = 'block'; // Exibe a galeria como bloco
     document.getElementById('imagem').style.display = 'none';
 });
+
+
 function createCategoryOption(){
     
     inputCategory = document.getElementById("categoria");
@@ -79,3 +81,56 @@ function createCategoryOption(){
     
 }
 createCategoryOption()
+
+
+
+document.addEventListener("DOMContentLoaded",function(){
+    let formulario = document.getElementById("formulario");
+
+    
+    formulario.addEventListener('submit', function(event){ 
+    event.preventDefault();
+    
+    const projectName = document.getElementById("nome-projeto");
+    const institutionName = document.getElementById("nome-instituicao");
+    const availability = document.getElementById("horas");
+    const categoryName = document.getElementById("categoria");
+    const imageLink = document.getElementById("imagem");
+    const description = document.getElementById("descricao");
+
+    let userLogged = isLogged();
+    let users = getUsers();
+    let projects = JSON.parse(localStorage.getItem("projects"));
+    if(userLogged){
+        users.forEach((user)=>{
+            if(user.email === userLogged.email && projects){
+                let project = {
+                    id: projects.length,
+                    projectName: projectName,
+                    projectDescription: description,
+                    instituitionName: institutionName,
+                    availability: availability,
+                    categoryName: categoryName,
+                    imgLink: imageLink,
+                    isActive: 1,
+                    userCompleted: 0
+                }
+                projects.push(project);
+                localStorage.setItem("projects", JSON.stringify(projects));
+                console.log("Adicionado com sucesso")
+            }
+        })
+    }
+    })
+
+
+})
+
+
+
+
+
+// Tratar os campos antes de postar no localStorage
+
+
+

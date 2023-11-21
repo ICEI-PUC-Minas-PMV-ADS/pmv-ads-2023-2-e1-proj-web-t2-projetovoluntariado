@@ -59,18 +59,18 @@
             <h2 class="text-white mt-5 mb-3 d-flex justify-content-center">Cadastrar Projeto</h2>
             <div class="card mx-3 mx-md-3 mx-lg-auto rounded-5 p-4">
                 <div class="container mt-4">
-                    <form>
+                    <form id="formulario">
                         <div class="mb-4">
                             <label for="input1" class="form-label">Nome do projeto:</label>
-                            <input type="text" class="form-control" id="input1" placeholder="Exemplo: Amigos do bem">
+                            <input type="text" class="form-control" id="nome-projeto" minlength="5" maxlength="50" placeholder="Exemplo: Amigos do bem">
                         </div>
                         <div class="mb-4">
                             <label for="input2" class="form-label">Nome de sua instituição:</label>
-                            <input type="text" class="form-control" id="input2" placeholder="Exemplo: PUC Minas">
+                            <input type="text" class="form-control" id="nome-instituicao" minlength="5" maxlength="50" placeholder="Exemplo: PUC Minas">
                         </div>
                         <div class="mb-4">
                             <label for="horas" class="form-label">Disponibilidade de horas necessárias:</label>
-                            <input type="number" class="form-control" id="horas" name="horas">
+                            <input type="number" class="form-control" id="horas" name="horas" min="1" max="1000">
                         </div>
                         <div class="mb-4">
                             <label for="categoria" class="form-label">Selecione a categoria do projeto:</label>
@@ -88,7 +88,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="textoGrande" class="form-label">Descrição do projeto:</label>
-                            <textarea class="form-control" id="textoGrande" name="textoGrande" rows="7"></textarea>
+                            <textarea class="form-control" id="descricao" name="textoGrande" rows="7" minlength="10" maxlength="250"></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-lg mb-4 btn-secondary">Enviar</button>

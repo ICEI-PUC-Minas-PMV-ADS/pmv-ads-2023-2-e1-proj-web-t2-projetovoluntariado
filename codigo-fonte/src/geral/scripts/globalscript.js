@@ -1,10 +1,10 @@
 function isLogged() //Retorna o objeto LoginUser caso esteja logado do contrário null
 {
-    user = JSON.parse(localStorage.getItem("loginUser"));
-    if(user == null || user == undefined)
+    let user = localStorage.getItem("loginUser");
+    if(user == null || user == undefined || user == "")
         return null;
     else
-        return user;
+        return JSON.parse(user);
 
 }
 
@@ -31,12 +31,14 @@ function checkisLoggedInMenu(){
     let loggedNodeText = document.querySelector(".entrar-sair");
     const listaNav = document.querySelector(".navbar-nav");
     const links = listaNav.querySelectorAll(".nav-link") ;
-    if(isLogged() != null)
+    let userLogged = isLogged();
+    console.log(userLogged);
+    if(userLogged != null)
     {
-      loggedNodeText.innerText = "Sair";
+      loggedNodeText.textContent = "Sair";
         loggedNodeText.setAttribute("href","#");
         loggedNodeText.addEventListener("click", ()=>{
-            localStorage.setItem("loginUser", null);
+            localStorage.setItem("loginUser", "");
             Swal.fire({
                 position: "center",
                 title: `Logout... `,
@@ -47,11 +49,16 @@ function checkisLoggedInMenu(){
               });
               setInterval(()=>{
                 location.replace("../index.html");
-           },2800);
+           },2000);
             
         });
-    }
-    else{
+        if(userLogged.typeUser === "Empresa"){
+          let linkPerfil = links[2];
+          linkPerfil.setAttribute("href", "../perfilEmpresa/perfilEmpresa.html")
+        }
+    
+}
+else{
       const linkPerfil = links[2];
       linkPerfil.style.display = "none" ;
     }

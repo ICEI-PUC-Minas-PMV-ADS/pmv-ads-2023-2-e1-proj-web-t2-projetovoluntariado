@@ -145,7 +145,7 @@ function subscribe(index){
                               });
                            setInterval(()=>{
                                 window.location.replace("../perfilVoluntario/perfilVoluntarioo.html");
-                           },2500);
+                           },2000);
                             
                         }                        
                         else
@@ -181,7 +181,7 @@ function subscribe(index){
           });
           setInterval(()=>{
             window.location.replace("../loginCadastro/loginCadastro.html");
-       },3700);
+       },2000);
         
     }
 }

@@ -95,7 +95,7 @@ const perfilImagem = document.getElementById("perfilImage");
 const images = [
   "../homePage/images/perfil-1.jpeg",
   "./imagens/perfil/golden-dog.webp",
-  "./imagens/perfil/other-dog.webp",
+  "./imagens/perfil/other-dog.jpg",
   "./imagens/perfil/h1.jpg",
   "./imagens/perfil/j1.jpg",
   "./imagens/perfil/j2.jpg",

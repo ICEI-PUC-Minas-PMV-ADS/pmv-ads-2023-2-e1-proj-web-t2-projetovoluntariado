@@ -118,10 +118,11 @@ document.addEventListener("DOMContentLoaded",function(){
                 }
                 projects.push(project);
                 localStorage.setItem("projects", JSON.stringify(projects));
-                
+
                 tempProjects.push(project);
+                user.projects =[];
                 user.projects = tempProjects;
-                localStorage.setItem("users", user);
+                localStorage.setItem("users", JSON.stringify(users));
                 
                 console.log("Adicionado com sucesso")
                 Swal.fire({

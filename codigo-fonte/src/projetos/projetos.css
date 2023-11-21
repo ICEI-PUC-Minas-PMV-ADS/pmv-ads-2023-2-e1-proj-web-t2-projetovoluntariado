@@ -181,7 +181,6 @@ article h2 {
 }
 .container-card{
     flex-direction: column;
-    /* align-items: flex-start; */
     justify-content: space-between;   
     text-align: center;    
 }

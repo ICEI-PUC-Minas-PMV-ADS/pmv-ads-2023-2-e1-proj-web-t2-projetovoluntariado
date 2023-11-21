@@ -65,3 +65,17 @@ document.getElementById('btnEscolherImagem').addEventListener('click', () => {
     galeriaImagens.style.display = 'block'; // Exibe a galeria como bloco
     document.getElementById('imagem').style.display = 'none';
 });
+function createCategoryOption(){
+    
+    inputCategory = document.getElementById("categoria");
+    Object.keys(categorias).forEach((categoriaItem)=>{
+        const valor = categorias[categoriaItem];
+        let option = document.createElement("option");
+        option.setAttribute("value", valor);
+        option.textContent = valor;
+        inputCategory.appendChild(option);
+    })
+    
+    
+}
+createCategoryOption()

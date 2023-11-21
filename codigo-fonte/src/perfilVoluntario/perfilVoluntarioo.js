@@ -94,6 +94,8 @@ const perfilImagem = document.getElementById("perfilImage");
 
 const images = [
   "../homePage/images/perfil-1.jpeg",
+  "./imagens/perfil/golden-dog.webp",
+  "./imagens/perfil/other-dog.webp",
   "./imagens/perfil/h1.jpg",
   "./imagens/perfil/j1.jpg",
   "./imagens/perfil/j2.jpg",
@@ -141,8 +143,6 @@ if (loginUserInfo) {
   console.log("Nome de usuario não encontrado.");
 }
 
-
-
 document.getElementById("hours").textContent = getHours() + " horas";
 
 listarProjetos();
@@ -184,13 +184,12 @@ function getNivel(horas) {
   }
 }
 
-function inibBotao(){
-  horas = getHours()
-  if(horas <= 0){
-    let botao = document.getElementById("emitirCertificadoBtn")
-    botao.style.display = "none"
-    
-}
+function inibBotao() {
+  horas = getHours();
+  if (horas <= 0) {
+    let botao = document.getElementById("emitirCertificadoBtn");
+    botao.style.display = "none";
+  }
 }
 
-inibBotao()
+inibBotao();

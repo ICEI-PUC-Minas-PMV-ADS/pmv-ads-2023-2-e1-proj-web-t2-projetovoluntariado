@@ -263,7 +263,7 @@ function register() {
     password,
     typeUser,
     projects: [],
-    perfilImage: "../homePage/images/perfil-1.jpeg",
+    perfilImage: "../perfilVoluntario/imagens/perfil/golden-dog.webp",
   };
 
   let registers = [registerObject];

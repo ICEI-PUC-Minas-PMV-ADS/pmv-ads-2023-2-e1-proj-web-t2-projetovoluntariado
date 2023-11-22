@@ -79,17 +79,7 @@ listaProjetos = [
         userCompleted:0
     },
 ```
-Para a gravação dos dados dos usuários cadastrados, a estrutura de dados utilizada também é um objeto Javascript disposto da seguinte estrutura:
 
-```javascript
-  {
-        "name": "André",
-        "email": "a@a.com",
-        "password": "123",
-        "typeUser": "Voluntário",
-        "projects": []
-  }
-```
 
 
 #### Instruções de acesso
@@ -124,7 +114,17 @@ RF-07: A aplicação deve permitir que o usuário registre-se no site.
 
 #### Estrutura de Dados
 
+Para a gravação dos dados dos usuários cadastrados, a estrutura de dados utilizada também é um objeto Javascript disposto da seguinte estrutura:
 
+```javascript
+  {
+        "name": "André",
+        "email": "a@a.com",
+        "password": "123",
+        "typeUser": "Voluntário",
+        "projects": []
+  }
+```
 
 
 #### Instruções de acesso

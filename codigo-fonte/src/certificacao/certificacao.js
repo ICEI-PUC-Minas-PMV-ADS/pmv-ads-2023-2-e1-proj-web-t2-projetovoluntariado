@@ -51,9 +51,9 @@ function iconeCertificado() {
     let horas = getHours()
     
     if (horas > 2 && horas < 10) {
-        document.getElementById("imagemNivel").src ="../perfilVoluntario/imagens/esmeralda.png";
+        document.getElementById("imagemNivel").src ="../perfilVoluntario/imagens/safira.png";
     } else if (horas >= 10 && horas < 30) {
-        document.getElementById("imagemNivel").src ="../perfilVoluntario/imagens/esmeralda.png";
+        document.getElementById("imagemNivel").src ="../perfilVoluntario/imagens/ametista.png";
     } else if (horas >= 30 && horas < 60) {
         document.getElementById("imagemNivel").src ="../perfilVoluntario/imagens/esmeralda.png";
     } else if(horas <= 60){

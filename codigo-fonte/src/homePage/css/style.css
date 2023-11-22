@@ -75,6 +75,7 @@ body {
 
 .btn-secondary:hover {
     background-color: var(--cor-1);
+    scale: 1.1;
 }
 
 .section-3 img {

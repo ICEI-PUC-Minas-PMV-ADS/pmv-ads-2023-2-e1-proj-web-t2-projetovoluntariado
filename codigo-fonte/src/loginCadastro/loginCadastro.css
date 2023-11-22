@@ -94,6 +94,7 @@ body {
 
 .btn-default:hover {
   opacity: 0.7;
+  scale: 1.1;
 }
 
 .error-message {

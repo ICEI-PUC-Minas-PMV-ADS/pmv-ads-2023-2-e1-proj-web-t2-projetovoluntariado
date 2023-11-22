@@ -109,6 +109,7 @@ body .my-4 {
 
 .botao-vermais:hover {
     background-color: #7f66a7;
+    scale: 1.1;
 
 }
 

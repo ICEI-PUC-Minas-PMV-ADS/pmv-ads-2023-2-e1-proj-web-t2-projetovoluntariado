@@ -1,5 +1,4 @@
 .modal-container {
-
     display: none;
     margin: 0;
     position: relative;
@@ -63,7 +62,7 @@
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.5em;
-
+    margin-top: 5px;
 }
 
 .fechar-modal {
@@ -149,9 +148,7 @@
 }
 
 .btn-participar:hover {
-
     background-color: #7f66a7;
-
 }
 
 .modal-dados-empresa-horas {
@@ -172,6 +169,10 @@
     fill: white;
     align-self: flex-end;
     cursor: pointer;
+}
+
+.btn-fechar-modal:hover {
+    scale: 1.2;
 }
 
 @media screen and (max-width: 576px) {

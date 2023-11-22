@@ -14,12 +14,13 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 |Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
 |-|:---|:---|:---|:---|:---|
-| CT01: Verificar o funcionamento dos links da página Projetos | - RF-02 Por parte do voluntário, a aplicação deve possuir um mecanismo de filtro de projetos de acordo com a área de interesse. </br> - RF-03 Por parte do voluntário, a aplicação deve possuir um mecanismo de filtro de projetos de acordo com a área de interesse.|||||
-|:-------|:---|:---|:---|:---|:---|
+| CT02: Verificar a inscrição do voluntário nos projetos | RF-01 A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário. <br> RF-03 - A aplicação deve permitir que o voluntário se inscreva em projetos. <br> RF-07 - A aplicação deve permitir que o usuário registre-se no site.| Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - O usuário precisa se inscrever e ou efetuar o login na modalidade voluntário <br> 2- Acessar a página "Projetos" a partir da Home ou de outra página.<br> 3 - Visualizar a página Projetos <br> 3 - Clicar no botão "ver detalhes" do projeto de interesse <br> 4 - Clicar em "Inscrever" no modal que será aberto com detalhes dos projetos | Uma mensagem com sucesso deverá ser exibida | Anderson S Gomes|
+|||||||
+
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
 > -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
 > - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+> - [UX 

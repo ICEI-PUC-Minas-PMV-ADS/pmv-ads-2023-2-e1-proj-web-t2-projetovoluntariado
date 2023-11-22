@@ -4,23 +4,11 @@
 
 Os testes funcionais a serem realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste]
 
-|Caso de Teste    | CT-X - Título Caso de Teste |
-|:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+<br>
 
 |Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
 |-|:---|:---|:---|:---|:---|
 | CT01: Verificar a inscrição do voluntário nos projetos | RF-01 A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário. <br> RF-03 - A aplicação deve permitir que o voluntário se inscreva em projetos. <br> RF-07 - A aplicação deve permitir que o usuário registre-se no site.| Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - O usuário precisa se inscrever e ou efetuar o login na modalidade voluntário <br> 2- Acessar a página "Projetos" a partir da Home ou de outra página.<br> 3 - Visualizar a página Projetos <br> 3 - Clicar no botão "ver detalhes" do projeto de interesse <br> 4 - Clicar em "Inscrever" no modal que será aberto com detalhes dos projetos | Uma mensagem com sucesso deverá ser exibida | Anderson S Gomes|
 | CT02| Verificar a inscrição dos usuários aos projetos |  ||||
 
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX 
+

@@ -11,6 +11,11 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Passos | Indicar passos para a execução do teste |
 | Critérios de êxito | Indicar os critérios de êxito  |
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+|Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
+|-|:---|:---|:---|:---|:---|
+| CT01: Verificar o funcionamento dos links da página Projetos | - RF-02 Por parte do voluntário, a aplicação deve possuir um mecanismo de filtro de projetos de acordo com a área de interesse. </br> - RF-03 Por parte do voluntário, a aplicação deve possuir um mecanismo de filtro de projetos de acordo com a área de interesse.|||||
+|:-------|:---|:---|:---|:---|:---|
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)

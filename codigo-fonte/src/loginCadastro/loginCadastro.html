@@ -1,132 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login e Registro</title>
-  <link rel="stylesheet" href="loginCadastro.css" />
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.all.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-</head>
-
-<body>
-  <main class="c-main">
-    <header class="header-menu">
-      <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
-        <div class="container-fluid rounded-3 mx-3">
-          <a class="navbar-brand d-flex nav-link ms-2" href="../index.html">
-            <img src="./images/logo-white.svg" alt="Logo" width="45" class="d-inline-block align-text-top" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="../projetos/projetos.html">Projetos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Entrar</a>
-              </li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login e Registro</title>
+    <link rel="stylesheet" href="loginCadastro.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.all.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="c-main">
+      <header class="header-menu">
+        <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
+          <div class="container-fluid rounded-3 mx-3">
+            <a class="navbar-brand d-flex nav-link ms-2" href="../index.html">
+              <img
+                src="./images/logo-white.svg"
+                alt="Logo"
+                width="45"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="../projetos/projetos.html"
+                    >Projetos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Entrar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="section-switch-card">
+        <div class="c-switch">
+          <span class="switch-text-login" role="button">Login</span>
+          <label class="switch">
+            <input type="checkbox" class="switch-checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <span class="switch-text-register" role="button">Cadastro</span>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1 class="card-front-title">Login</h1>
+              <img
+                src="images/sign-in.svg"
+                alt="Imagem representando uma mulher fazendo login em um site"
+                class="image-sign-in"
+              />
+              <div class="container-label-input">
+                <label class="label-default label-login">Email</label>
+                <input
+                  placeholder="email@gmail.com"
+                  maxlength="50"
+                  required
+                  name="email"
+                  type="email"
+                  id="email"
+                  class="input-default input-login"
+                />
+              </div>
+              <div class="container-label-input">
+                <label class="label-default label-login">Senha</label>
+                <input
+                  placeholder="P@ssw0rd"
+                  required
+                  name="senha"
+                  id="password"
+                  maxlength="37"
+                  type="password"
+                  class="input-default input-login"
+                />
+                <i class="fa-solid fa-eye eye-icon" id="eye-login"></i>
+                <i
+                  class="fa-solid fa-eye-slash eye-slash-icon"
+                  id="slash-eye-login"
+                ></i>
+              </div>
+              <span class="error-message"></span>
+              <button
+                type="button"
+                class="btn-default btn-login"
+                id="btn-login"
+              >
+                ENTRAR
+              </button>
+            </div>
+            <div class="flip-card-back">
+              <h1 class="card-back-title">Cadastro</h1>
+              <div class="container-label-input">
+                <label class="label-default label-register">Nome</label>
+                <input
+                  placeholder="João Pedro"
+                  required
+                  name="nome"
+                  id="nameRegister"
+                  maxlength="50"
+                  type="text"
+                  class="input-default input-register"
+                />
+              </div>
+              <div class="container-label-input">
+                <label class="label-default label-register">Email</label>
+                <input
+                  placeholder="email@gmail.com"
+                  required
+                  name="email"
+                  maxlength="50"
+                  id="emailRegister"
+                  type="email"
+                  class="input-default input-register"
+                />
+              </div>
+              <div class="container-label-input">
+                <label class="label-default label-register">Senha</label>
+                <input
+                  placeholder="P@ssw0rd"
+                  required
+                  maxlength="37"
+                  id="passwordRegister"
+                  name="senha"
+                  type="password"
+                  class="input-default input-register"
+                />
+                <i class="fa-solid fa-eye eye-icon" id="eye-register"></i>
+                <i
+                  class="fa-solid fa-eye-slash eye-slash-icon"
+                  id="slash-eye-register"
+                ></i>
+              </div>
+              <div class="container-checkboxes">
+                <div class="label-checkbox">
+                  <label class="label-register" for="voluntario"
+                    >Voluntário</label
+                  >
+                  <input
+                    type="checkbox"
+                    name="tipo"
+                    id="voluntario"
+                    value="Voluntario"
+                    class="custom-checkbox"
+                    onclick="toggleCheckboxes(this)"
+                  />
+                </div>
+                <div class="label-checkbox">
+                  <label class="label-register" for="empresa">Empresa</label>
+                  <input
+                    type="checkbox"
+                    id="empresa"
+                    name="tipo"
+                    value="Empresa"
+                    class="custom-checkbox"
+                    onclick="toggleCheckboxes(this)"
+                  />
+                </div>
+              </div>
+              <span class="error-message"></span>
+              <button
+                type="button"
+                class="btn-default btn-register"
+                id="btn-register"
+              >
+                CADASTRAR
+              </button>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <section class="section-switch-card">
-      <div class="c-switch">
-        <span class="switch-text-login" role="button">Login</span>
-        <label class="switch">
-          <input type="checkbox" class="switch-checkbox" />
-          <span class="slider round"></span>
-        </label>
-        <span class="switch-text-register" role="button">Cadastro</span>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <h1 class="card-front-title">Login</h1>
-            <img src="images/sign-in.svg" alt="Imagem representando uma mulher fazendo login em um site"
-              class="image-sign-in" />
-            <div class="container-label-input">
-              <label class="label-default label-login">Email</label>
-              <input placeholder="email@gmail.com" maxlength="50" required name="email" type="email" id="email"
-                class="input-default input-login" />
-            </div>
-            <div class="container-label-input">
-              <label class="label-default label-login">Senha</label>
-              <input placeholder="P@ssw0rd" required name="senha" id="password" maxlength="37" type="password"
-                class="input-default input-login" />
-              <i class="fa-solid fa-eye eye-icon" id="eye-login"></i>
-              <i class="fa-solid fa-eye-slash eye-slash-icon" id="slash-eye-login"></i>
-            </div>
-            <span class="error-message"></span>
-            <button type="button" class="btn-default btn-login" id="btn-login">
-              ENTRAR
-            </button>
-          </div>
-          <div class="flip-card-back">
-            <h1 class="card-back-title">Cadastro</h1>
-            <div class="container-label-input">
-              <label class="label-default label-register">Nome</label>
-              <input placeholder="João Pedro" required name="nome" id="nameRegister" maxlength="50" type="text"
-                class="input-default input-register" />
-            </div>
-            <div class="container-label-input">
-              <label class="label-default label-register">Email</label>
-              <input placeholder="email@gmail.com" required name="email" maxlength="50" id="emailRegister" type="email"
-                class="input-default input-register" />
-            </div>
-            <div class="container-label-input">
-              <label class="label-default label-register">Senha</label>
-              <input placeholder="P@ssw0rd" required maxlength="37" id="passwordRegister" name="senha" type="password"
-                class="input-default input-register" />
-              <i class="fa-solid fa-eye eye-icon" id="eye-register"></i>
-              <i class="fa-solid fa-eye-slash eye-slash-icon" id="slash-eye-register"></i>
-            </div>
-            <div class="container-checkboxes">
-              <div class="label-checkbox">
-                <label class="label-register" for="voluntario">Voluntário</label>
-                <input type="checkbox" name="tipo" id="voluntario" value="Voluntario" class="custom-checkbox"
-                  onclick="toggleCheckboxes(this)" />
-              </div>
-              <div class="label-checkbox">
-                <label class="label-register" for="empresa">Empresa</label>
-                <input type="checkbox" id="empresa" name="tipo" value="Empresa" class="custom-checkbox"
-                  onclick="toggleCheckboxes(this)" />
-              </div>
-            </div>
-            <span class="error-message"></span>
-            <button type="button" class="btn-default btn-register" id="btn-register">
-              CADASTRAR
-            </button>
-          </div>
+      </section>
+      <footer class="section text-center text-white custom-footer">
+        <div
+          class="text-center py-3 rounded-4 mb-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          <p class="mb-1">Todos os direitos reservados</p>
+          <h6>© 2023 Copyright: VoluntaRia</h6>
         </div>
-      </div>
-    </section>
-    <footer class="section text-center text-white custom-footer">
-      <div class="text-center py-3 rounded-4 mb-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        <p class="mb-1">Todos os direitos reservados</p>
-        <h6>© 2023 Copyright: VoluntaRia</h6>
-      </div>
-    </footer>
-  </main>
-  <script src="loginCadastro.js"></script>
-  <script src="sweetalert2.all.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
-
+      </footer>
+    </main>
+    <script src="loginCadastro.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -351,5 +351,12 @@ input:checked+.slider:before {
 }
 
 .header-menu {
-  width: 86%;
+  width: 92%;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    margin-top: 6px;
+  }
+
 }

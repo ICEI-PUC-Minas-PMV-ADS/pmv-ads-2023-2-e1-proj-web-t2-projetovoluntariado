@@ -356,7 +356,8 @@ input:checked+.slider:before {
 
 @media screen and (min-width: 768px) {
   .navbar {
-    margin-top: 8px;
+    margin-top: 7px;
+    margin-left: -15px;
   }
 
   .header-menu {

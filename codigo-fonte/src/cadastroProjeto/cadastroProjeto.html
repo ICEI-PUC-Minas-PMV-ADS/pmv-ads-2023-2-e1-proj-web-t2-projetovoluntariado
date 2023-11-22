@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/menu.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.all.min.js"></script>
     <script src="../projetos/scripts/categorias.js"></script>
+
 <body>
     <div class="circle circle-1"></div>
     <div class="circle circle-2"></div>
@@ -62,15 +63,18 @@
                     <form id="formulario">
                         <div class="mb-4">
                             <label for="input1" class="form-label">Nome do projeto:</label>
-                            <input required type="text" class="form-control" id="nome-projeto" minlength="5" maxlength="50" placeholder="Exemplo: Amigos do bem">
+                            <input required type="text" class="form-control" id="nome-projeto" minlength="5"
+                                maxlength="26" placeholder="Exemplo: Amigos do bem">
                         </div>
                         <div class="mb-4">
                             <label for="input2" class="form-label">Nome de sua instituição:</label>
-                            <input required type="text" class="form-control" id="nome-instituicao" minlength="5" maxlength="50" placeholder="Exemplo: PUC Minas">
+                            <input required type="text" class="form-control" id="nome-instituicao" minlength="5"
+                                maxlength="50" placeholder="Exemplo: PUC Minas">
                         </div>
                         <div class="mb-4">
                             <label for="horas" class="form-label">Disponibilidade de horas necessárias:</label>
-                            <input required type="number" class="form-control" id="horas" name="horas" min="1" max="100">
+                            <input required type="number" class="form-control" id="horas" name="horas" min="1"
+                                max="100">
                         </div>
                         <div class="mb-4">
                             <label for="categoria" class="form-label">Selecione a categoria do projeto:</label>
@@ -80,14 +84,17 @@
                         </div>
                         <div class="mb-4">
                             <label for="imagem" class="form-label">Selecione uma imagem de perfil do projeto:</label>
-                            <input required type="text" class="form-control" id="imagem" name="imagem" accept="image/*" style="display: none">
+                            <input required type="text" class="form-control" id="imagem" name="imagem" accept="image/*"
+                                style="display: none">
                             <div id="galeria-imagens" class="mb-2">
                             </div>
-                            <button type="button" class="btn btn-secondary" id="btnEscolherImagem">Escolher imagem</button>
+                            <button type="button" class="btn btn-secondary" id="btnEscolherImagem">Escolher
+                                imagem</button>
                         </div>
                         <div class="mb-3">
                             <label for="textoGrande" class="form-label">Descrição do projeto:</label>
-                            <textarea required class="form-control" id="descricao" name="textoGrande" rows="7" minlength="5" maxlength="250"></textarea>
+                            <textarea required class="form-control" id="descricao" name="textoGrande" rows="7"
+                                minlength="5" maxlength="250"></textarea>
                         </div>
                         <button type="submit" class="btn btn-lg mb-4 btn-secondary">Enviar</button>
                     </form>
@@ -130,7 +137,7 @@
             </div>
         </footer>
     </footer>
-    <script src="../geral/scripts/globalscript.js"></script> 
+    <script src="../geral/scripts/globalscript.js"></script>
     <script src="./cadastroProjeto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

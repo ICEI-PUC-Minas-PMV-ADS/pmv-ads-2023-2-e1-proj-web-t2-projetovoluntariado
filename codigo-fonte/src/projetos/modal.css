@@ -44,7 +44,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 100%;
-
 }
 
 .modal-footer {
@@ -163,8 +162,8 @@
 
 .btn-fechar-modal {
     position: absolute;
-    top: 9px;
-    right: 13px;
+    top: 13px;
+    right: 16px;
     height: 1.7rem;
     fill: white;
     align-self: flex-end;
@@ -224,5 +223,19 @@
 
     .modal-empresa h3 {
         font-size: 1em;
+    }
+
+    .modal-titulo {
+        font-size: 1rem;
+    }
+
+    .btn-fechar-modal {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 1.4rem;
+        fill: white;
+        align-self: flex-end;
+        cursor: pointer;
     }
 }

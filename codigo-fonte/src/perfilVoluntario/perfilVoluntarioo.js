@@ -53,6 +53,7 @@ function listarProjetos() {
       });
     }
   });
+  document.getElementById("hours").textContent = getHours() + " horas";
 }
 
 function finalizarProjeto(projectNumber) {

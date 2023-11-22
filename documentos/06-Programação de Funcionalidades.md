@@ -24,7 +24,32 @@ RF-10: A aplicação deve possuir uma tela inicial atrativa e convidativa com ac
 
 #### Estrutura de Dados
 
-[index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/blob/main/codigo-fonte/src/index.html)
+Para o armazenamento de dados da aplicação foi utilizado um objeto Javascript contendo um array com os projetos a serem carregados no localStorage na primeira vez que o site for acessado, os dados se dispoem da seguinte forma:
+```javascript
+listaProjetos = [
+    {
+        id:1,
+        projectName: "Doe sangue e salve vidas",
+        projectDescription: "Um gesto simples pode salvar muitas vidas, que tal ajudar as pessoas que precisam receber sangue",
+        instituitionName: "Red Blood",
+        availability: 15,
+        categoryName: "Saúde",
+        imgLink: "images/imagem-voluntarios-01.jpg",
+        isActive: 1,
+        userCompleted:0
+    },
+```
+Para a gravação dos dados dos usuários cadastrados, a estrutura de dados utilizada também é um objeto Javascript disposto da seguinte estrutura:
+
+```javascript
+  {
+        "name": "André",
+        "email": "a@a.com",
+        "password": "123",
+        "typeUser": "Voluntário",
+        "projects": []
+  }
+```
 
 
 #### Instruções de acesso

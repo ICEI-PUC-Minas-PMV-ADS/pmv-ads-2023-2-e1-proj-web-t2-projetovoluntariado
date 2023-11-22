@@ -82,9 +82,8 @@ function finalizarProjeto(projectNumber) {
       }
     });
     localStorage.setItem("users", JSON.stringify(usuarios));
-    setInterval(() => {
-      window.location.reload();
-    }, 3000);
+    deleteAllNodesById("containerCards");
+    listarProjetos();
   }
 }
 

@@ -196,16 +196,22 @@ if(queryString){
     var filtered = listaProjetos.filter(project =>categoryFilter(project, categoryName));
     for(project in filtered)
     {
-      createCards(".grid-wrapper", filtered[project], filtered[project].id);
+        createCards(".grid-wrapper", filtered[project], filtered[project].id);
     }
 }
 else // sem query de pesquisa, carrega todos os cards
 {
-    projects = JSON.parse(localStorage.getItem("projects"));
+    let projects = JSON.parse(localStorage.getItem("projects"));
     if(projects){
-        projects.forEach( (project)=>{
-            createCards(".grid-wrapper", project, project.id);
-            
+        projects.forEach((project)=>{
+            if(project.isActive===1) 
+                {
+                    createCards(".grid-wrapper", project, project.id);
+                    console.log(project);
+                }
+                else{
+                    console.log(project);
+                }
         } );
         
     }

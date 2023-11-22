@@ -38,17 +38,30 @@ function listarProjetosEmpresa(){
     let users = getUsers();
     let userLogged = isLogged()
     let projects =[];
+    let countProjects = 0;
     users.forEach((user)=>{
         if(user.email === userLogged.email){
-            projects = user.projects;
+            projects = user.projects;  
             projects.forEach((project)=>{
                 if(project.isActive == 1)
                 {
+                    countProjects++;
                     createCards(project, project.id);
                 }
-            });
+                });
+                if(countProjects==0){
+                    let container = document.getElementById("container2");
+                    let tag = document.createElement("h5");
+                    let div = document.createElement("div");
+                    div.setAttribute("class", "cardVazio")
+                    tag.innerHTML = "Não há projetos ativos";
+                    div.appendChild(tag);
+                    container.appendChild(div);
+                }     
+            }
+            
         }
-    });
+    );
 
 }
 function createCards(project, id){
@@ -66,7 +79,7 @@ function createCards(project, id){
     h4.textContent = project.projectName;
     
     let h5 = document.createElement("h5");
-    h5.textContent = project.availability;
+    h5.textContent = project.availability + " horas";
     
     let div2 = document.createElement("div");
     div2.setAttribute("class", "col text-center margin");
@@ -102,6 +115,13 @@ function encerrarProjeto(id){
             });
             user.projects = projects;
             localStorage.setItem("users", JSON.stringify(users));
+            tempProjects = getProjects();
+            tempProjects.forEach((project)=>{
+                if(project.id == id){
+                    project.isActive = 0;
+                    localStorage.setItem("projects", JSON.stringify(tempProjects));
+                }
+            });
             Swal.fire({
                 position: "center",
                 title: `Pronto`,
@@ -110,9 +130,63 @@ function encerrarProjeto(id){
                 showConfirmButton: false,
                 timer: 2000,
               });
+              deleteAllNodes(".container2");
               listarProjetosEmpresa();
+              countProjectsActive();
+              atualizaNumProjetos();
+              
         }
     });
 
 }
+
+function countProjectsActive(){
+    let users = getUsers();
+    let userLogged = isLogged()
+    let projects =[];
+    let countProjects = 0;
+    users.forEach((user)=>{
+        if(user.email === userLogged.email){
+            projects = user.projects;  
+            projects.forEach((project)=>{
+                if(project.isActive === 1)
+                    countProjects++;
+                });
+                   
+            }
+            
+        }
+       
+    );
+    return countProjects; 
+}
+
+function getNomeEmpresa(){
+    let users = getUsers();
+    let userLogged = isLogged()
+    let userName="";
+    users.forEach((user)=>{
+        if(user.email === userLogged.email){
+            userName = user.name;
+                   
+         }
+        }   
+
+    );
+    return userName;
+}
+
+
+function atualizaNumProjetos(){
+    let numProjetos = countProjectsActive();
+    document.getElementById("nomeEmpresa").textContent = getNomeEmpresa();
+    if (numProjetos>1)
+    { document.getElementById("totalProjetos").textContent = numProjetos + " projetos";}
+    else if(numProjetos==1)
+        {document.getElementById("totalProjetos").textContent = numProjetos + " projeto";}
+        else
+        {document.getElementById("totalProjetos").textContent = numProjetos + " projetos";}
+}
+
+atualizaNumProjetos();
 listarProjetosEmpresa();

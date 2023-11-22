@@ -39,6 +39,7 @@ body {
 .btn-secondary:hover {
     background-color: var(--cor-1);
     border: none;
+    scale: 1.1;
 }
 
 @media print {

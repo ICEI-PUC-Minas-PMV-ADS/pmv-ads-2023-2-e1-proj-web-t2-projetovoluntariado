@@ -90,5 +90,17 @@ function setProjectsToLocalStorage() { //Faz a primeira gravacao do localStorage
   if (projects == null || projects == undefined)
     localStorage.setItem("projects", JSON.stringify(listaProjetos));
 }
+function deleteAllNodes(parentNodeClass){ // Deleta todos os nós abaixo do nó passado como parametro
+  let parent = document.querySelector(parentNodeClass);
+  while(parent.firstChild){
+      parent.removeChild(parent.firstChild);
+  }
+}
+function deleteAllNodesById(parentNodeClass){ // Deleta todos os nós abaixo do nó passado como parametro
+  let parent = document.getElementById(parentNodeClass);
+  while(parent.firstChild){
+      parent.removeChild(parent.firstChild);
+  }
+}
 setProjectsToLocalStorage();
 checkisLoggedInMenu();

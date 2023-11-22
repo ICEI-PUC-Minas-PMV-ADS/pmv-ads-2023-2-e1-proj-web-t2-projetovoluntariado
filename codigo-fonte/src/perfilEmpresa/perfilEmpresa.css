@@ -21,6 +21,7 @@ body {
 .btn-secondary:hover {
     background-color: var(--cor-1);
     border: none;
+    scale: 1.1;
 }
 
 .section img {
@@ -44,6 +45,17 @@ body {
 .section-1{
     margin-bottom: 120px;
     white-space: nowrap;
+}
+.cardVazio{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 343px;
+    width: 100%;
+}
+.cardVazio h5{
+    padding: 25px;
+   
 }
 
 

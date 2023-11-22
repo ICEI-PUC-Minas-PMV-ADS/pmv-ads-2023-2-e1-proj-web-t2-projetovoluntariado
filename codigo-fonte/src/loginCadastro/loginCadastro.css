@@ -94,6 +94,7 @@ body {
 
 .btn-default:hover {
   opacity: 0.7;
+  scale: 1.1;
 }
 
 .error-message {
@@ -205,15 +206,15 @@ body {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: var(--register-color);
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px var(--register-color);
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -301,7 +302,8 @@ input:checked + .slider:before {
   box-sizing: border-box;
   border: 0.4rem solid var(--register-color);
   color: black;
-  transform: rotateY(180deg) translateZ(1px); /* Adiciona a transformação translateZ(1px) */
+  transform: rotateY(180deg) translateZ(1px);
+  /* Adiciona a transformação translateZ(1px) */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -350,6 +352,16 @@ input:checked + .slider:before {
 }
 
 .header-menu {
-  width: 91.209%;
-  padding-top: 0.5rem;
+  width: 92%;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    margin-top: 7px;
+    margin-left: -15px;
+  }
+
+  .header-menu {
+    width: 90.4%;
+  }
 }

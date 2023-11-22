@@ -104,6 +104,7 @@ document.addEventListener("DOMContentLoaded",function(){
     let users = getUsers();
     let projects = JSON.parse(localStorage.getItem("projects"));
     let newId = projects.length+1;
+    let contProjects=0;
     if(userLogged){
         users.forEach((user)=>{
             if(user.email === userLogged.email && projects){
@@ -119,7 +120,12 @@ document.addEventListener("DOMContentLoaded",function(){
                     isActive: 1,
                     userCompleted: 0
                 }
-                if(tempProjects.length>=3)
+                tempProjects.forEach((project)=>{
+                    if(project.isActive == 1)
+                        contProjects++;
+                });
+
+                if(contProjects >=3)
                 {
                     Swal.fire({
                         position: "center",

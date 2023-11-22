@@ -53,6 +53,7 @@ function listarProjetos() {
       });
     }
   });
+  document.getElementById("hours").textContent = getHours() + " horas";
 }
 
 function finalizarProjeto(projectNumber) {
@@ -82,9 +83,8 @@ function finalizarProjeto(projectNumber) {
       }
     });
     localStorage.setItem("users", JSON.stringify(usuarios));
-    setInterval(() => {
-      window.location.reload();
-    }, 3000);
+    deleteAllNodesById("containerCards");
+    listarProjetos();
   }
 }
 

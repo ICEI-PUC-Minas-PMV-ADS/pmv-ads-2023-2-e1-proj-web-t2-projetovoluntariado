@@ -35,6 +35,7 @@ body {
 
 .btn-secondary:hover {
     background-color: #7f66a7;
+    scale: 1.1;
 }
 
 .section-3 img {

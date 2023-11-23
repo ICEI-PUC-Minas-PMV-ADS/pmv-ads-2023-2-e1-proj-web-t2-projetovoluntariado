@@ -94,7 +94,7 @@ var listaProjetos = [
         instituitionName: "Animal Rescue",
         availability: 14,
         categoryName: "Proteção aos Animais",
-        imgLink: "images/volunteer-13.jpg",
+        imgLink: "images/imagem-voluntarios-01.jpeg",
         isActive: 1,
         userCompleted:0
     },
@@ -105,7 +105,7 @@ var listaProjetos = [
         instituitionName: "Community Builders",
         availability: 13,
         categoryName: "Desenvolvimento Comunitário",
-        imgLink: "images/imagem-voluntarios-01.jpg",
+        imgLink: "images/imagem-voluntarios-02.jpg",
         isActive: 1,
         userCompleted:0
     },

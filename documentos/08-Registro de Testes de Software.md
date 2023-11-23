@@ -14,13 +14,86 @@ Responsável pela execução do caso de Teste: Aleksander
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
 
 ---- 
-## CT-02: Verificar a inscrição do voluntário nos projetos
+
+## Caso de Teste CT-10
+### Verificar o funcionamento da página HomePage 
+
+Responsável pela execução do caso de Teste: Aleksander 
+  
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+
+---- 
+
+## Caso de Teste CT-10
+### Verificar o funcionamento da página HomePage 
+
+Responsável pela execução do caso de Teste: Aleksander 
+  
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+
+---- 
+
+## Caso de Teste CT-10
+### Verificar o funcionamento da página HomePage 
+
+Responsável pela execução do caso de Teste: Aleksander 
+  
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+
+---- 
+
+## Caso de Teste CT-10
+### Verificar o funcionamento da página HomePage 
+
+Responsável pela execução do caso de Teste: Aleksander 
+  
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+
+---- 
+
+## Caso de Teste CT-10
+### Verificar o funcionamento da página HomePage 
+
+Responsável pela execução do caso de Teste: Aleksander 
+  
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+
+---- 
+
+## Caso de Teste CT-10
+### Verificar o funcionamento da página HomePage 
+
+Responsável pela execução do caso de Teste: Aleksander 
+  
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+
+---- 
+
+## Caso de Teste CT-10
+### Verificar o funcionamento da página HomePage 
+
+Responsável pela execução do caso de Teste: Aleksander 
+  
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+
+---- 
+## Caso de Teste CT-10
+### Verificar o funcionamento da página HomePage 
+
+Responsável pela execução do caso de Teste: Aleksander 
+  
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+
+---- 
+
+## Caso de Teste CT-10
+### Verificar o funcionamento da página HomePage 
+
+Responsável pela execução do caso de Teste: Aleksander 
+  
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+
+---- 
 
 
-Responsável: XXX
-
-Filtro por categoria:
-
-
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/4f31ef4b-e0c2-48c6-b6f5-546591667739)
 

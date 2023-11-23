@@ -18,7 +18,8 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetov
 ## Caso de Teste CT-02
 ### Verificar a inscrição do voluntário nos projetos
 
-Responsável pela execução do caso de Teste: Anderson 
+Responsável pela execução do caso de Teste: Anderson
+
 A página com a lista de projetos publicados e ativos e o botão "ver detalhes"
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/9926da2a-f6c3-47a9-ae46-f14bcb86da38)
@@ -37,6 +38,7 @@ A mensagem de sucesso ao se inscrever nos projetos:
 ### Verificar o filtro dos projetos por categoria
 
 Responsável pela execução do caso de Teste: Anderson 
+
 A lista com todos os projetos:
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/cbc7f95f-02ac-415e-87d1-6b44389fca98)

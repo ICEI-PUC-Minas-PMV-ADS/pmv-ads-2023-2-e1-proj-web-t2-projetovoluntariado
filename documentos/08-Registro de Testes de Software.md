@@ -146,7 +146,7 @@ Projetos ativos:
 ## Caso de Teste CT-10
 ### Verificar o funcionamento da página HomePage 
 
-Responsável pela execução do caso de Teste: Aleksander 
+Responsável pela execução do caso de Teste: Átila 
   
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
 

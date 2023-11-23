@@ -7,11 +7,11 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 ----
 
 ## Caso de Teste CT-01
-### Verificar o funcionamento da página HomePage 
+### Verificar o funcionamento da autenticação e perfis de usuário.
 
-Responsável pela execução do caso de Teste: Aleksander 
+Responsável pela execução do caso de Teste: Arthur
   
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+
 
 ---- 
 

@@ -6,7 +6,7 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 ----
 
-## Caso de Teste CT-10
+## Caso de Teste CT-01
 ### Verificar o funcionamento da página HomePage 
 
 Responsável pela execução do caso de Teste: Aleksander 
@@ -50,7 +50,7 @@ O resultado depois de se clicar na categoria em que se deseja:
 
 ---- 
 
-## Caso de Teste CT-10
+## Caso de Teste CT-04
 ### Verificar o funcionamento da página HomePage 
 
 Responsável pela execução do caso de Teste: Aleksander 
@@ -59,7 +59,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetov
 
 ---- 
 
-## Caso de Teste CT-10
+## Caso de Teste CT-05
 ### Verificar o funcionamento da página HomePage 
 
 Responsável pela execução do caso de Teste: Aleksander 
@@ -68,7 +68,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetov
 
 ---- 
 
-## Caso de Teste CT-10
+## Caso de Teste CT-06
 ### Verificar o funcionamento da página HomePage 
 
 Responsável pela execução do caso de Teste: Aleksander 
@@ -77,7 +77,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetov
 
 ---- 
 
-## Caso de Teste CT-10
+## Caso de Teste CT-07
 ### Verificar o funcionamento da página HomePage 
 
 Responsável pela execução do caso de Teste: Aleksander 
@@ -86,7 +86,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetov
 
 ---- 
 
-## Caso de Teste CT-10
+## Caso de Teste CT-08
 ### Verificar o funcionamento da página HomePage 
 
 Responsável pela execução do caso de Teste: Aleksander 
@@ -94,7 +94,7 @@ Responsável pela execução do caso de Teste: Aleksander
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
 
 ---- 
-## Caso de Teste CT-10
+## Caso de Teste CT-09
 ### Verificar o funcionamento da página HomePage 
 
 Responsável pela execução do caso de Teste: Aleksander 

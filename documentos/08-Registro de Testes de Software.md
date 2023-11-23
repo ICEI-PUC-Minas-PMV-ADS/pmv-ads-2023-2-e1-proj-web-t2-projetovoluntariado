@@ -7,6 +7,6 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 |Caso de Teste    | CT-10: Verificar o funcionamento da página HomePage |
 |:---|:---|
 | Resultados obtidos |   |
-| Responsável pela execução do caso de Teste | Nome do integrante da equipe |
+| Responsável pela execução do caso de Teste | Aleksander |
 
 [Inserir aqui as evidências de teste que podem ser apresentadas por print de telas ou por .gif de execução de teste]

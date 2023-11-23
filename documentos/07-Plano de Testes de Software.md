@@ -1,8 +1,6 @@
 # Plano de Testes de Software
 
-[Apresente os cenários de testes a serem utilizados na realização dos testes da aplicação. Escolha cenários de testes que demonstrem os requisitos sendo atendidos. ]
-
-Os testes funcionais a serem realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste]
+Os testes funcionais a serem realizados na aplicação são descritos a seguir:
 
 ----
 
@@ -62,7 +60,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 |Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
 |-|:---|:---|:---|:---|:---|
-| CT-10: Verificar o funcionamento da página HomePage | RF-10 A aplicação deve possuir uma tela inicial atrativa e convidativa com acesso aos outros fluxos de telas. | Verificar se os links de direcionamento e botões estão funcionando. | 1 - Abrir o navegador. <br> 2- Informar o endereço do site. <br> 3- Visualizar a página Home. <br> 4- Verificar direcionamentos dos links do menu. <br> 5- Verificar direcionamento do botao "Ver mais" <br> 6- Verificar direcionamentos dos links do menu. | Os botões/links deverão encaminhar para cada página correspondente com êxito. | Aleksander |
+| CT-10: Verificar o funcionamento da página HomePage | RF-10 A aplicação deve possuir uma tela inicial atrativa e convidativa com acesso aos outros fluxos de telas. | Verificar se os links de direcionamento e botões estão funcionando. | 1 - Abrir o navegador. <br> 2- Informar o endereço do site. <br> 3- Visualizar a página Home. <br> 4- Verificar direcionamentos dos links do menu. <br> 5- Verificar direcionamento do botao "Ver mais" <br> 6- Verificar direcionamentos dos links do footer. | Os botões/links deverão encaminhar para cada página correspondente com êxito. | Aleksander |
 
 ----
 

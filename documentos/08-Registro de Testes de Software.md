@@ -10,8 +10,14 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 ### Verificar o funcionamento da autenticação e perfis de usuário.
 
 Responsável pela execução do caso de Teste: Arthur
-  
 
+Página de Perfil de voluntário
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/91980fa8-1b0a-411d-b3f5-3fa48f576fe5)
+
+Página de Perfil de Empresa
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/7a0232ee-91af-4162-9d07-b664a2ed6c51)
 
 ---- 
 

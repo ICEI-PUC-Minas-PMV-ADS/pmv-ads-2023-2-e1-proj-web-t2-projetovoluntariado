@@ -9,7 +9,7 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 ## Caso de Teste CT-01
 ### Verificar o funcionamento da autenticação e perfis de usuário.
 
-Responsável pela execução do caso de Teste: Arthur
+Responsável pela execução do caso de Teste: Aleksander
 
 Página de Perfil de voluntário:
 
@@ -24,7 +24,7 @@ Página de Perfil de Empresa:
 ## Caso de Teste CT-02
 ### Verificar a inscrição do voluntário nos projetos
 
-Responsável pela execução do caso de Teste: Anderson
+Responsável pela execução do caso de Teste: Arthur
 
 A página com a lista de projetos publicados e ativos e o botão "ver detalhes"
 
@@ -43,7 +43,7 @@ A mensagem de sucesso ao se inscrever nos projetos:
 ## Caso de Teste CT-03
 ### Verificar o filtro dos projetos por categoria
 
-Responsável pela execução do caso de Teste: Anderson 
+Responsável pela execução do caso de Teste: Gabriela 
 
 A lista com todos os projetos:
 
@@ -75,7 +75,7 @@ Projetos cadastrados:
 ## Caso de Teste CT-05
 ### Verificar o funcionamento do mecanismo de rastreamento de horas.
 
-Responsável pela execução do caso de Teste: Átila 
+Responsável pela execução do caso de Teste: Anderson 
   
 Rastreamento de horas:
 
@@ -94,7 +94,7 @@ Rastreamento de horas:
 ## Caso de Teste CT-06
 ### Verificar o funcionamento da emissão e variações de certificado.
 
-Responsável pela execução do caso de Teste: Gabriela
+Responsável pela execução do caso de Teste: Aleksander
   
 Certificados:
 
@@ -110,7 +110,7 @@ Certificados:
 
 ## Caso de Teste CT-07
 ### Verificar o funcionamento do cadastro de usuário
-Responsável pela execução do caso de Teste: Arthur 
+Responsável pela execução do caso de Teste: Átila 
   
 Cadastro de Usuário:
 
@@ -123,7 +123,7 @@ Cadastro de Usuário:
 ## Caso de Teste CT-08
 ### Verificar o funcionamento da troca de imagem de perfil de voluntário.
 
-Responsável pela execução do caso de Teste: Átila 
+Responsável pela execução do caso de Teste: Anderson 
   
 Troca de imagem de perfil:
 
@@ -135,7 +135,7 @@ Troca de imagem de perfil:
 ## Caso de Teste CT-09
 ### Verificar o funcionamento dos projetos ativos cadastrados pela empresa e poder finaliza-los.
 
-Responsável pela execução do caso de Teste: Gabriela
+Responsável pela execução do caso de Teste: Arthur
   
 Projetos ativos: 
 

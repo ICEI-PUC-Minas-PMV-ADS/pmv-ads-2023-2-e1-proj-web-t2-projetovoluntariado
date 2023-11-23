@@ -29,12 +29,13 @@ Responsável pela execução do caso de Teste: Anderson
 
 ---- 
 
-## Caso de Teste CT-10
-### Verificar o funcionamento da página HomePage 
+## Caso de Teste CT-03
+### Verificar o filtro dos projetos por categoria
 
-Responsável pela execução do caso de Teste: Aleksander 
+Responsável pela execução do caso de Teste: Anderson 
   
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+![print-filtro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/c9a6f6fb-9e14-435b-90fd-ef7eda29ecd1)
+
 
 ---- 
 

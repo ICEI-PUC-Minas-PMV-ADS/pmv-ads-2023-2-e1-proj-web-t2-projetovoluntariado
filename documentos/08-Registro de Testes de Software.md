@@ -15,12 +15,17 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetov
 
 ---- 
 
-## Caso de Teste CT-10
-### Verificar o funcionamento da página HomePage 
+## Caso de Teste CT-02
+### Verificar a inscrição do voluntário nos projetos
 
-Responsável pela execução do caso de Teste: Aleksander 
-  
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+Responsável pela execução do caso de Teste: Anderson 
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/9926da2a-f6c3-47a9-ae46-f14bcb86da38)
+
+![print-inscrever](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/bceb0b98-562a-48fb-bca6-dfd8f66878c9)
+
+![sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/8ef76f66-e03c-4c12-86ed-19b45f165ddb)
+
 
 ---- 
 

@@ -48,7 +48,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir:
 
 |Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
 |-|:---|:---|:---|:---|:---|
-| CT-08: Verificar o funcionamento da troca de imagem de perfil de voluntário. | RF-08 A aplicação deve possuir um mecanismo de troca de imagem de perfil. | 1 - Ir para tela de perfil de voluntário; <br> 2 - Clicar em imagem perfil. | A foto exibida deverá ser alterada. | Atila |
+| CT-08: Verificar o funcionamento da troca de imagem de perfil de voluntário. | RF-08 A aplicação deve possuir um mecanismo de troca de imagem de perfil. | Trocar a imagem de perfil do usuário | 1 - Ir para tela de perfil de voluntário; <br> 2 - Clicar em imagem perfil. | A foto exibida deverá ser alterada. | Atila |
 
 ----
 

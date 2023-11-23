@@ -2,7 +2,7 @@ var listaProjetos = [
     {
         id: 1,
         projectName: "Alimento e amor",
-        projectDescription: "Contribua para garantir refeições nutritivas a famílias em vulnerabilidade, proporcionando não apenas comida, mas esperança e apoio em momentos difíceis.",
+        projectDescription: "Contribua para garantir refeições nutritivas a famílias em situação de vulnerabilidade, proporcionando não apenas comida, mas também esperança e apoio em momentos difíceis. O objetivo é não apenas alimentar, mas fortalecer comunidades por meio da solidariedade e do cuidado mútuo.",
         instituitionName: "Food Bank",
         availability: 2,
         categoryName: "Alimentação",
@@ -13,7 +13,7 @@ var listaProjetos = [
     {
         id: 2,
         projectName: "Cidade Radiante",
-        projectDescription: "Um projeto que busca transformar áreas urbanas em espaços sustentáveis, repletos de vegetação e vida, priorizando a saúde ambiental para todos.",
+        projectDescription: "Um projeto abrangente que busca transformar áreas urbanas em ambientes sustentáveis e verdes. Prioriza a criação de espaços cheios de vida, integrando natureza e cidadãos para promover um estilo de vida mais saudável e consciente, preservando o meio ambiente para as gerações futuras.",
         instituitionName: "ONG Verde Mais",
         availability: 10,
         categoryName: "Meio Ambiente",
@@ -24,7 +24,7 @@ var listaProjetos = [
     {
         id: 3,
         projectName: "Amigos Peludos",
-        projectDescription: "Ajude na reabilitação de animais abandonados e feridos, proporcionando cuidados amorosos e um lar seguro para aqueles que mais precisam.",
+        projectDescription: "Ajude na reabilitação de animais abandonados e feridos, proporcionando cuidados amorosos e um lar seguro para aqueles que mais precisam. Este projeto visa não apenas salvar vidas animais, mas também promover a conscientização sobre a importância da adoção responsável e do respeito aos seres vivos.",
         instituitionName: "Save Pets",
         availability: 8,
         categoryName: "Proteção dos Animais",

@@ -4,17 +4,65 @@
 
 Os testes funcionais a serem realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste]
 
-|Caso de Teste    | CT-X - Título Caso de Teste |
-|:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+----
+
+|Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
+|-|:---|:---|:---|:---|:---|
+| CT-01: Verificar a inscrição do voluntário nos projetos | RF-01 A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário. <br> RF-03 - A aplicação deve permitir que o voluntário se inscreva em projetos. <br> RF-07 - A aplicação deve permitir que o usuário registre-se no site.| Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - O usuário precisa se inscrever e ou efetuar o login na modalidade voluntário <br> 2- Acessar a página "Projetos" a partir da Home ou de outra página.<br> 3 - Visualizar a página Projetos <br> 3 - Clicar no botão "ver detalhes" do projeto de interesse <br> 4 - Clicar em "Inscrever" no modal que será aberto com detalhes dos projetos | Uma mensagem com sucesso deverá ser exibida | Arthur |
+
+----
+
+|Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
+|-|:---|:---|:---|:---|:---|
+| CT-02: Verificar a inscrição do voluntário nos projetos | RF-01 A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário. <br> RF-03 - A aplicação deve permitir que o voluntário se inscreva em projetos. <br> RF-07 - A aplicação deve permitir que o usuário registre-se no site.| Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - O usuário precisa se inscrever e ou efetuar o login na modalidade voluntário <br> 2- Acessar a página "Projetos" a partir da Home ou de outra página.<br> 3 - Visualizar a página Projetos <br> 3 - Clicar no botão "ver detalhes" do projeto de interesse <br> 4 - Clicar em "Inscrever" no modal que será aberto com detalhes dos projetos | Uma mensagem com sucesso deverá ser exibida | Anderson |
+
+----
+
+|Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
+|-|:---|:---|:---|:---|:---|
+| CT-03: Verificar o filtro dos projetos por categoria | RF-04 A aplicação deve possuir a funcionalidade para as organizações publicarem projetos. | Verificar se o usuário consegue filtrar os projetos por categoria| 1 -  Acessar a página "Projetos" a partir da Home ou de outra página.<br> 2 - Visualizar a página Projetos <br> 3 -  O usuário deve clicar na categoria que corresponde ao interesse de sua busca <br> | Caso haja projetos dentro da categoria selecionada, serão exibidos os respectivos projetos. | Anderson |
+
+----
+
+|Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
+|-|:---|:---|:---|:---|:---|
+| CT-04: Verificar a inscrição do voluntário nos projetos | RF-01 A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário. <br> RF-03 - A aplicação deve permitir que o voluntário se inscreva em projetos. <br> RF-07 - A aplicação deve permitir que o usuário registre-se no site.| Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - O usuário precisa se inscrever e ou efetuar o login na modalidade voluntário <br> 2- Acessar a página "Projetos" a partir da Home ou de outra página.<br> 3 - Visualizar a página Projetos <br> 3 - Clicar no botão "ver detalhes" do projeto de interesse <br> 4 - Clicar em "Inscrever" no modal que será aberto com detalhes dos projetos | Uma mensagem com sucesso deverá ser exibida | Gabriela |
+
+----
+
+|Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
+|-|:---|:---|:---|:---|:---|
+| CT-05: Verificar a inscrição do voluntário nos projetos | RF-01 A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário. <br> RF-03 - A aplicação deve permitir que o voluntário se inscreva em projetos. <br> RF-07 - A aplicação deve permitir que o usuário registre-se no site.| Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - O usuário precisa se inscrever e ou efetuar o login na modalidade voluntário <br> 2- Acessar a página "Projetos" a partir da Home ou de outra página.<br> 3 - Visualizar a página Projetos <br> 3 - Clicar no botão "ver detalhes" do projeto de interesse <br> 4 - Clicar em "Inscrever" no modal que será aberto com detalhes dos projetos | Uma mensagem com sucesso deverá ser exibida | Atila |
+
+----
+
+|Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
+|-|:---|:---|:---|:---|:---|
+| CT-06: Verificar a inscrição do voluntário nos projetos | RF-01 A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário. <br> RF-03 - A aplicação deve permitir que o voluntário se inscreva em projetos. <br> RF-07 - A aplicação deve permitir que o usuário registre-se no site.| Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - O usuário precisa se inscrever e ou efetuar o login na modalidade voluntário <br> 2- Acessar a página "Projetos" a partir da Home ou de outra página.<br> 3 - Visualizar a página Projetos <br> 3 - Clicar no botão "ver detalhes" do projeto de interesse <br> 4 - Clicar em "Inscrever" no modal que será aberto com detalhes dos projetos | Uma mensagem com sucesso deverá ser exibida | Gabriela |
+
+----
+
+|Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
+|-|:---|:---|:---|:---|:---|
+| CT-07: Verificar a inscrição do voluntário nos projetos | RF-01 A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário. <br> RF-03 - A aplicação deve permitir que o voluntário se inscreva em projetos. <br> RF-07 - A aplicação deve permitir que o usuário registre-se no site.| Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - O usuário precisa se inscrever e ou efetuar o login na modalidade voluntário <br> 2- Acessar a página "Projetos" a partir da Home ou de outra página.<br> 3 - Visualizar a página Projetos <br> 3 - Clicar no botão "ver detalhes" do projeto de interesse <br> 4 - Clicar em "Inscrever" no modal que será aberto com detalhes dos projetos | Uma mensagem com sucesso deverá ser exibida | Arthur |
+
+----
+
+|Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
+|-|:---|:---|:---|:---|:---|
+| CT-08: Verificar a inscrição do voluntário nos projetos | RF-01 A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário. <br> RF-03 - A aplicação deve permitir que o voluntário se inscreva em projetos. <br> RF-07 - A aplicação deve permitir que o usuário registre-se no site.| Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - O usuário precisa se inscrever e ou efetuar o login na modalidade voluntário <br> 2- Acessar a página "Projetos" a partir da Home ou de outra página.<br> 3 - Visualizar a página Projetos <br> 3 - Clicar no botão "ver detalhes" do projeto de interesse <br> 4 - Clicar em "Inscrever" no modal que será aberto com detalhes dos projetos | Uma mensagem com sucesso deverá ser exibida | Atila |
+
+----
+
+|Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
+|-|:---|:---|:---|:---|:---|
+| CT-09: Verificar a inscrição do voluntário nos projetos | RF-01 A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário. <br> RF-03 - A aplicação deve permitir que o voluntário se inscreva em projetos. <br> RF-07 - A aplicação deve permitir que o usuário registre-se no site.| Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - O usuário precisa se inscrever e ou efetuar o login na modalidade voluntário <br> 2- Acessar a página "Projetos" a partir da Home ou de outra página.<br> 3 - Visualizar a página Projetos <br> 3 - Clicar no botão "ver detalhes" do projeto de interesse <br> 4 - Clicar em "Inscrever" no modal que será aberto com detalhes dos projetos | Uma mensagem com sucesso deverá ser exibida | Gabriela |
+
+----
+
+|Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
+|-|:---|:---|:---|:---|:---|
+| CT-10: Verificar o funcionamento da página HomePage | RF-10 A aplicação deve possuir uma tela inicial atrativa e convidativa com acesso aos outros fluxos de telas. | Verificar se os links de direcionamento e botões estão funcionando. | 1 - Abrir o navegador. <br> 2- Informar o endereço do site. <br> 3- Visualizar a página Home. <br> 4- Verificar direcionamentos dos links do menu. <br> 5- Verificar direcionamento do botao "Ver mais" <br> 6- Verificar direcionamentos dos links do menu. | Os botões/links deverão encaminhar para cada página correspondente com êxito. | Aleksander |
+
+----
+

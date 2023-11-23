@@ -54,7 +54,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir:
 
 |Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
 |-|:---|:---|:---|:---|:---|
-| CT-09: Verificar a inscrição do voluntário nos projetos | RF-01 A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário. <br> RF-03 - A aplicação deve permitir que o voluntário se inscreva em projetos. <br> RF-07 - A aplicação deve permitir que o usuário registre-se no site.| Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - O usuário precisa se inscrever e ou efetuar o login na modalidade voluntário <br> 2- Acessar a página "Projetos" a partir da Home ou de outra página.<br> 3 - Visualizar a página Projetos <br> 3 - Clicar no botão "ver detalhes" do projeto de interesse <br> 4 - Clicar em "Inscrever" no modal que será aberto com detalhes dos projetos | Uma mensagem com sucesso deverá ser exibida | Gabriela |
+| CT-09: Verificar o funcionamento dos projetos ativos cadastrados pela empresa e poder finaliza-los. | RF-09 A aplicação deve possuir nas telas de perfis uma forma de acompanhar os projetos em andamento e finalizá-los. | Verificar se o usuário pode finalizar os projetos ativos. | 1 - Ir para tela de perfil de empresa; <br> 2 - Clicar em encerrar projeto. | O projeto deverá desaparecer da tela de projetos ativos. | Gabriela |
 
 ----
 

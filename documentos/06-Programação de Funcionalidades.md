@@ -24,7 +24,7 @@ RF-10: A aplicação deve possuir uma tela inicial atrativa e convidativa com ac
 
 #### Estrutura de Dados
 
-
+Não se aplica
 
 
 #### Instruções de acesso
@@ -192,7 +192,7 @@ RF-09: A aplicação deve possuir nas telas de perfis uma forma de acompanhar os
 
 #### Estrutura de Dados
 
-[perfilEmpresa.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/blob/main/codigo-fonte/src/perfilEmpresa/perfilEmpresa.html)
+Não ser aplica
 
 
 #### Instruções de acesso
@@ -224,7 +224,7 @@ RF-04: A aplicação deve possuir a funcionalidade para as organizações public
 
 #### Estrutura de Dados
 
-[cadastroProjeto.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/blob/main/codigo-fonte/src/cadastroProjeto/cadastroProjeto.html)
+Não se aplica
 
 
 #### Instruções de acesso
@@ -256,7 +256,7 @@ RF-06: A aplicação deve possuir um sistema de gamificação para reconheciment
 
 #### Estrutura de Dados
 
-[cerficacao.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/blob/main/codigo-fonte/src/certificacao/certificacao.html)
+Não se aplica
 
 
 #### Instruções de acesso

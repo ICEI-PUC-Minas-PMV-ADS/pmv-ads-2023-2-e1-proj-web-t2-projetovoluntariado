@@ -11,11 +11,11 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 Responsável pela execução do caso de Teste: Arthur
 
-Página de Perfil de voluntário
+Página de Perfil de voluntário:
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/91980fa8-1b0a-411d-b3f5-3fa48f576fe5)
 
-Página de Perfil de Empresa
+Página de Perfil de Empresa:
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/7a0232ee-91af-4162-9d07-b664a2ed6c51)
 
@@ -61,7 +61,14 @@ O resultado depois de se clicar na categoria em que se deseja:
 
 Responsável pela execução do caso de Teste: Gabriela
   
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+Cadastro de projetos:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/c728613e-62ae-4b4d-9be2-e733ceade7ef)
+
+Projetos cadastrados:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/a09a7d90-4cd8-48c3-a58a-5556ee425b63)
+
 
 ---- 
 
@@ -70,7 +77,17 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetov
 
 Responsável pela execução do caso de Teste: Átila 
   
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+Rastreamento de horas:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/d1a7c739-3d11-4900-bf6f-0c4cd326967e)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/82b4b94d-c791-477d-be84-1fc7c14f3639)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/6580a59d-6741-4be7-b69b-52d344c01d47)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/e443fa3a-f265-4442-adf5-1c953d0c93f9)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/d74e0991-7c1f-46bb-9589-08bd4f60380c)
 
 ---- 
 
@@ -79,7 +96,15 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetov
 
 Responsável pela execução do caso de Teste: Gabriela
   
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+Certificados:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/6d65fd1c-290e-4151-9507-163294ca3bab)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/be8954be-c8ee-4671-9db8-92ba8f3c5cb5)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/342ae8b6-983d-49e5-9ae3-f90019e95f03)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/eeb5daad-462c-461b-9082-e27b8968e7f3)
 
 ---- 
 
@@ -87,7 +112,11 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetov
 ### Verificar o funcionamento do cadastro de usuário
 Responsável pela execução do caso de Teste: Arthur 
   
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+Cadastro de Usuário:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/043fc552-721d-4251-8d32-fc51d27b4d9c)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/a822ff31-8b71-42d6-9844-1b6e2d51d6ec)
 
 ---- 
 
@@ -96,7 +125,11 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetov
 
 Responsável pela execução do caso de Teste: Átila 
   
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+Troca de imagem de perfil:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/c03e265b-5375-400e-b4cb-bc0b7e73b718)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/b92fa83e-2f97-4836-abd1-250c3ac7ddf1)
 
 ---- 
 ## Caso de Teste CT-09
@@ -104,7 +137,9 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetov
 
 Responsável pela execução do caso de Teste: Gabriela
   
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
+Projetos ativos: 
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/c13526dd-64ae-4c17-89a6-864a819b69aa)
 
 ---- 
 

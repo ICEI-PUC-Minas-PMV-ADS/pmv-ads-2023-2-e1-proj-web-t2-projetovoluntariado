@@ -32,55 +32,6 @@ var listaProjetos = [
         isActive: 1,
         userCompleted: 0
     },
-    // Restante dos projetos com descrições expandidas...
-    // ...
-];
-Agora, todas as descrições foram expandidas para oferecer mais detalhes sobre cada projeto. Se precisar de mais alguma coisa, estou aqui para ajudar!
-
-
-
-
-User
-voce nao consegue listar os 15 de uma só vez?
-ChatGPT
-Claro, aqui estão os 15 projetos com suas descrições expandidas:
-
-javascript
-Copy code
-var listaProjetos = [
-    {
-        id: 1,
-        projectName: "Alimento e amor",
-        projectDescription: "Contribua para garantir refeições nutritivas a famílias em vulnerabilidade, proporcionando não apenas comida, mas esperança e apoio em momentos difíceis.",
-        instituitionName: "Food Bank",
-        availability: 2,
-        categoryName: "Alimentação",
-        imgLink: "../homePage/images/pexels-photo-6646917.jpeg",
-        isActive: 1,
-        userCompleted: 0
-    },
-    {
-        id: 2,
-        projectName: "Cidade Radiante",
-        projectDescription: "Um projeto que busca transformar áreas urbanas em espaços sustentáveis, repletos de vegetação e vida, priorizando a saúde ambiental para todos.",
-        instituitionName: "ONG Verde Mais",
-        availability: 10,
-        categoryName: "Meio Ambiente",
-        imgLink: "../homePage/images/imagem-limpeza2.jpg",
-        isActive: 1,
-        userCompleted: 0
-    },
-    {
-        id: 3,
-        projectName: "Amigos Peludos",
-        projectDescription: "Ajude na reabilitação de animais abandonados e feridos, proporcionando cuidados amorosos e um lar seguro para aqueles que mais precisam.",
-        instituitionName: "Save Pets",
-        availability: 8,
-        categoryName: "Proteção dos Animais",
-        imgLink: "../homePage/images/imagem-voluntarios-09.jpg",
-        isActive: 1,
-        userCompleted: 0
-    },
     {
         id: 4,
         projectName: "Preservando a Natureza",

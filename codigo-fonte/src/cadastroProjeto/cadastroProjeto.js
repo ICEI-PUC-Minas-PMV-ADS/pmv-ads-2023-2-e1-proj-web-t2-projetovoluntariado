@@ -11,7 +11,7 @@ menuButton.addEventListener('click', () => {
 
 document.getElementById('btnEscolherImagem').addEventListener('click', () => {
     const imagens = [
-        "../projetos/images/imagem-voluntarios-01.jpg",
+        "../projetos/images/imagem-voluntarios-01.jpeg",
         "../projetos/images/imagem-voluntarios-02.jpg",
         "../projetos/images/imagem-voluntarios-03.jpg",
         "../projetos/images/imagem-voluntarios-04.jpg",
@@ -20,6 +20,13 @@ document.getElementById('btnEscolherImagem').addEventListener('click', () => {
         "../projetos/images/imagem-voluntarios-07.jpg",
         "../projetos/images/imagem-voluntarios-08.jpg",
         "../projetos/images/imagem-voluntarios-09.jpg",
+        "../projetos/images/imagem-voluntarios-10.jpg",
+        "../projetos/images/imagem-voluntarios-11.jpg",
+        "../projetos/images/imagem-voluntarios-12.jpg",
+        "../projetos/images/imagem-voluntarios-13.jpg",
+        "../projetos/images/imagem-voluntarios-14.jpg",
+        "../projetos/images/imagem-voluntarios-15.jpg",
+        "../projetos/images/imagem-voluntarios-16.jpg",
     ];
 
     const galeriaImagens = document.getElementById('galeria-imagens');

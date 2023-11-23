@@ -19,10 +19,14 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetov
 ### Verificar a inscrição do voluntário nos projetos
 
 Responsável pela execução do caso de Teste: Anderson 
+A página com a lista de projetos publicados e ativos e o botão "ver detalhes"
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/9926da2a-f6c3-47a9-ae46-f14bcb86da38)
 
+A abertura do modal com os detalhes do projeto e o botão de se inscrever:
 ![print-inscrever](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/bceb0b98-562a-48fb-bca6-dfd8f66878c9)
+
+A mensagem de sucesso ao se inscrever nos projetos:
 
 ![sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/8ef76f66-e03c-4c12-86ed-19b45f165ddb)
 
@@ -33,7 +37,12 @@ Responsável pela execução do caso de Teste: Anderson
 ### Verificar o filtro dos projetos por categoria
 
 Responsável pela execução do caso de Teste: Anderson 
-  
+A lista com todos os projetos:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/cbc7f95f-02ac-415e-87d1-6b44389fca98)
+
+O resultado depois de se clicar na categoria em que se deseja:
+
 ![print-filtro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/c9a6f6fb-9e14-435b-90fd-ef7eda29ecd1)
 
 

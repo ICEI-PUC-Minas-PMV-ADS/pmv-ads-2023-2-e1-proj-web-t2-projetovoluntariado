@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded",function(){
     
     const projectName = document.getElementById("nome-projeto").value;
     const institutionName = document.getElementById("nome-instituicao").value;
-    const availability = document.getElementById("horas").value;
+    const availability = parseInt(document.getElementById("horas").value);
     const categoryName = document.getElementById("categoria").value;
     const imageLink = document.getElementById("imagem").value;
     const description = document.getElementById("descricao").value;

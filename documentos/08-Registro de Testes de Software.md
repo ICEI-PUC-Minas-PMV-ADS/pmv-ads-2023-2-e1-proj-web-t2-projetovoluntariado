@@ -51,53 +51,52 @@ O resultado depois de se clicar na categoria em que se deseja:
 ---- 
 
 ## Caso de Teste CT-04
-### Verificar o funcionamento da página HomePage 
+### Verificar o funcionamento do cadastro de projetos
 
-Responsável pela execução do caso de Teste: Aleksander 
+Responsável pela execução do caso de Teste: Gabriela
   
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
 
 ---- 
 
 ## Caso de Teste CT-05
-### Verificar o funcionamento da página HomePage 
+### Verificar o funcionamento do mecanismo de rastreamento de horas.
 
-Responsável pela execução do caso de Teste: Aleksander 
+Responsável pela execução do caso de Teste: Átila 
   
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
 
 ---- 
 
 ## Caso de Teste CT-06
-### Verificar o funcionamento da página HomePage 
+### Verificar o funcionamento da emissão e variações de certificado.
 
-Responsável pela execução do caso de Teste: Aleksander 
+Responsável pela execução do caso de Teste: Gabriela
   
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
 
 ---- 
 
 ## Caso de Teste CT-07
-### Verificar o funcionamento da página HomePage 
-
-Responsável pela execução do caso de Teste: Aleksander 
+### Verificar o funcionamento do cadastro de usuário
+Responsável pela execução do caso de Teste: Arthur 
   
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
 
 ---- 
 
 ## Caso de Teste CT-08
-### Verificar o funcionamento da página HomePage 
+### Verificar o funcionamento da troca de imagem de perfil de voluntário.
 
-Responsável pela execução do caso de Teste: Aleksander 
+Responsável pela execução do caso de Teste: Átila 
   
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
 
 ---- 
 ## Caso de Teste CT-09
-### Verificar o funcionamento da página HomePage 
+### Verificar o funcionamento dos projetos ativos cadastrados pela empresa e poder finaliza-los.
 
-Responsável pela execução do caso de Teste: Aleksander 
+Responsável pela execução do caso de Teste: Gabriela
   
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/133550283/c0caae58-07a3-4623-a77a-9ddc98ded3aa
 

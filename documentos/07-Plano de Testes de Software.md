@@ -62,7 +62,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 |Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
 |-|:---|:---|:---|:---|:---|
-| CT-10: Verificar o funcionamento da página HomePage | RF-10 A aplicação deve possuir uma tela inicial atrativa e convidativa com acesso aos outros fluxos de telas. | Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - O usuário precisa se inscrever e ou efetuar o login na modalidade voluntário <br> 2- Acessar a página "Projetos" a partir da Home ou de outra página.<br> 3 - Visualizar a página Projetos <br> 3 - Clicar no botão "ver detalhes" do projeto de interesse <br> 4 - Clicar em "Inscrever" no modal que será aberto com detalhes dos projetos | Uma mensagem com sucesso deverá ser exibida | Aleksander |
+| CT-10: Verificar o funcionamento da página HomePage | RF-10 A aplicação deve possuir uma tela inicial atrativa e convidativa com acesso aos outros fluxos de telas. | Verificar se os links de direcionamento e botões estão funcionando. | 1 - Abrir o navegador <br> 2- Informar o endereço do site. <br> 3- Visualizar a página Home. <br> 4- Verificar direcionamentos dos links do menu. <br> 5- Verificar direcionamento do botao "Ver mais" <br> 6- Verificar direcionamentos dos links do menu. | Os botões/links deverão encaminhar para cada página correspondente com êxito. | Aleksander |
 
 ----
 

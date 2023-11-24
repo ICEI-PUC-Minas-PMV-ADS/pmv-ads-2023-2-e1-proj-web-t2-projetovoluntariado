@@ -10,6 +10,7 @@ menuButton.addEventListener('click', () => {
 });
 
 document.getElementById('btnEscolherImagem').addEventListener('click', () => {
+    deleteAllNodesById("campo-busca");
     const imagens = [
         "../projetos/images/imagem-voluntarios-01.jpeg",
         "../projetos/images/imagem-voluntarios-02.jpg",
@@ -62,7 +63,6 @@ document.getElementById('btnEscolherImagem').addEventListener('click', () => {
                     child.style.display = 'none';
                 }
             });
-
             // Exibe o botão de escolher arquivo
             document.getElementById('imagem').style.display = 'block';
         });
@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded",function(){
 async function loadImages(search) {
     if (search.length > 1 && search != "") {
         const word = encodeURI(search);
-        const urlApi = `https://api.pexels.com/v1/search?query=${word}&locale=pt-br`;
+        const urlApi = `https://api.pexels.com/v1/search?query=${word}&locale=pt-br&per_page=20&orientation=landscape`;
         const optionsApi = {
             method: "GET",
             headers: {
@@ -196,58 +196,42 @@ async function loadImages(search) {
 
 document.getElementById("btnEscolherImagemApi").addEventListener("click", (event)=>{
     event.preventDefault();
-    deleteAllNodesById("galeria-imagens");
     
-    const nodeSearch = document.createElement("input");
-    nodeSearch.setAttribute("class", "form-control mb-4");
-    nodeSearch.setAttribute("type", "text");
-    nodeSearch.setAttribute("placeholder","Insira seu texto de busca");
-    nodeSearch.setAttribute("id", "searchInput")
+    deleteAllNodesById("galeria-imagens");
+    deleteAllNodesById("campo-busca");
+    
+    const inputSearch = document.createElement("input");
+    inputSearch.setAttribute("class", "form-control mb-4");
+    inputSearch.setAttribute("type", "text");
+    inputSearch.setAttribute("placeholder","Insira seu texto de busca");
+    inputSearch.setAttribute("id", "searchInput")
     
     const searchButton = document.createElement("button");
     searchButton.setAttribute("class", "btn btn-secondary");
-    searchButton.textContent = "Buscar na web"
+    searchButton.textContent = "Pesquisar"
 
+    const elemImagemGaleria = document.getElementById("btnEscolherImagem");
     
-    noRaiz.appendChild(nodeSearch);
-    noRaiz.appendChild(searchButton);
-
-    const imageButton = document.getElementById("btnEscolherImagem");
-    const imageButtonApi = document.getElementById("btnEscolherImagemApi");
-    imageButton.style.display = "none";
-    imageButtonApi.style.display = "none";
-
-  
-
-
-    imageButton.addEventListener("click", ()=>{
-
-    });
-
-    imageButtonApi.addEventListener("click", (event)=>{
-        event.preventDefault();
-        imageButtonApi.style.display = "none";
-
-    });
+    
+    campoBusca.appendChild(inputSearch);
+    campoBusca.appendChild(searchButton); 
 
     searchButton.addEventListener("click", (event)=>{
         event.preventDefault();
         const query = document.getElementById("searchInput").value;
         find(query);
-        imageButtonApi.style.display = "block";
     });
 });
 
-const noRaiz = document.getElementById("galeria-imagens");
+const galeriaDiv = document.getElementById("galeria-imagens");
+const galeriaBtn = document.getElementById("galeria-btn");
+const campoBusca = document.getElementById("campo-busca");
 
 async function find(searchQuery){
     const imageData = await loadImages(searchQuery);
     if(imageData && imageData.photos && imageData.photos.length >0){
         
-       
-
-        noRaiz.innerHTML = "";
-        console.log(imageData);
+        galeriaDiv.innerHTML = "";
         imageData.photos.forEach(photo =>{
 
             const linkElement = document.createElement("a");
@@ -261,38 +245,24 @@ async function find(searchQuery){
             img.style.cursor = "pointer";
             linkElement.appendChild(img);
             
-            noRaiz.appendChild(linkElement);
+            galeriaDiv.appendChild(linkElement);
             
             linkElement.addEventListener("click", (event)=>{
                 event.preventDefault();
-                document.getElementById('imagem').value = photo.src.tiny;
+                document.getElementById('imagem').value = photo.src.medium;
                 document.getElementById('imagem').style.display = 'block';
 
-                Array.from(noRaiz.children).forEach((child) => {
+                Array.from(galeriaDiv.children).forEach((child) => {
                     if (child !== linkElement) {
                         child.style.display = 'none';
                     }
-                });
-                const backButton = document.createElement("button");
-                backButton.setAttribute("class", "btn btn-secondary");
-                backButton.textContent = "Escolher imagem da galeria X";
-
-                noRaiz.appendChild(backButton);
-                backButton.addEventListener("click", (event)=>{
-                    event.preventDefault();
-
-                    deleteAllNodesById("galeria-imagens");
-                    document.getElementById('imagem').value = "";
-                    document.getElementById('imagem').style.display = "none";
-                    document.getElementById('btnEscolherImagem').style.display = "block"
-                    
                 });
 
             })
         });
     }
     else{
-        noRaiz.innerHTML = "<p>A busca não retornou nenhum resultado.</p>"
+        galeriaDiv.innerHTML = "<p>A busca não retornou nenhum resultado.</p>"
     }
 
 }

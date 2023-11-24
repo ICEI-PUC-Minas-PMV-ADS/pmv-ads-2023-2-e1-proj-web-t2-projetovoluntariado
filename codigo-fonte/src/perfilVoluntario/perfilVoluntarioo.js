@@ -28,17 +28,18 @@ function listarProjetos() {
   let projectNumber = 0;
 
   usuarios.forEach((usuario) => {
+    let linkImg;
+
     if (usuario.email == usuarioLogado.email) {
       usuario.projects.forEach((projeto) => {
         if (projeto.userCompleted === 0) {
+          linkImg = (projeto.imgLink).startsWith('http') ? projeto.imgLink : ("../projetos/" + projeto.imgLink )
           document.getElementById("containerCards").innerHTML =
             document.getElementById("containerCards").innerHTML +
             `
                 <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
                     <div class="card rounded-5 card-projetos">
-                  <img src="${
-                    "../projetos/" + projeto.imgLink
-                  }" class="rounded-5 pb-2" alt="...">
+                  <img src="${linkImg}" class="rounded-5 pb-2" alt="...">
                   <h5 class="tittle">${projeto.projectName}</h5>
                   <h3>${projeto.availability} horas</h3>
                   <div class="col text-center">

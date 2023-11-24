@@ -27,6 +27,15 @@ body {
   scale: 1.1;
 }
 
+#btnEscolherImagem{
+  margin-bottom: 8px;
+}
+#btnEscolherImagemApi{
+  margin-bottom: 8px;
+
+}
+
+
 /* BOLINHAS DE FUNDO */
 
 @keyframes sway {

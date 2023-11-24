@@ -63,7 +63,8 @@ Responsável pela execução do caso de Teste: Gabriela
   
 Cadastro de projetos:
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/c728613e-62ae-4b4d-9be2-e733ceade7ef)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/d8a4230e-30c4-4ebe-ba6a-6ccf2b6ffc9f)
+
 
 Projetos cadastrados:
 

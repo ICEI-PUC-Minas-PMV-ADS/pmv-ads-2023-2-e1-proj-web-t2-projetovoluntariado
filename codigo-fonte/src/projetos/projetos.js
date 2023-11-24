@@ -191,9 +191,9 @@ function subscribe(index){
 setProjectsToLocalStorage();
 var queryString = location.search; //Verifica se há na barra de navegacao alguma query de filtro de categoria
 if(queryString){
-    
+    let projects = getProjects();
     let categoryName=decodeURI(queryString.trim().split("=")[1]);
-    var filtered = listaProjetos.filter(project =>categoryFilter(project, categoryName));
+    var filtered = projects.filter(project =>categoryFilter(project, categoryName));
     for(project in filtered)
     {
         createCards(".grid-wrapper", filtered[project], filtered[project].id);

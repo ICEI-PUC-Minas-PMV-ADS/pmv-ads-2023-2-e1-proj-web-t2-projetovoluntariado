@@ -10,17 +10,39 @@ menuButton.addEventListener('click', () => {
 });
 
 document.getElementById('cadastrarProjetoBtn').addEventListener('click', function() {
-    window.location.href = "../cadastroProjeto/cadastroProjeto.html";
-});
+    
+    let userLogged = isLogged();
+    let users = getUsers();
+    let contProjects=0;
+        if(userLogged){
+        users.forEach((user)=>{
+            if(user.email === userLogged.email){
+                tempProjects = user.projects;
+                tempProjects.forEach((project)=>{
+                    if(project.isActive == 1)
+                        contProjects++;
+                });
 
-document.querySelectorAll('.btn-secondary').forEach((button) => {
-    button.addEventListener('click', () => {
-        const projetoCard = button.closest('.card-projetos');
-
-        projetoCard.classList.add('d-none');
-
-        updateTotalProjetos();
-    });
+                if(contProjects >=3)
+                {
+                    Swal.fire({
+                        position: "center",
+                        title: `Erro`,
+                        text: "Você só pode cadastrar até 3 projetos",
+                        icon: "error",
+                        showConfirmButton: false,
+                        timer: 2000,
+                      });
+                }
+                else{
+                    window.location.href = "../cadastroProjeto/cadastroProjeto.html";
+                }
+                
+            }
+        })
+    }
+    
+    
 });
 
 function updateTotalProjetos() {

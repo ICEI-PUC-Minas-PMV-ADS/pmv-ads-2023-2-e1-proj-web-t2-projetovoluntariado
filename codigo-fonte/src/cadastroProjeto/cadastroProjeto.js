@@ -53,7 +53,6 @@ document.getElementById('btnEscolherImagem').addEventListener('click', () => {
 
         linkElement.addEventListener('click', (event) => {
             event.preventDefault(); // Impede que o link siga para outra página
-            console.log("arquivo imagem " + imagemURL);
             // Define o valor do campo de arquivo para a imagem selecionada
             document.getElementById('imagem').value = imagemURL;
 
@@ -175,5 +174,127 @@ document.addEventListener("DOMContentLoaded",function(){
 
 })
 
+async function loadImages(search) {
+    if (search.length > 1 && search != "") {
+        const word = encodeURI(search);
+        const urlApi = `https://api.pexels.com/v1/search?query=${word}&locale=pt-br`;
+        const optionsApi = {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "i4BXa69b1DXlvYGimv6a1NYDaHCkkfzyP3zcyY1UeYsJxhSWfQtvfMHb"
+            }
+        };
+        const response = await fetch(urlApi, optionsApi);
+        const dados = await response.json();
+        console.log(dados);
+        return dados;
+    } else {
+        return []; 
+    }
+}
+
+document.getElementById("btnEscolherImagemApi").addEventListener("click", (event)=>{
+    event.preventDefault();
+    deleteAllNodesById("galeria-imagens");
+    
+    const nodeSearch = document.createElement("input");
+    nodeSearch.setAttribute("class", "form-control mb-4");
+    nodeSearch.setAttribute("type", "text");
+    nodeSearch.setAttribute("placeholder","Insira seu texto de busca");
+    nodeSearch.setAttribute("id", "searchInput")
+    
+    const searchButton = document.createElement("button");
+    searchButton.setAttribute("class", "btn btn-secondary");
+    searchButton.textContent = "Buscar na web"
+
+    
+    noRaiz.appendChild(nodeSearch);
+    noRaiz.appendChild(searchButton);
+
+    const imageButton = document.getElementById("btnEscolherImagem");
+    const imageButtonApi = document.getElementById("btnEscolherImagemApi");
+    imageButton.style.display = "none";
+    imageButtonApi.style.display = "none";
+
+  
+
+
+    imageButton.addEventListener("click", ()=>{
+
+    });
+
+    imageButtonApi.addEventListener("click", (event)=>{
+        event.preventDefault();
+        imageButtonApi.style.display = "none";
+
+    });
+
+    searchButton.addEventListener("click", (event)=>{
+        event.preventDefault();
+        const query = document.getElementById("searchInput").value;
+        find(query);
+        imageButtonApi.style.display = "block";
+    });
+});
+
+const noRaiz = document.getElementById("galeria-imagens");
+
+async function find(searchQuery){
+    const imageData = await loadImages(searchQuery);
+    if(imageData && imageData.photos && imageData.photos.length >0){
+        
+       
+
+        noRaiz.innerHTML = "";
+        console.log(imageData);
+        imageData.photos.forEach(photo =>{
+
+            const linkElement = document.createElement("a");
+            linkElement.setAttribute("href", "#");
+
+            const img = document.createElement("img");
+            img.src = photo.src.tiny;
+            img.style.maxWidth= "150px";
+            img.style.maxHeight="150px";
+            img.setAttribute("class", "img-thumbnail img-fluid m-2");
+            img.style.cursor = "pointer";
+            linkElement.appendChild(img);
+            
+            noRaiz.appendChild(linkElement);
+            
+            linkElement.addEventListener("click", (event)=>{
+                event.preventDefault();
+                document.getElementById('imagem').value = photo.src.tiny;
+                document.getElementById('imagem').style.display = 'block';
+
+                Array.from(noRaiz.children).forEach((child) => {
+                    if (child !== linkElement) {
+                        child.style.display = 'none';
+                    }
+                });
+                const backButton = document.createElement("button");
+                backButton.setAttribute("class", "btn btn-secondary");
+                backButton.textContent = "Escolher imagem da galeria X";
+
+                noRaiz.appendChild(backButton);
+                backButton.addEventListener("click", (event)=>{
+                    event.preventDefault();
+
+                    deleteAllNodesById("galeria-imagens");
+                    document.getElementById('imagem').value = "";
+                    document.getElementById('imagem').style.display = "none";
+                    document.getElementById('btnEscolherImagem').style.display = "block"
+                    
+                });
+
+            })
+        });
+    }
+    else{
+        noRaiz.innerHTML = "<p>A busca não retornou nenhum resultado.</p>"
+    }
+
+}
 
 

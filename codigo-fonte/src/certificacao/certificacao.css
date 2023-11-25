@@ -46,6 +46,7 @@ body {
     body {
       font-size: 16px;
       color: black;
+      overflow: hidden;
     }
     header{
         display: none;

@@ -106,7 +106,7 @@ function escolherImagemApi(){
     const inputSearch = document.createElement("input");
     inputSearch.setAttribute("class", "form-control");
     inputSearch.setAttribute("type", "text");
-    inputSearch.setAttribute("placeholder","Insira seu texto de busca");
+    inputSearch.setAttribute("placeholder","Insira o texto");
     inputSearch.setAttribute("id", "searchInput")
     
     const searchButton = document.createElement("button");

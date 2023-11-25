@@ -86,6 +86,7 @@ function finalizarProjeto(projectNumber) {
     localStorage.setItem("users", JSON.stringify(usuarios));
     deleteAllNodesById("containerCards");
     listarProjetos();
+    icone();
   }
 }
 

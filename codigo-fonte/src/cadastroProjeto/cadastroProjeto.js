@@ -9,8 +9,28 @@ menuButton.addEventListener('click', () => {
     }
 });
 
-document.getElementById('btnEscolherImagem').addEventListener('click', () => {
+const radioLabels = document.querySelectorAll('[name="options-radio"]+label');
+
+radioLabels.forEach(label=>{
+    label.addEventListener("click", function(event){
+        const radioButton = document.getElementById(event.target.getAttribute("for"));
+        radioButton.checked = true;
+        switch (radioButton.id){
+            case "btnEscolherImagem" :
+                escolherImagemGaleria()
+            break;
+            case "btnEscolherImagemApi":
+                escolherImagemApi()
+            break;
+        }
+    });
+});
+
+function escolherImagemGaleria(){
+
+    deleteAllNodesById("galeria-imagens");
     deleteAllNodesById("campo-busca");
+    
     const imagens = [
         "../projetos/images/imagem-voluntarios-01.jpeg",
         "../projetos/images/imagem-voluntarios-02.jpg",
@@ -70,7 +90,44 @@ document.getElementById('btnEscolherImagem').addEventListener('click', () => {
 
     galeriaImagens.style.display = 'block'; // Exibe a galeria como bloco
     document.getElementById('imagem').style.display = 'none';
-});
+}
+
+function escolherImagemApi(){
+    
+    deleteAllNodesById("galeria-imagens");
+    deleteAllNodesById("campo-busca");
+
+    const divGroup = document.createElement("div");
+    divGroup.setAttribute("class", "input-group mb-3");
+
+    const divButton = document.createElement("div");
+    divButton.setAttribute("class", "input-group-append");
+    
+    const inputSearch = document.createElement("input");
+    inputSearch.setAttribute("class", "form-control");
+    inputSearch.setAttribute("type", "text");
+    inputSearch.setAttribute("placeholder","Insira seu texto de busca");
+    inputSearch.setAttribute("id", "searchInput")
+    
+    const searchButton = document.createElement("button");
+    searchButton.setAttribute("class", "btn btn-secondary");
+    searchButton.textContent = "Pesquisar"
+
+    const elemImagemGaleria = document.getElementById("btnEscolherImagem");
+    
+    divGroup.appendChild(inputSearch);
+    divButton.appendChild(searchButton);
+    divGroup.appendChild(divButton);
+    campoBusca.appendChild(divGroup);
+
+ 
+
+    searchButton.addEventListener("click", (event)=>{
+        event.preventDefault();
+        const query = document.getElementById("searchInput").value;
+        find(query);
+    });
+}
 
 
 function createCategoryOption(){
@@ -174,7 +231,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
 })
 
-async function loadImages(search) {
+async function loadImages(search) { // Retorna o Json com a lista de imagens pesquisadas de search
     if (search.length > 1 && search != "") {
         const word = encodeURI(search);
         const urlApi = `https://api.pexels.com/v1/search?query=${word}&locale=pt-br&per_page=20&orientation=landscape`;
@@ -194,34 +251,7 @@ async function loadImages(search) {
     }
 }
 
-document.getElementById("btnEscolherImagemApi").addEventListener("click", (event)=>{
-    event.preventDefault();
-    
-    deleteAllNodesById("galeria-imagens");
-    deleteAllNodesById("campo-busca");
-    
-    const inputSearch = document.createElement("input");
-    inputSearch.setAttribute("class", "form-control mb-4");
-    inputSearch.setAttribute("type", "text");
-    inputSearch.setAttribute("placeholder","Insira seu texto de busca");
-    inputSearch.setAttribute("id", "searchInput")
-    
-    const searchButton = document.createElement("button");
-    searchButton.setAttribute("class", "btn btn-secondary");
-    searchButton.textContent = "Pesquisar"
 
-    const elemImagemGaleria = document.getElementById("btnEscolherImagem");
-    
-    
-    campoBusca.appendChild(inputSearch);
-    campoBusca.appendChild(searchButton); 
-
-    searchButton.addEventListener("click", (event)=>{
-        event.preventDefault();
-        const query = document.getElementById("searchInput").value;
-        find(query);
-    });
-});
 
 const galeriaDiv = document.getElementById("galeria-imagens");
 const galeriaBtn = document.getElementById("galeria-btn");

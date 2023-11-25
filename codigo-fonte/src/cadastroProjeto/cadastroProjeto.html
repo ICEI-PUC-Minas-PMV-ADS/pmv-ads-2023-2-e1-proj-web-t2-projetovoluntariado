@@ -84,17 +84,20 @@
                         </div>
                         <div class="mb-4">
                             <label for="imagem" class="form-label">Selecione uma imagem de perfil do projeto:</label>
-                            <input required type="text" class="form-control" id="imagem" name="imagem" accept="image/*"
+                            <input required type="hidden" class="form-control" id="imagem" name="imagem" accept="image/*"
                                 style="display: none">
-                                <div id="campo-busca"></div>
-                            <div id="galeria-imagens" class="mb-2">
+                               
+                           
                             </div>
                             <div id="galeria-btn col-md-6 offset-md-3">
-                                <button type="button" class="btn btn-secondary" id="btnEscolherImagem">Escolher
-                                    imagem da galeria</button>
-                                <button type="button" class="btn btn-secondary" id="btnEscolherImagemApi">Buscar imagem na web</button>
-                            </div>
-                        </div>
+                                <input type="radio" class="btn-check" name="options-radio" id="btnEscolherImagem" autocomplete="off"></input>
+                                <label class="btn btn-outline-secondary" for="btnEscolherImagem">Galeria</label>
+                                <input type="radio" class="btn-check" name="options-radio" id="btnEscolherImagemApi" autocomplete="off"></input>
+                                <label class="btn btn-outline-secondary" for="btnEscolherImagemApi">Web</label>
+                            </div><br>
+                            <div id="campo-busca"></div>
+                            <div id="galeria-imagens" class="mb-2"></div>
+                        </div> 
                         <div class="mb-3">
                             <label for="textoGrande" class="form-label">Descrição do projeto:</label>
                             <textarea required class="form-control" id="descricao" name="textoGrande" rows="7"

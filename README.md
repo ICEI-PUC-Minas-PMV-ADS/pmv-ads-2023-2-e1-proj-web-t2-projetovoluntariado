@@ -36,12 +36,8 @@ O objetivo deste projeto é a criação de uma aplicação web que permita as pe
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
-
-# Código-Fonte
-
-* <a href="codigo-fonte/README.md">Código Fonte</a>
+https://voluntaria.vercel.app/index.html
 
 # Apresentação
 
-* <a href="apresentacao/README.md">Apresentação do Projeto</a>
+<a href="apresentacao/README.md">Apresentação do Projeto</a>

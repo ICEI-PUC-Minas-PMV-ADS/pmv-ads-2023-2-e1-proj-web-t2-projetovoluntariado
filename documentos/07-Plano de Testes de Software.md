@@ -54,12 +54,6 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir:
 
 |Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
 |-|:---|:---|:---|:---|:--:|
-| CT-08: Verificar mensagem de erro no cadastro de novos usuários ao inserir um email inválido ou já cadastrado. | RF-07 A aplicação deve impedir o usuário de se cadastrar com um email inválido ou já cadastrado. | Verificar mensagens de erro. | 1 - Ir para a tela de login; <br> 2 - Clicar em cadastro; <br> 3 - Digitar um email inválido ou que já foi cadastrado; <br> 4 - Clicar no botão cadastrar; | Após clicar em cadastrar, a mensagem de erro: 'Digite um e-mail válido!' ou 'Conta já existe, faça login!' deve ser aparecer na tela. | Átila |
-
-----
-
-|Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
-|-|:---|:---|:---|:---|:--:|
 | CT-09: Verificar se a autenticação do usuário falha ao tentar entrar com email ou senha incorretos. | RF-07 A aplicação deve garantir que o usuário não consiga fazer login ao digitar email ou senha incorretos. | Verificar falha na autenticação do usuário. | 1 - Ir para a tela de login; <br> 2 - Prencher os campos email ou senha incorretamente; <br> 3 - Clicar no botão entrar; | Após clicar no botão entrar colocando email ou senha incorretos, a seguinte mensagem de error deve aparecer para o usuário: 'E-mail ou senha incorretos'. | Átila |
 
 ----

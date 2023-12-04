@@ -123,6 +123,38 @@ Cadastro de Usuário:
 ---- 
 
 ## Caso de Teste CT-08
+###  Verificar mensagem de erro no cadastro de novos usuários ao inserir um email inválido ou já cadastrado.
+Responsável pela execução do caso de Teste: Átila 
+  
+Cadastro de Usuário:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/84386289/62cd377b-1698-4676-9dcd-0406e082a8fc)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/84386289/27e41e41-bd25-4da5-9a8c-67e1617b5abb)
+
+---- 
+
+## Caso de Teste CT-09
+###  Verificar se a autenticação do usuário falha ao tentar entrar com email ou senha incorretos.
+Responsável pela execução do caso de Teste: Átila 
+  
+Autenticação de Usuário:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/84386289/a4cd98a4-9b52-4da3-93d9-af70c6825e60)
+
+---- 
+
+## Caso de Teste CT-10
+###  Verificar se a autenticação do usuário está ocorrendo de forma correta.
+Responsável pela execução do caso de Teste: Átila 
+  
+Autenticação de Usuário:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/84386289/d4ca6a99-1e7d-4aa6-b39c-7019900c179e)
+
+----
+
+## Caso de Teste CT-11
 ### Verificar o funcionamento da troca de imagem de perfil de voluntário.
 
 Responsável pela execução do caso de Teste: Anderson 
@@ -134,7 +166,7 @@ Troca de imagem de perfil:
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/b92fa83e-2f97-4836-abd1-250c3ac7ddf1)
 
 ---- 
-## Caso de Teste CT-09
+## Caso de Teste CT-12
 ### Verificar o funcionamento dos projetos ativos cadastrados pela empresa e poder finaliza-los.
 
 Responsável pela execução do caso de Teste: Arthur
@@ -145,7 +177,7 @@ Projetos ativos:
 
 ---- 
 
-## Caso de Teste CT-10
+## Caso de Teste CT-13
 ### Verificar o funcionamento da página HomePage 
 
 Responsável pela execução do caso de Teste: Átila 

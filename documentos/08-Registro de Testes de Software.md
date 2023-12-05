@@ -84,6 +84,10 @@ Projetos cadastrados:
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/a09a7d90-4cd8-48c3-a58a-5556ee425b63)
 
+Caso a empresa tente cadastrar mais de 3 projetos uma mensagem será exibida:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/d0c4cc63-815b-495e-93fe-5de2edd1bf42)
+
 
 ---- 
 

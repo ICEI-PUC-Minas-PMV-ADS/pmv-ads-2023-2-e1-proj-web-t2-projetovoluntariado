@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded",function(){
                     instituitionName: institutionName,
                     availability: availability,
                     categoryName: categoryName,
-                    imgLink: imageLink,
+                    imgLink: imageLink == null ? "../projetos/images/noimage.png" : imageLink,
                     isActive: 1,
                     userCompleted: 0
                 }

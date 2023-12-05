@@ -37,6 +37,19 @@ A mensagem de sucesso ao se inscrever nos projetos:
 
 ![sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/8ef76f66-e03c-4c12-86ed-19b45f165ddb)
 
+Caso o voluntário tente se inscrever em mais de 3 projetos uma mensagem com a informação de erro será exibido, mostrando que não é possível se inscrever em mais de 3 projetos.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/6e515355-83ab-4c6d-86f6-0a017814e283)
+
+Caso o voluntário tente se inscrever nos projetos mas não esteja logado, uma mensagem de erro será exibida e ele será redirecionado a página de login/cadastro.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/9b9dda0c-0495-417e-bcf3-95a3b77a49c1)
+
+Se o usuário esitver logado como usuário "empresa" e tentar se inscrever em algum projeto, uma mensagem será exibida com empresas não podem se inscrever em projetos.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/5921ad78-9eb8-4226-9ab9-e36b45f190c3)
+
+
 
 ---- 
 
@@ -63,12 +76,17 @@ Responsável pela execução do caso de Teste: Gabriela
   
 Cadastro de projetos:
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/d8a4230e-30c4-4ebe-ba6a-6ccf2b6ffc9f)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/435dfd50-4958-4384-a1d6-2e019cae9a47)
+
 
 
 Projetos cadastrados:
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/a09a7d90-4cd8-48c3-a58a-5556ee425b63)
+
+Caso a empresa tente cadastrar mais de 3 projetos uma mensagem será exibida:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/d0c4cc63-815b-495e-93fe-5de2edd1bf42)
 
 
 ---- 
@@ -122,6 +140,38 @@ Cadastro de Usuário:
 ---- 
 
 ## Caso de Teste CT-08
+###  Verificar mensagem de erro no cadastro de novos usuários ao inserir um email inválido ou já cadastrado.
+Responsável pela execução do caso de Teste: Átila 
+  
+Cadastro de Usuário:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/84386289/62cd377b-1698-4676-9dcd-0406e082a8fc)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/84386289/27e41e41-bd25-4da5-9a8c-67e1617b5abb)
+
+---- 
+
+## Caso de Teste CT-09
+###  Verificar se a autenticação do usuário falha ao tentar entrar com email ou senha incorretos.
+Responsável pela execução do caso de Teste: Átila 
+  
+Autenticação de Usuário:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/84386289/a4cd98a4-9b52-4da3-93d9-af70c6825e60)
+
+---- 
+
+## Caso de Teste CT-10
+###  Verificar se a autenticação do usuário está ocorrendo de forma correta.
+Responsável pela execução do caso de Teste: Átila 
+  
+Autenticação de Usuário:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/84386289/d4ca6a99-1e7d-4aa6-b39c-7019900c179e)
+
+----
+
+## Caso de Teste CT-11
 ### Verificar o funcionamento da troca de imagem de perfil de voluntário.
 
 Responsável pela execução do caso de Teste: Anderson 
@@ -133,7 +183,7 @@ Troca de imagem de perfil:
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/137177277/b92fa83e-2f97-4836-abd1-250c3ac7ddf1)
 
 ---- 
-## Caso de Teste CT-09
+## Caso de Teste CT-12
 ### Verificar o funcionamento dos projetos ativos cadastrados pela empresa e poder finaliza-los.
 
 Responsável pela execução do caso de Teste: Arthur
@@ -144,7 +194,7 @@ Projetos ativos:
 
 ---- 
 
-## Caso de Teste CT-10
+## Caso de Teste CT-13
 ### Verificar o funcionamento da página HomePage 
 
 Responsável pela execução do caso de Teste: Átila 

@@ -37,6 +37,19 @@ A mensagem de sucesso ao se inscrever nos projetos:
 
 ![sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/8ef76f66-e03c-4c12-86ed-19b45f165ddb)
 
+Caso o voluntário tente se inscrever em mais de 3 projetos uma mensagem com a informação de erro será exibido, mostrando que não é possível se inscrever em mais de 3 projetos.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/6e515355-83ab-4c6d-86f6-0a017814e283)
+
+Caso o voluntário tente se inscrever nos projetos mas não esteja logado, uma mensagem de erro será exibida e ele será redirecionado a página de login/cadastro.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/9b9dda0c-0495-417e-bcf3-95a3b77a49c1)
+
+Se o usuário esitver logado como usuário "empresa" e tentar se inscrever em algum projeto, uma mensagem será exibida com empresas não podem se inscrever em projetos.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-projetovoluntariado/assets/59897366/5921ad78-9eb8-4226-9ab9-e36b45f190c3)
+
+
 
 ---- 
 

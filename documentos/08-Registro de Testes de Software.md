@@ -9,7 +9,7 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 ## Caso de Teste CT-01
 ### Verificar o funcionamento da autenticação e perfis de usuário.
 
-Responsável pela execução do caso de Teste: Aleksander
+Responsável pela execução do caso de Teste: Arthur
 
 Página de Perfil de voluntário:
 
@@ -24,7 +24,7 @@ Página de Perfil de Empresa:
 ## Caso de Teste CT-02
 ### Verificar a inscrição do voluntário nos projetos
 
-Responsável pela execução do caso de Teste: Arthur
+Responsável pela execução do caso de Teste: Anderson
 
 A página com a lista de projetos publicados e ativos e o botão "ver detalhes"
 
@@ -56,7 +56,7 @@ Se o usuário esitver logado como usuário "empresa" e tentar se inscrever em al
 ## Caso de Teste CT-03
 ### Verificar o filtro dos projetos por categoria
 
-Responsável pela execução do caso de Teste: Gabriela 
+Responsável pela execução do caso de Teste: Átila
 
 A lista com todos os projetos:
 
@@ -72,7 +72,7 @@ O resultado depois de se clicar na categoria em que se deseja:
 ## Caso de Teste CT-04
 ### Verificar o funcionamento do cadastro de projetos
 
-Responsável pela execução do caso de Teste: Gabriela
+Responsável pela execução do caso de Teste: Átila
   
 Cadastro de projetos:
 
@@ -94,7 +94,7 @@ Caso a empresa tente cadastrar mais de 3 projetos uma mensagem será exibida:
 ## Caso de Teste CT-05
 ### Verificar o funcionamento do mecanismo de rastreamento de horas.
 
-Responsável pela execução do caso de Teste: Anderson 
+Responsável pela execução do caso de Teste: Gabriela
   
 Rastreamento de horas:
 
@@ -113,7 +113,7 @@ Rastreamento de horas:
 ## Caso de Teste CT-06
 ### Verificar o funcionamento da emissão e variações de certificado.
 
-Responsável pela execução do caso de Teste: Aleksander
+Responsável pela execução do caso de Teste: Arthur
   
 Certificados:
 
@@ -129,7 +129,7 @@ Certificados:
 
 ## Caso de Teste CT-07
 ### Verificar o funcionamento do cadastro de usuário
-Responsável pela execução do caso de Teste: Átila 
+Responsável pela execução do caso de Teste: Aleksander
   
 Cadastro de Usuário:
 
@@ -141,7 +141,7 @@ Cadastro de Usuário:
 
 ## Caso de Teste CT-08
 ###  Verificar mensagem de erro no cadastro de novos usuários ao inserir um email inválido ou já cadastrado.
-Responsável pela execução do caso de Teste: Átila 
+Responsável pela execução do caso de Teste: Aleksander
   
 Cadastro de Usuário:
 
@@ -153,7 +153,7 @@ Cadastro de Usuário:
 
 ## Caso de Teste CT-09
 ###  Verificar se a autenticação do usuário falha ao tentar entrar com email ou senha incorretos.
-Responsável pela execução do caso de Teste: Átila 
+Responsável pela execução do caso de Teste: Anderson
   
 Autenticação de Usuário:
 
@@ -163,7 +163,7 @@ Autenticação de Usuário:
 
 ## Caso de Teste CT-10
 ###  Verificar se a autenticação do usuário está ocorrendo de forma correta.
-Responsável pela execução do caso de Teste: Átila 
+Responsável pela execução do caso de Teste: Gabriela
   
 Autenticação de Usuário:
 

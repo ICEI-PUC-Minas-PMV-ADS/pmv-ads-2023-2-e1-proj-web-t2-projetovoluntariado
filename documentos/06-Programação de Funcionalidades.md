@@ -47,7 +47,7 @@ Aleksander Cunha Garcia Romero | [Aleksander Romero](https://github.com/Aleksand
 
 #### Requisito atendido
 
-RF-02: Por parte do voluntário, a aplicação deve possuir um mecanismo de filtro de projetos de acordo com a área de interesse.
+RF-02: Por parte do voluntário, a aplicação deve possuir um mecanismo de filtro de projetos de acordo com a área de interesse.<br>
 RF-03: A aplicação deve permitir que o voluntário se inscreva em projetos.
 
 
@@ -101,7 +101,7 @@ Anderson da Silva Gomes | [Anderson Gomes](https://github.com/Dinhoop)
 
 #### Requisito atendido
 
-RF-01: A aplicação deve disponibilizar uma forma de autenticação do usuário.
+RF-01: A aplicação deve disponibilizar uma forma de autenticação do usuário.<br:
 RF-07: A aplicação deve permitir que o usuário registre-se no site.
 
 
@@ -145,9 +145,9 @@ Arthur de Andrade Simões | [Arthur Simões](https://github.com/ArthurSimoess)
 
 #### Requisito atendido
 
-RF-05: A aplicação deve possuir um mecanismo de rastreamento de horas de voluntariado.
-RF-06: A aplicação deve possuir um sistema de gamificação para reconhecimento e certificação dos voluntários.
-RF-08: A aplicação deve possuir na tela de perfil voluntário uma forma de alterar avatares.
+RF-05: A aplicação deve possuir um mecanismo de rastreamento de horas de voluntariado.<br>
+RF-06: A aplicação deve possuir um sistema de gamificação para reconhecimento e certificação dos voluntários.<br>
+RF-08: A aplicação deve possuir na tela de perfil voluntário uma forma de alterar avatares.<br>
 RF-09: A aplicação deve possuir nas telas de perfis uma forma de acompanhar os projetos em andamento e finaliza-los.
 
 

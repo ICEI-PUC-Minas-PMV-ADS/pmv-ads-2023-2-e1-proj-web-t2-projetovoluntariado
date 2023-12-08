@@ -12,13 +12,13 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir:
 
 |Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
 |-|:---|:---|:---|:---|:--:|
-| CT-02: Verificar a inscrição do voluntário nos projetos | RF-01 A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário. <br> RF-03 - A aplicação deve permitir que o voluntário se inscreva em projetos. <br> RF-07 - A aplicação deve permitir que o usuário registre-se no site.| Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - O usuário precisa se inscrever e ou efetuar o login na modalidade voluntário <br> 2- Acessar a página "Projetos" a partir da Home ou de outra página.<br> 3 - Visualizar a página Projetos <br> 3 - Clicar no botão "ver detalhes" do projeto de interesse <br> 4 - Clicar em "Inscrever" no modal que será aberto com detalhes dos projetos | Uma mensagem com sucesso deverá ser exibida | Arthur |
+| CT-02: Verificar a inscrição do voluntário nos projetos | RF-01 A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário. <br> RF-03 - A aplicação deve permitir que o voluntário se inscreva em projetos. <br> RF-07 - A aplicação deve permitir que o usuário registre-se no site.| Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - O usuário precisa se inscrever e ou efetuar o login na modalidade voluntário; <br> 2- Acessar a página "Projetos" a partir da Home ou de outra página;<br> 3 - Visualizar a página Projetos; <br> 4 - Clicar no botão "ver detalhes" do projeto de interesse; <br> 5 - Clicar em "Inscrever" no modal que será aberto com detalhes dos projetos. | Uma mensagem com sucesso deverá ser exibida | Arthur |
 
 ----
 
 |Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
 |-|:---|:---|:---|:---|:--:|
-| CT-03: Verificar o filtro dos projetos por categoria | RF-04 A aplicação deve possuir a funcionalidade para as organizações publicarem projetos. | Verificar se o usuário consegue filtrar os projetos por categoria| 1 -  Acessar a página "Projetos" a partir da Home ou de outra página.<br> 2 - Visualizar a página Projetos <br> 3 -  O usuário deve clicar na categoria que corresponde ao interesse de sua busca <br> | Caso haja projetos dentro da categoria selecionada, serão exibidos os respectivos projetos. | Gabriela |
+| CT-03: Verificar o filtro dos projetos por categoria | RF-04 A aplicação deve possuir a funcionalidade para as organizações publicarem projetos. | Verificar se o usuário consegue filtrar os projetos por categoria| 1 -  Acessar a página "Projetos" a partir da Home ou de outra página;<br> 2 - Visualizar a página Projetos; <br> 3 -  O usuário deve clicar na categoria que corresponde ao interesse de sua busca. <br> | Caso haja projetos dentro da categoria selecionada, serão exibidos os respectivos projetos. | Gabriela |
 
 ----
 
@@ -48,19 +48,19 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir:
 
 |Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
 |-|:---|:---|:---|:---|:--:|
-| CT-08: Verificar mensagem de erro no cadastro de novos usuários ao inserir um email inválido ou já cadastrado. | RF-07 A aplicação deve impedir o usuário de se cadastrar com um email inválido ou já cadastrado. | Verificar mensagens de erro. | 1 - Ir para a tela de login; <br> 2 - Clicar em cadastro; <br> 3 - Digitar um email inválido ou que já foi cadastrado; <br> 4 - Clicar no botão cadastrar; | Após clicar em cadastrar, a mensagem de erro: 'Digite um e-mail válido!' ou 'Conta já existe, faça login!' deve ser aparecer na tela. | Átila |
+| CT-08: Verificar mensagem de erro no cadastro de novos usuários ao inserir um email inválido ou já cadastrado. | RF-07 A aplicação deve impedir o usuário de se cadastrar com um email inválido ou já cadastrado. | Verificar mensagens de erro. | 1 - Ir para a tela de login; <br> 2 - Clicar em cadastro; <br> 3 - Digitar um email inválido ou que já foi cadastrado; <br> 4 - Clicar no botão cadastrar. | Após clicar em cadastrar, a mensagem de erro: 'Digite um e-mail válido!' ou 'Conta já existe, faça login!' deve ser aparecer na tela. | Átila |
 
 ----
 
 |Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
 |-|:---|:---|:---|:---|:--:|
-| CT-09: Verificar se a autenticação do usuário falha ao tentar entrar com email ou senha incorretos. | RF-07 A aplicação deve garantir que o usuário não consiga fazer login ao digitar email ou senha incorretos. | Verificar falha na autenticação do usuário. | 1 - Ir para a tela de login; <br> 2 - Prencher os campos email ou senha incorretamente; <br> 3 - Clicar no botão entrar; | Após clicar no botão entrar colocando email ou senha incorretos, a seguinte mensagem de error deve aparecer para o usuário: 'E-mail ou senha incorretos'. | Átila |
+| CT-09: Verificar se a autenticação do usuário falha ao tentar entrar com email ou senha incorretos. | RF-07 A aplicação deve garantir que o usuário não consiga fazer login ao digitar email ou senha incorretos. | Verificar falha na autenticação do usuário. | 1 - Ir para a tela de login; <br> 2 - Prencher os campos email ou senha incorretamente; <br> 3 - Clicar no botão entrar. | Após clicar no botão entrar colocando email ou senha incorretos, a seguinte mensagem de error deve aparecer para o usuário: 'E-mail ou senha incorretos'. | Átila |
 
 ----
 
 |Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
 |-|:---|:---|:---|:---|:--:|
-| CT-10: Verificar se a autenticação do usuário está ocorrendo de forma correta. | RF-07 A aplicação deve garantir que a autenticação do usuário ocorra ao prencher o email e senha corretamente. | Verificar a autenticação do usuário. | 1 - Ir para a tela de login; <br> 2 - Prencher os campos email e senha corretamente; <br> 3 - Clicar no botão entrar; | Após clicar no botão entrar colocando os dados corretamente, o usuário é autenticado e redirecionado para a página de voluntário ou empresa de acordo com o seu perfil. | Átila |
+| CT-10: Verificar se a autenticação do usuário está ocorrendo de forma correta. | RF-07 A aplicação deve garantir que a autenticação do usuário ocorra ao prencher o email e senha corretamente. | Verificar a autenticação do usuário. | 1 - Ir para a tela de login; <br> 2 - Prencher os campos email e senha corretamente; <br> 3 - Clicar no botão entrar. | Após clicar no botão entrar colocando os dados corretamente, o usuário é autenticado e redirecionado para a página de voluntário ou empresa de acordo com o seu perfil. | Átila |
 
 ----
 
@@ -78,7 +78,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir:
 
 |Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
 |-|:---|:---|:---|:---|:--:|
-| CT-13: Verificar o funcionamento da página HomePage | RF-10 A aplicação deve possuir uma tela inicial atrativa e convidativa com acesso aos outros fluxos de telas. | Verificar se os links de direcionamento e botões estão funcionando. | 1 - Abrir o navegador. <br> 2- Informar o endereço do site. <br> 3- Visualizar a página Home. <br> 4- Verificar direcionamentos dos links do menu. <br> 5- Verificar direcionamento do botao "Ver mais" <br> 6- Verificar direcionamentos dos links do footer. | Os botões/links deverão encaminhar para cada página correspondente com êxito. | Átila |
+| CT-13: Verificar o funcionamento da página HomePage | RF-10 A aplicação deve possuir uma tela inicial atrativa e convidativa com acesso aos outros fluxos de telas. | Verificar se os links de direcionamento e botões estão funcionando. | 1 - Abrir o navegador; <br> 2- Informar o endereço do site; <br> 3- Visualizar a página Home; <br> 4- Verificar direcionamentos dos links do menu; <br> 5- Verificar direcionamento do botao "Ver mais"; <br> 6- Verificar direcionamentos dos links do footer. | Os botões/links deverão encaminhar para cada página correspondente com êxito. | Átila |
 
 ----
 

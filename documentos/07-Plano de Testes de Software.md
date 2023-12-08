@@ -6,7 +6,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir:
 
 |Caso de teste | Requisito Associado | Objetivo do teste | Passos | Critério de êxito | Responsável |
 |-|:---|:---|:---|:---|:--:|
-| CT-01: Verificar o funcionamento da autenticação e perfis de usuário. | RF-01 A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário. | Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - Clicar em perfil. | O perfil deve mostrar os dados cadastrados pelo usuário. | Aleksander |
+| CT-01: Verificar o funcionamento da autenticação e perfis de usuário. | RF-01 A aplicação deve disponibilizar uma forma de autenticação e perfis de usuário. | Verificar se o usuário pode-se inscrever nos projetos publicados| 1 - Criar sua conta;<br>2 - Entrar com o email e senha cadastrados;<br>3 - Clicar em perfil. | O perfil deve mostrar os dados cadastrados pelo usuário. | Aleksander |
 
 ----
 
